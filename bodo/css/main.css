@@ -632,8 +632,12 @@ ul.portfolio-image li .image-bg {
     background: rgba(255, 255, 255, .8);
     outline: #FFF double 4px;
     outline-offset: 8px;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%)
+    
+        -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .mouse-icon {
@@ -666,6 +670,8 @@ ul.portfolio-image li .image-bg {
     animation-iteration-count: infinite;
     animation-play-state: running;
     position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
     background: #2f2f2f;
     width: 4px;
@@ -731,7 +737,13 @@ ul.portfolio-image li {
 
 ul.portfolio-image li:hover img {
     -webkit-filter: grayscale(20%);
-    transform: scale(1.15)
+    -ms-filter: grayscale(20%);
+    filter: grayscale(20%);
+        -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
 }
 
 ul.portfolio-image li:hover .image-bg {
@@ -749,7 +761,13 @@ ul.portfolio-image li img {
     left: 0;
     top: 0;
     -webkit-filter: grayscale(100%);
-    transition: filter, transform, .5s
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+     -webkit-transition: filter, transform, .5s;
+    -moz-transition: filter, transform, .5s;
+    -ms-transition: filter, transform, .5s;
+    -o-transition: filter, transform, .5s;
+    transition: filter, transform, .5s;
 }
 
 ul.portfolio-image li .decription-wrap {
@@ -760,7 +778,11 @@ ul.portfolio-image li .decription-wrap {
     left: 0;
     background: rgba(242, 242, 242, .4);
     padding: 20px;
-    transition: background, .5s
+     -webkit-transition: background, .5s ;
+    -moz-transition: background, .5s ;
+    -ms-transition: background, .5s ;
+    -o-transition: background, .5s ;
+    transition: background, .5s ;
 }
 
 ul.portfolio-image li .image-bg {
@@ -770,8 +792,11 @@ ul.portfolio-image li .image-bg {
     width: 100%;
     height: 100%;
     display: inline-block;
-    -ms-transform: translate(-50%, -50%);
+    
     -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -780,7 +805,11 @@ ul.portfolio-image li .image-bg {
     margin: 0 auto;
     text-align: center;
     opacity: 0;
-    transition: opacity, .5s;
+   -webkit-transition: opacity, .5s ;
+    -moz-transition: opacity, .5s ;
+    -ms-transition: opacity, .5s ;
+    -o-transition: opacity, .5s ;
+    transition: opacity, .5s ;
     font-weight: 300;
     color: transparent
 }
@@ -824,7 +853,12 @@ ul.portfolio-image li .desc {
     position: relative;
     box-shadow: 0 0 0 #818181;
     transition: all .2s ease 0s;
-    -webkit-transform: translateY(0) translateX(0)
+  
+        -webkit-transform: translateY(0) translateX(0);
+    -moz-transform: translateY(0) translateX(0);
+    -ms-transform: translateY(0) translateX(0);
+    -o-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
 }
 
 .card:after,
@@ -841,31 +875,62 @@ ul.portfolio-image li .desc {
     width: 100%;
     height: 3px;
     background: #818181;
+    
     -webkit-transform: scaleX(0);
-    transition: all .2s ease
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease  ;
+    -ms-transition: all .2s ease  ;
+    -o-transition: all .2s ease  ;
+    transition: all .2s ease  ;
 }
 
 .wrap-card:before {
     top: 0;
     left: 0;
-    -webkit-transform-origin: 0 0
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
 }
 
 .wrap-card:after {
     bottom: 0;
     left: 0;
-    -webkit-transform-origin: 100% 0
+    
+     -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    -o-transform-origin: 100% 0;
+    transform-origin: 100% 0;
 }
 
 .wrap-card:hover {
     box-shadow: 20px 20px 0 #818181;
     -webkit-transform: translateY(-10px) translateX(-10px);
-    transition: all .2s ease .4s
+    -moz-transform: translateY(-10px) translateX(-10px);
+    -ms-transform: translateY(-10px) translateX(-10px);
+    -o-transform: translateY(-10px) translateX(-10px);
+    transform: translateY(-10px) translateX(-10px);
+   -webkit-transition: all .2s ease .4s;
+    -moz-transition: all .2s ease .4s;
+    -ms-transition: all .2s ease .4s;
+    -o-transition: all .2s ease .4s;
+    transition: all .2s ease .4s;
 }
 
 .wrap-card:hover:after,
 .wrap-card:hover:before {
-    -webkit-transform: scaleX(1)
+    
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .card {
