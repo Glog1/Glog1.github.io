@@ -985,6 +985,7 @@ ul.portfolio-image li .desc{
   margin-bottom: 65px;
 }
 #contact input,
+#contact button,
 #contact textarea {
   font-size: 13px;
   padding: 10px 10px 10px 5px;
@@ -997,6 +998,7 @@ ul.portfolio-image li .desc{
   font-size: 13px;
 }
 #contact input:focus,
+#contact button:focus,
 #contact textarea:focus {
   outline: none;
   border-bottom: none;
@@ -1015,6 +1017,8 @@ ul.portfolio-image li .desc{
 }
 #contact input:focus ~ label,
 #contact input:valid ~ label,
+#contact button:focus ~ label,
+#contact button:valid ~ label,
 #contact textarea:focus ~ label,
 #contact textarea:valid ~ label {
   top: -25px;
@@ -1046,6 +1050,8 @@ ul.portfolio-image li .desc{
 }
 #contact input:focus ~ .bar:before,
 #contact input:focus ~ .bar:after,
+#contact button:focus ~ .bar:before,
+#contact button:focus ~ .bar:after,
 #contact textarea:focus ~ .bar:after,
 #contact textarea:focus ~ .bar:before {
   width: 50%;
@@ -1060,12 +1066,13 @@ ul.portfolio-image li .desc{
   opacity: 0.5;
 }
 #contact input:focus ~ .highlight,
+#contact button:focus ~ .highlight,
 #contact textarea:focus ~ .highlight {
   -webkit-animation: inputHighlighter 0.3s ease;
   -moz-animation: inputHighlighter 0.3s ease;
   animation: inputHighlighter 0.3s ease;
 }
-#contact input[type=submit] {
+#contact button {
   border: 1px solid #2b2b2b !important;
   color: #2b2b2b;
   padding: 10px;
@@ -1076,7 +1083,7 @@ ul.portfolio-image li .desc{
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
-#contact input[type=submit]:hover {
+#contact button:hover {
   background: #2b2b2b;
   color: #ffffff;
 }
