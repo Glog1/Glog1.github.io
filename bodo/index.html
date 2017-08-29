@@ -932,5 +932,20 @@
 
         <script src="js/libs.min.js"></script>
         <script src="js/common.js"></script>
+        <script>
+            jQuery("form").submit(function() {
+		jQuery.ajax({
+			type: "GET",
+			url: "../mail.php",
+			data: jQuery("form").serialize()
+		}).done(function() {
+			alert("Thank you for your message");
+			setTimeout(function() {
+				jQuery.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
+        </script>
     </body>
 </html>
