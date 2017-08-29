@@ -194,5 +194,17 @@
       }
     });
   }
-
+	$("form").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "../mail.php",
+			data: $("form").serialize()
+		}).done(function() {
+			alert("Thank you for your message");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
 })(jQuery);
