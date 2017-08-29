@@ -194,7 +194,9 @@
       }
     });
   }
-	$("form").submit(function() {
+	
+})(jQuery);
+$("form").submit(function() {
 		$.ajax({
 			type: "GET",
 			url: "../mail.php",
@@ -207,4 +209,3 @@
 		});
 		return false;
 	});
-})(jQuery);
