@@ -936,7 +936,7 @@
             jQuery("form").submit(function() {
 		jQuery.ajax({
 			type: "GET",
-			url: "../mail.php",
+			url: "mail.php",
 			data: jQuery("form").serialize()
 		}).done(function() {
 			alert("Thank you for your message");
