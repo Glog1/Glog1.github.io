@@ -882,14 +882,15 @@ ul.portfolio-image {
   padding-right: 15px;
   padding-left: 15px;
   margin-bottom: 30px;
-  height: 100%;
+  
    box-sizing: border-box;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;}
   .grid-item .wrap-article {
     background: #fff;
-    padding: 30px 20px; }
+    padding: 30px 20px; 
+  height: 100%;}
     .grid-item .wrap-article img {
       text-align: center;
       display: block;
