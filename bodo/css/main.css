@@ -60,6 +60,12 @@ iframe {
 
 img {
   max-width: 100%; }
+section{
+    -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 /*end Technical styles*/
 
 /* Preloader*/
@@ -515,14 +521,25 @@ p {
   font-weight: 400; }
 
 #home {
-  background: url(../images/hero1.jpg);
-  -webkit-background-size: cover;
+ -webkit-background-size: cover;
   background-size: cover;
   min-width: 100%;
   min-height: 100%;
   height: 100%;
-  display: block; }
-
+  display: block; 
+  background-attachment: fixed;}
+.shadow{
+    position: relative;
+}
+.shadow:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0, .6); 
+}
 .wrap-hero-content {
   width: 100%;
   height: 100%;
@@ -815,8 +832,7 @@ ul.portfolio-image {
 /*end education*/
   /*testimonial*/
 #testimonial {
-  background-image: url(../images/testimonial-bg.jpg);
-  -webkit-background-size: cover;
+ -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
