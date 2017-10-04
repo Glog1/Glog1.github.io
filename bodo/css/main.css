@@ -980,7 +980,7 @@ ul.portfolio-image {
   width: 100%; }
 
 .bg-about {
-  background: url(../images/reza.jpg) no-repeat;
+    background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
   padding: 0;
