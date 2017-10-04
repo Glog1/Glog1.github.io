@@ -1,3 +1,4 @@
+/*Technical styles*/
 a, body {
   color: #2f2f2f; }
 
@@ -59,7 +60,9 @@ iframe {
 
 img {
   max-width: 100%; }
+/*end Technical styles*/
 
+/* Preloader*/
 #preloader {
   position: fixed;
   top: 0;
@@ -82,7 +85,9 @@ img {
   #status img {
     text-align: center;
     margin-top: -80px; }
+/*end preloader*/
 
+/*Technical styles*/
 .no-pad {
   padding: 0 !important;
   margin: 0 !important; }
@@ -149,7 +154,9 @@ img {
   width: 100%;
   padding: 0;
   margin: 0; }
+/*end Technical styles*/
 
+/*HEADER*/
 .header {
   width: 100%;
   z-index: 9999; }
@@ -392,7 +399,9 @@ img {
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     z-index: -1; }
+/*end HEADER*/
 
+/*HOME*/
 #home {
   width: 100%; }
 
@@ -600,7 +609,7 @@ p {
 
 .typed-cursor {
   opacity: 0; }
-
+/*work*/
 ul.portfolio-image {
   list-style: none;
   position: relative;
@@ -682,7 +691,8 @@ ul.portfolio-image {
       color: #2f2f2f;
       font-size: 14px;
       font-weight: 700; }
-
+/*end work*/
+/*education*/
 .icon-use {
   font-family: Glyphter;
   font-size: 30px;
@@ -802,7 +812,8 @@ ul.portfolio-image {
     -webkit-transform-origin: 0 0; }
   .card:hover:after, .card:hover:before {
     -webkit-transform: scaleY(1); }
-
+/*end education*/
+  /*testimonial*/
 #testimonial {
   background-image: url(../images/testimonial-bg.jpg);
   -webkit-background-size: cover;
@@ -857,7 +868,8 @@ ul.portfolio-image {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  height: 100%;}
   .grid-item .wrap-article {
     background: #fff;
     padding: 30px 20px; }
@@ -925,7 +937,9 @@ ul.portfolio-image {
   padding: 0 10px;
   text-align: justify;
   color: #5f5f5f; }
+/*end HOME*/
 
+/*ABOUT*/
 #about {
   min-height: 650px;
   display: inline-block;
@@ -971,7 +985,8 @@ ul.portfolio-image {
   .wrap-about .name {
     margin: 40px 0 20px;
     font-size: 14px; }
-
+  /*end ABOUT*/
+/*CONTACT*/
 #contact {
   padding: 120px 0 200px; }
   #contact form {
@@ -1086,7 +1101,7 @@ ul.portfolio-image {
     #contact button:hover {
       background: #2b2b2b;
       color: #fff; }
-
+/*end CONTACT*/
 @-webkit-keyframes inputHighlighter {
   from {
     background: #5264AE; }
@@ -1100,7 +1115,7 @@ ul.portfolio-image {
   to {
     width: 0;
     background: 0 0; } }
-
+/*FOOTER*/
 .footer-top {
   width: 100%;
   text-align: center;
@@ -1179,7 +1194,8 @@ ul.portfolio-image {
   background: #2f2f2f;
   padding: 80px 0;
   color: #636363; }
-
+/*FOOTER*/
+/*skill*/
 .skillst {
   margin-top: 30px; }
   .skillst .skillbar {
@@ -1227,7 +1243,7 @@ ul.portfolio-image {
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
         border-top: 4px solid #818181; }
-
+/*end skill*/
 .coyright {
   text-align: center;
   margin: 2em 0 0;

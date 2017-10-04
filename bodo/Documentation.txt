@@ -1,0 +1,22 @@
+Hello, thank you for choosing our template!
+a) The template includes:
+1. Main page 
+  1.1 index.html
+2. Css files
+  2.1 main.css
+  2.2 libs.min.css
+  2.3 normalize.css
+3. js files
+  3.1 common.js
+  3.2 libs.min.js
+  3.3 html5shiv.min.js
+4. Fonts
+  4.1 Glyphter
+  4.2 RobotoLight
+  4.3 RobotoSlabRegular
+5. Application processing file
+  5.1 mail.php
+
+b) To edit the information on the site, edit the 'index.html' file (Pay attention to the comments in the file!).
+c) To edit the main styles on the site, you need to edit the 'css/main.css' file (Pay attention to the comments in the file!).
+d) For the correct work of the feedback form, in the file 'mail.php', enter the name of your site, and your mail, which will be sent to the application!(Pay attention to the comments in the file!).

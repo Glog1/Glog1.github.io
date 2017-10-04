@@ -1,7 +1,7 @@
 <?php
 
-$recepient = "youmail@ya.ru";
-$sitename = "Bodo";
+$recepient = "youmail@ya.ru"; //Enter your mail
+$sitename = "Bodo"; //Enter the name of your site
 
 $name = trim($_GET["name"]);
 $email = trim($_GET["email"]);
