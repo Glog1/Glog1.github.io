@@ -1240,6 +1240,9 @@ ul.portfolio-image {
     padding: 2px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
+  .skillst .skillbar:last-child{
+      margin: 0;
+  }
   .skillst .count-bar {
     height: 5px;
     width: 0;
