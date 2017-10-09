@@ -693,7 +693,7 @@
 
                 <!--TESTIMONIAL-->
                 <section id="testimonial" class="row-flex align-center" style=" background-image: url(images/testimonial-bg.jpg);
-  ">
+                         ">
                     <div class="container">
                         <div class="row wrap-testimonial">
                             <div class="col-md-10 col-md-offset-1">
@@ -933,23 +933,27 @@
 
         <script src="js/libs.min.js"></script>
         <script src="js/common.js"></script>
-         <script>
-          !function(e){"use strict"; e(".typed").typed({strings:["My Name is M.Reza","I'm a Web Designer","Love Simplicity"],typeSpeed:100,backDelay:900,loop:!0})}
+        <script>
+          
+            var typed = new Typed(".typed", {
+                // Waits 1000ms after typing "First"
+                strings: ["My Name is M.Reza", "I'm a Web Designer", "Love Simplicity"], typeSpeed: 100, backDelay: 900, loop: !0
+            });
         </script>
         <script>
-            jQuery("form").submit(function() {
-		jQuery.ajax({
-			type: "GET",
-			url: "mail.php",
-			data: jQuery("form").serialize()
-		}).done(function() {
-			alert("Thank you for your message");
-			setTimeout(function() {
-				jQuery.fancybox.close();
-			}, 1000);
-		});
-		return false;
-	});
+            jQuery("form").submit(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    url: "mail.php",
+                    data: jQuery("form").serialize()
+                }).done(function () {
+                    alert("Thank you for your message");
+                    setTimeout(function () {
+                        jQuery.fancybox.close();
+                    }, 1000);
+                });
+                return false;
+            });
         </script>
     </body>
 </html>
