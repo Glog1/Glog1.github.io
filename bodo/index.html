@@ -933,12 +933,18 @@
 
         <script src="js/libs.min.js"></script>
         <script src="js/common.js"></script>
-        <script>
-          
-            var typed = new Typed(".typed", {
-                // Waits 1000ms after typing "First"
-                strings: ["My Name is M.Reza", "I'm a Web Designer", "Love Simplicity"], typeSpeed: 100, backDelay: 900, loop: !0
-            });
+      <script>
+       
+        ! function(e) {
+            e(document).ready(function() {
+          "use strict";
+        e(".typed").typed({
+            strings: ["My Name is M.Reza", "I'm a Web Designer", "Love Simplicity"],
+            typeSpeed: 100,
+            backDelay: 900,
+            loop: !0
+        })
+        }), window.onload = t()}(jQuery);
         </script>
         <script>
             jQuery("form").submit(function () {
