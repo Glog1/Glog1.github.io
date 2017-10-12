@@ -1,5 +1,5 @@
 $(function(){
-$(document).pjax('a[data-pjax]', '#pjax-container')
+$(document).pjax('a', '#pjax-container')
     //   $(document).pjax('.ajaxLink','#ajaxContainer',{fragment: '#ajaxContainer'}); 
 });
 
