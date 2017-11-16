@@ -1,0 +1,45 @@
+@font-face {
+	font-family: "ProximaNovaExtrabld";
+	src: url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.eot");
+	src: url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.woff") format("woff"),
+	url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNovaRegular";
+	src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot");
+	src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"),
+	url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNovaBold";
+	src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+	src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+	url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNovaSemibold";
+	src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot");
+	src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"),
+	url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
