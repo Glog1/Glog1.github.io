@@ -1,16 +1,39 @@
 jQuery(function () {
-//Open child menu
+
+// Open sub menu
     $(".sub-menu a").click(function () {
         $( ".sub-menu").toggleClass( "open" );
         $(this).parent(".sub-menu").children("ul").slideToggle("200");
     });
-    $(".acordionMenu a").click(function () {
-        $( ".acordionMenu").toggleClass( "open" );
-        $(this).parent(".acordionMenu").children("ul").slideToggle("200");
-        $(this).toggleClass("open");
+    $(document).mouseup(function(e) {
+        var $target = $(e.target);
+        if ($target.closest(".sub-menu").length == 0) {
+            $(".sub-menu").removeClass("open");
+            $(".childIList").hide('slow');
+        }
     });
 
-// Menu open
+    $('.acordionMenu a').click(function () {
+        if ($(this).hasClass('open"')) {
+            $(this).removeClass("open");
+            $(this).parent(".acordionMenu").children("ul").hide();
+        } else {
+            $( ".acordionMenu").removeClass( "open" );
+            $( ".acordionMenu ul").hide('slow');
+            $(this).parent(".acordionMenu").children("ul").slideToggle("200");
+            $(this).parent(".acordionMenu").toggleClass("open");
+        }
+    });
+    $(document).mouseup(function(e) {
+        var $target = $(e.target);
+        if ($target.closest(".acordionMenu").length == 0) {
+            $(".acordionMenu").removeClass("open");
+            $(".acordionMenu ul").hide('slow');
+        }
+    });
+
+
+// Menu MOBILE open
     $(".btnMnu, .close").click(function () {
          $(".burger").toggleClass( "open" );
         $(".navBarWrapp" ).toggleClass( "active" );
@@ -19,8 +42,25 @@ jQuery(function () {
 	$(".searchBtn").click(function () {
          $(".searchFormWrapp").toggleClass( "open" );
     });
+    $(document).mouseup(function(e) {
+        var $target = $(e.target);
+        if ($target.closest(".searchFormWrapp").length == 0) {
+            $(".searchFormWrapp").removeClass("open");
+        }
+    });
+
+
+
+
+	// SLIDERS
  // Slider "Banner"
-    $('.slider').slick();
+    $('.sliderBanner').slick({
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+    // $('.slider').slick();
  // Multiple slider
     $('.sliderMultiple').slick({
         infinite: false,
@@ -44,9 +84,6 @@ jQuery(function () {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
     // Instagram slider
@@ -72,9 +109,7 @@ jQuery(function () {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
+
         ]
     });
     // Partnersslider
