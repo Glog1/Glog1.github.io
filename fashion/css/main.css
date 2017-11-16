@@ -514,7 +514,8 @@ section.sliderWrapp {
   left: calc(0% - 76px);
   top: 25%;
   border: 1px solid #d7d7d7;
-  margin-right: -1px; }
+  margin-right: -1px;
+  right: inherit; }
 
 .inlineSlickBtn .slick-next:hover {
   z-index: 2;
@@ -602,7 +603,8 @@ section.sliderWrapp {
           align-self: flex-end;
   width: 100%;
   padding: 0 1em 1em;
-  bottom: 0; }
+  bottom: 0;
+  left: 0; }
   .network__data {
     float: left;
     font-family: "ProximaNovaExtrabld", san-serif;
