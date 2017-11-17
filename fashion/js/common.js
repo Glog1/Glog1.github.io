@@ -24,13 +24,13 @@ jQuery(function () {
             $(this).parent(".acordionMenu").toggleClass("open");
         }
     });
-    $(document).mouseup(function(e) {
-        var $target = $(e.target);
-        if ($target.closest(".acordionMenu").length == 0) {
-            $(".acordionMenu").removeClass("open");
-            $(".acordionMenu ul").hide('slow');
-        }
-    });
+    // $(document).mouseup(function(e) {
+    //     var $target = $(e.target);
+    //     if ($target.closest(".acordionMenu").length == 0) {
+    //         $(".acordionMenu").removeClass("open");
+    //         $(".acordionMenu ul").hide('slow');
+    //     }
+    // });
 
 
 // Menu MOBILE open
@@ -48,10 +48,6 @@ jQuery(function () {
             $(".searchFormWrapp").removeClass("open");
         }
     });
-
-
-
-
 	// SLIDERS
  // Slider "Banner"
     $('.sliderBanner').slick({
@@ -138,4 +134,16 @@ jQuery(function () {
             }
         ]
     });
+});
+
+jQuery(document).ready(function() {
+// Masonry grid
+var $container = $(".grid");
+
+    $container.masonry({
+        columnWidth: '.grid-item',
+        itemSelector: ".grid-item"
+    });
+    $(".item").imagefill();
+
 });
