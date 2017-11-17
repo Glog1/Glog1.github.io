@@ -6,10 +6,7 @@ jQuery(document).ready(function() {
         columnWidth: '.grid-item',
         itemSelector: ".grid-item"
     });
-    $(".item").imagefill();
-
-});
-jQuery(function () {
+ 
 
 // Open sub menu
     $(".sub-menu a").click(function () {
