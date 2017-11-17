@@ -1,3 +1,14 @@
+jQuery(document).ready(function() {
+// Masonry grid
+    var $container = $(".grid");
+
+    $container.masonry({
+        columnWidth: '.grid-item',
+        itemSelector: ".grid-item"
+    });
+    $(".item").imagefill();
+
+});
 jQuery(function () {
 
 // Open sub menu
@@ -136,14 +147,3 @@ jQuery(function () {
     });
 });
 
-jQuery(document).ready(function() {
-// Masonry grid
-var $container = $(".grid");
-
-    $container.masonry({
-        columnWidth: '.grid-item',
-        itemSelector: ".grid-item"
-    });
-    $(".item").imagefill();
-
-});
