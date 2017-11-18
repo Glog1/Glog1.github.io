@@ -1,12 +1,23 @@
-jQuery(document).ready(function() {
-// Masonry grid
+$(document).ready(function() {
+//Masonry
     var $container = $(".grid");
-
-    $container.masonry({
-        columnWidth: '.grid-item',
-        itemSelector: ".grid-item"
+    $container.imagesLoaded(function () {
+        $container.masonry({
+            columnWidth: ".grid-item",
+            itemSelector: ".grid-item"
+        });
+        $(".gridArticleImg__img").imagefill();
     });
- 
+    var $containercss = $(".grid-css-container");
+    $containercss.imagesLoaded(function () {
+        $containercss.masonry({
+            columnWidth: ".grid-col-md-3",
+            itemSelector: ".grid-css",
+             percentPosition: true
+        });
+        $(".releasesImgGrid__img").imagefill();
+    });
+
 
 // Open sub menu
     $(".sub-menu a").click(function () {

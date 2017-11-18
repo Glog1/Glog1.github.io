@@ -23,16 +23,28 @@
 .smallTopic{
             height: 200px;
         }
+    .releasesImgGrid__link{
+        top: inherit
+    }
+    .logoFooter{
+        display: block;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width :1400px) {
     .wrapping{
         max-width: 81%;
     }
+    .wrapping-2 {
+        max-width: 91%;
+    }
 }
 @media only screen and (max-width :1300px) {
     .wrapping{
         max-width: 84%;
+    }
+    .wrapping-2 {
+        max-width: 94%;
     }
 }
 @media only screen and (max-width : 1199px) {
@@ -289,14 +301,76 @@ span.close {
     .grid-item{
         width: 50%;
     }
+
     .titleSection{
         margin-bottom: 15px;
+    }
+    .wrapping-2 {
+        max-width: 100%;
+    }
+    .box-after:after{
+        display: none;
+    }
+    .socLinkItem__link{
+        display: block;
+    }
+    .articleTitleSinglePage{
+        font-size: 32px;
+        line-height: 34px;
+    }
+    .p-b-sm-0{
+        padding-bottom: 0;
+    }
+    .contacts,.mapWrapp, .contactInfo:last-child {
+        margin-bottom: 50px;
+    }
+    .contacts__title{
+        margin-bottom: 10px;
+    }
+    .footerText,.contacts__link {
+        margin-bottom: 15px;
+    }
+    .contentBox__link{
+        line-height: 32px;
+    }
+    .contactInfo__name{
+        text-align: left;
+    }
+    .contactInfo__title{
+        margin-bottom: 25px;
     }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+    .articleNetworkSinglePage{
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+    .spacer{
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    .articleNetworkWrappSinglePage {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+    .contacts{
+        padding: 0;
+    }
 }
 @media only screen and (max-width : 600px) {
     .smallTopic {
@@ -409,6 +483,49 @@ span.close {
     .grid-item{
         width: 100%;
     }
+    .breadcrumbs__list {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: horizontal;
+        overflow: hidden;
+        width: 100%;
+        height: 55px;
+    }
+    .articleTitleSinglePage{
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .subtitle {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .subtitle__lvl2 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .list__item{
+        font-size: 16px;
+    }
+    .grid-css{
+        padding: 0px 5px 0;
+    }
+    .contacts__title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .contacts, .mapWrapp, .contactInfo:last-child {
+        margin-bottom: 30px;
+    }
+    #map{
+        height: 160px;
+    }
+    .mapWrapp {
+         padding: 0 15px;
+    }
+    .contactInfo__name{
+        font-size: 24px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -421,16 +538,34 @@ span.close {
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+    .grid-col-xs-12{
+        width: 100%;
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
 }
-
+@media only screen and (min-width :600px) {
+    .grid-css{
+        width: 33.3%;
+    }
+}
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+    .grid-css_item-row-2 {
+        height: 620px;
+    }
+    .grid-css_item-row-1 {
+        height: 310px;
+    }
+    .grid-col-sm-6{
+        width: 50%;
+    }
+    .grid-col-sm-3{
+        width: 25%;
+    }
 
 }
 
@@ -465,6 +600,24 @@ span.close {
     }
     ul.footerMenu {
         display: block !important;
+    }
+    .pull-md-left {
+        float: left;
+    }
+    .pull-md-right {
+        float: right;
+    }
+    .grid-col-md-3{
+        width: 25%;
+    }
+    .grid-col-md-6{
+        width: 50%;
+    }
+    .contactInfoWrapp{
+        margin: 30px 0;
+    }
+    .m-tb-md-50{
+        margin: 50px 0;
     }
 }
 
