@@ -25,6 +25,11 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   font-weight: normal; }
 
+p {
+  font-family: "RobotoLight", san-serif;
+  font-size: 17px;
+  line-height: 34px; }
+
 .col {
   padding: 0 15px; }
 
@@ -901,9 +906,6 @@ section.sliderWrapp {
     color: #6b6b6b; }
 
 .aboutUsText {
-  font-family: "RobotoLight", san-serif;
-  font-size: 17px;
-  line-height: 34px;
   margin-bottom: 50px; }
 
 .firstBig:first-letter {
