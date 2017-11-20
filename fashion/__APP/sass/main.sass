@@ -1,0 +1,890 @@
+/*FONTS*/
+$Pne: 'ProximaNovaExtrabld', san-serif
+$Pnr: 'ProximaNovaRegular', san-serif
+$Pnb: 'ProximaNovaBold', san-serif
+$Rbtl: 'RobotoLight', san-serif
+$Rb: 'RobotoBold', san-serif
+$Prsb: 'ProximaNovaSemibold', san-serif
+$Csbi: 'Cormorant-SemiBoldItalic', san-serif
+$Cgbi: 'CormorantGaramond-BoldItalic', san-serif
+$Cgsbi: 'CormorantGaramond-SemiBoldItalic', san-serif
+$Cgi: 'CormorantGaramond-Italic', san-serif
+/*COLOR*/
+$dark: #151515
+$lightGrey: #d7d7d7
+$bgImg: #91a2b2
+$bgf9: #f9f9f9
+$black: #000000
+$lighGrey-2: #e9e9e9
+$lightGrey-3: #dddddd
+body
+  margin: 0
+  font-size: 16px
+  color: $dark
+  *
+    outline: none !important
+    box-sizing: border-box
+a
+  text-decoration: none
+  color: $dark
+  -webkit-transition: all 0.25s ease-in
+  -o-transition: all 0.25s ease-in
+  transition: all 0.25s ease-in
+input, button
+  -webkit-transition: all 0.25s ease-in
+  -o-transition: all 0.25s ease-in
+  transition: all 0.25s ease-in
+h1, h2, h3, h4,  h5, h6, p
+  margin: 0
+  font-weight: normal
+p
+  font-family: $Rbtl
+  font-size: 17px
+  line-height: 34px
+.col
+  padding: 0 15px
+img
+  max-width: 100%
+ul, nav, li
+    list-style: none
+    margin: 0
+    padding: 0
+.row-flex 
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: horizontal
+    -webkit-box-direction: normal
+    -webkit-flex-direction: row
+    -ms-flex-direction: row
+    flex-direction: row
+.row-fl
+  box-sizing: border-box
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-flex: 0
+  -ms-flex: 0 1 auto
+  flex: 0 1 auto
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: normal
+  -ms-flex-direction: row
+  flex-direction: row
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+.column-flex
+  display: flex
+  flex-direction: column
+.align-end
+  align-items: flex-end
+.middle
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+.p0
+  padding: 0
+.pl-0
+  padding-left: 0
+.pt-30
+  padding-top: 30px
+.m0
+  margin: 0 !important
+.fl1
+  flex: 1
+section, footer
+  padding: 50px 0
+.mt50
+   margin-top: 50px
+.mt-b-50
+  margin: 50px 0
+.mt-b-30
+  margin: 30px 0
+.mb-15
+  margin-bottom: 15px
+.mb-30
+  margin-bottom: 30px
+.mb-50
+  margin-bottom: 50px
+.ml-8
+  margin-left: 8px
+.mt-10
+  margin-top: 10px
+.tac
+  text-align: center
+.h100
+  height: 100%
+/*HEADER*/
+.logo
+  text-align: center
+  padding: 30px 0
+.navBarWrapp
+  display: flex
+  flex: 1
+.navBar
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  flex: 1
+  -webkit-transition: none
+  -moz-transition: none
+  -ms-transition: none
+  -o-transition: none
+  transition: none
+.navBarItem 
+  display: flex
+  align-items: flex-start
+  flex-direction: column
+  position: relative
+  margin-right: 40px
+  &__link
+    font-family: $Pne
+    text-transform: uppercase
+    font-size: 15px
+    position: relative
+    padding: 5px
+ 
+.childIList 
+  position: absolute
+  top: 100%
+  left: 0
+  width: 100%
+  transition: none
+  display: none
+  z-index: 1
+  background-color: #fff
+.childListItem
+  &__link
+    font-family: $Pnr
+    text-transform: uppercase
+    font-size: 15px
+    padding: 5px 15px
+    margin: 5px 0
+    display: block
+.parent
+  position: relative
+  flex-direction: column
+.carrent
+  position: relative
+  flex-direction: row
+  align-items: baseline
+  &:before
+    content: '\f107'
+    font: normal normal normal 14px/1 FontAwesome
+    margin-left: 8px
+    text-align: center
+    font-weight: bold
+    position: absolute
+    right: -10px
+    margin-top: 3px
+.parent
+  &.open
+    transition: all 0.25s ease-in
+    .carrent
+          &:before
+             -webkit-transform: rotate(180deg)
+             -moz-transform: rotate(180deg)
+             -ms-transform: rotate(180deg)
+             -o-transform: rotate(180deg)
+             transform: rotate(180deg)
+             transition: all 0.25s ease-in
+.carrent.open
+  &:before
+    -webkit-transform: rotate(180deg)
+    -moz-transform: rotate(180deg)
+    -ms-transform: rotate(180deg)
+    -o-transform: rotate(180deg)
+    transform: rotate(180deg)
+    transition: all 0.25s ease-in
+.socLinkItem
+    position: relative
+    &__link
+        border: 1px solid $lightGrey
+        margin-right: -1px
+        margin-bottom: -1px
+        font-size: 18px
+        width: 55px
+        height: 55px
+        display: inline-block
+        text-align: center
+        line-height: 55px
+.searchFormWrapp		
+    position: absolute
+    right: 0
+    background-color: #fff
+    min-width: 300px
+    padding: 15px
+    border: 1px solid #eee
+    visibility: hidden
+    opacity: 0
+    transition: all .3s ease
+    margin-top: 10px
+    z-index: 1
+    &.open
+	    visibility: visible
+	    opacity: 1
+.formSearch
+	&__textfield
+		padding-top: 12px
+		padding-bottom: 12px
+		height: 52px
+		display: table-cell
+		position: relative
+		z-index: 2
+		float: left
+		width: calc(100% - 52px)
+		-moz-calc-width: calc(100% - 51px)
+		-webkit-calc-width: calc(100% - 51px)
+		margin-bottom: 0
+		padding: 18px 24px
+		border-radius: 0
+		background-color: transparent
+		letter-spacing: 1px
+		box-shadow: none
+		border-color: $lightGrey
+		border: 1px solid $lightGrey
+		-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+		-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+	&__btn
+                width: 52px
+                height: 52px 
+                line-height: 1
+                color: #fff
+                border-color: #FFA500
+                background-color: $dark
+                border-radius: 0
+                text-transform: uppercase
+                font-size: 12px
+                letter-spacing: 1px
+                font-weight: 400
+                font-family: "Montserrat", sans-serif
+                display: inline-block
+                text-align: center
+                white-space: nowrap
+                vertical-align: middle
+                touch-action: manipulation
+                cursor: pointer
+                -webkit-user-select: none
+                -moz-user-select: none
+                -ms-user-select: none
+                user-select: none
+                border: 1px solid transparent
+                font-size: 18px
+                position: relative
+.btnMnu
+  border: 1px solid $lightGrey
+  padding: 5px
+  width: 52px
+  height: 52px
+  display: flex
+  justify-content: center
+  align-items: center
+.burger 
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    align-items: flex-start
+    width: 20px
+    &__line
+        display: block
+        height: 3px
+        margin: 0 0 4px
+        background-color: $dark
+        -webkit-transition: width 0.3s ease-in-out, background-color 0.2s ease-in-out
+        transition: width 0.3s ease-in-out, background-color 0.2s ease-in-out
+        &:first-child
+            width: 100%
+        &:nth-child(2)
+            width: 50%
+            flex: 1
+        &:nth-child(3)
+            width: 80%
+            margin-bottom: 0
+.burger.open span
+    width: 100%
+//Banner
+section.sliderWrapp
+  margin: 20px 0
+.slick-slider
+  user-select: all
+.slick-next, .slick-prev
+  width: auto
+  height: auto
+  z-index: 1
+.slick-prev
+   left: 25px
+.slick-next
+  right: 25px
+.slick-next:before, .slick-prev:before
+  font-family: FontAwesome
+  font-size: 80px
+  line-height: 0
+  opacity: .28
+.slick-prev:before
+  content: "\f104"
+.slick-next:before
+  content: "\f105"
+
+.slider
+  &__item
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    min-height: 72vh
+    display: flex !important
+    align-items: center
+    position: relative
+    & *
+      z-index: 1
+    &:before
+      content: ''
+      width: 100%
+      height: 100%
+      display: block
+      background-color: rgba(21, 21, 21, .23)
+      position: absolute
+      left: 0
+      top: 0
+.sliderItem
+  &__content
+    width: 83.33333333%
+    margin: 0 auto
+.contentBox
+  border: 15px solid rgba(255,255,255, .28)
+  padding: 45px
+  &__title
+    font-family: $Pne
+    color: #ffffff
+    line-height: 60px
+    font-size: 50px
+    text-transform: uppercase
+  &__link
+    font-family: $Pnb
+    color: #ffffff
+    border-bottom: 2px solid #fff
+    font-size: 15px
+    line-height: 44px
+    padding-bottom: 3px
+    text-transform: uppercase
+.outsideContentBox
+  padding: 40px 0px 40px 45px
+  max-width: 310px
+  &__title
+    width: 450px
+//Releases
+.contentSlideWrap
+  position: relative
+.sliderMultipleItemImg
+  margin: 20px 15px 20px
+  transition: all .3s ease
+  &__img
+    flex: 1
+    margin: 0 auto
+  &:hover
+    box-shadow: 0px 0 20px 10px rgba(0, 0, 0, 0.2)
+.sliderMultipleItemTitle__title
+  font-family: $Pne
+  text-transform: uppercase
+  text-align: center
+  font-size: 20px
+  line-height: 1
+.dark
+  color: $dark
+  border-color: $dark
+.insideContentBox
+  border-color: $lighGrey-2
+  &__title
+    font-size: 40px
+    line-height: 44px
+.outsideBoxLink
+  padding-bottom: 130px
+  &__link
+    position: absolute
+    top: 62%
+    left: 7%
+    line-height: 1
+.inlineSlickBtn .slick-next, .inlineSlickBtn .slick-prev
+  left: calc(0% - 76px)
+  top: 25%
+  border: 1px solid $lightGrey
+  margin-right: -1px
+  right: inherit
+.inlineSlickBtn .slick-next
+  &:hover
+    z-index: 2
+    border-color: $dark
+.inlineSlickBtn .slick-prev
+  &:hover
+    border-color: $dark
+    z-index: 2
+.inlineSlickBtn .slick-prev
+  left: calc(0% - 132px)
+.inlineSlickBtn .slick-next:before, .inlineSlickBtn .slick-prev:before
+  color: $dark
+  opacity: 1
+  font-size: 30px
+  width: 55px
+  height: 55px
+  display: block
+  text-align: center
+  line-height: 55px
+//TOPICS
+.bg-light-silver
+  background-color: $bgf9
+.titleSection
+  &__title
+    font-family: $Pnb
+    //font-weight: bold
+    font-size: 50px
+    line-height: 1
+    text-align: center
+    letter-spacing: 15px
+    text-transform: uppercase
+  margin-bottom: 35px
+.gradient-bf
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(21,21,21,0.32)
+    background: -moz-linear-gradient(top, rgba(21,21,21,0.32) 0%, rgba(21,21,21,0.8) 100%)
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(21,21,21,0.32)), color-stop(100%, rgba(21,21,21,0.8)))
+    background: -webkit-linear-gradient(top, rgba(21,21,21,0.32) 0%, rgba(21,21,21,0.8) 100%)
+    background: -o-linear-gradient(top, rgba(21,21,21,0.32) 0%, rgba(21,21,21,0.8) 100%)
+    background: -ms-linear-gradient(top, rgba(21,21,21,0.32) 0%, rgba(21,21,21,0.8) 100%)
+    background: linear-gradient(to bottom, rgba(21,21,21,0.32) 0%, rgba(21,21,21,0.8) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151515', endColorstr='#151515', GradientType=0 )
+  &__light
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba(150,167,183,0)
+      background: -moz-linear-gradient(top, rgba(150,167,183,0) 0%, rgba(21,21,21,0.8) 100%)
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(150,167,183,0)), color-stop(100%, rgba(21,21,21,0.8)))
+      background: -webkit-linear-gradient(top, rgba(150,167,183,0) 0%, rgba(21,21,21,0.8) 100%)
+      background: -o-linear-gradient(top, rgba(150,167,183,0) 0%, rgba(21,21,21,0.8) 100%)
+      background: -ms-linear-gradient(top, rgba(150,167,183,0) 0%, rgba(21,21,21,0.8) 100%)
+      background: linear-gradient(to bottom, rgba(150,167,183,0) 0%, rgba(21,21,21,0.8) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a7b7', endColorstr='#151515', GradientType=0 )
+.btnTrsp
+  border: 1px solid #fff
+  padding: 1em 2em
+  border-radius: .15em
+  color: #fff
+  font-family: $Pnb
+  font-size: 15px
+  text-transform: uppercase
+  box-shadow: none
+  background: none
+.oneTopics
+  margin-bottom: 25px
+
+.topicImg
+  color: #fff
+  //display: flex
+  justify-content: center
+  &__network
+    position: absolute
+    align-self: flex-end
+    width: 100%
+    padding: 0 1em 1em
+    bottom: 0
+    left: 0
+  &__link
+    display: none
+    position: absolute
+    left: calc(50% - 88px)
+    top: 35%
+    align-self: center
+  &:hover
+    .topicImg__link
+      display: block
+.network
+  &__data
+    float: left
+    font-family: $Pne
+    font-size: 14px
+    i
+      font-size: 18px
+  &__share
+    font-size: 14px
+    font-family: $Pne
+    float: right
+    i
+      font-size: 18px
+.share__link
+  color: inherit
+.topicArticle
+  margin-top: 25px
+.topicTitle
+    font-size: 26px
+    font-family: $Pnr
+    line-height: 34px
+    margin-bottom: 30px
+    font-weight: bold
+    &:hover
+      text-decoration: underline
+.topicText
+  font-size: 15px
+  line-height: 28px
+  font-family: $Rbtl
+.smallTopic
+  max-height: 150px
+  overflow: hidden
+  //display: flex
+  margin-bottom: 35px
+  &:last-child
+    margin-bottom: 0
+.smallTopicImg
+  max-width: 200px
+  //display: flex
+  float: left
+.topicArticleSmall
+  float: right
+  width: calc(100% - 200px)
+  padding-left: 20px
+  margin: 0
+.smallTopicTitle
+    font-size: 20px
+    line-height: 28px
+    margin-bottom: 10px
+//Instagram
+.customPadding
+  padding: 45px 25px 150px
+//Partners
+.border-b
+  border-bottom: 4px solid #e6e6e6
+.border-t
+  border-top: 1px solid #e6e6e6
+.row-flex > .slick-list
+  width: 100%
+.row-flex > .slick-list > .slick-track
+  display: flex
+  flex-direction: row
+  align-items: center
+  .sliderMultiple__item
+    flex: 1
+.box-shadowNone .sliderMultipleItemImg:hover
+  box-shadow: none
+.filterImg
+  filter: opacity(30%)
+.slick-active.slick-center .filterImg
+  filter: opacity(1)
+//Footer
+.footer
+  border-top: 4px solid #e6e6e6
+.copyright
+  padding-right: 30px
+  font-family: $Rbtl
+  font-size: 13px
+  line-height: 22px
+.logoFooter
+  max-width: 150px
+  padding: 0
+  flex: 1
+  display: flex
+.footerText
+  font-family: $Rbtl
+  font-size: 15px
+  line-height: 24px
+.menuName__title
+  font-family: $Pne
+  font-size: 20px
+  line-height: 1.1
+  text-transform: uppercase
+  margin-bottom: 20px
+.footerMenuLink__link
+  font-family: $Prsb
+  font-size: 13px
+  line-height: 36px
+  letter-spacing: 1px
+  color: #757575
+  text-transform: uppercase
+.footerMail__link
+  font-size: 15px
+  line-height: 21px
+  font-family: $Pnr
+  font-weight: bold
+  text-transform: none
+.footerTell__link
+  font-size: 22px
+  font-family: $Pnr
+  font-weight: bold
+  line-height: 21px
+  margin: 20px 0
+  display: block
+.footerSocLink
+  justify-content: flex-end
+.footerSocLink,
+.menuName__title,
+.footerText,
+.menuName__title
+  display: flex
+  flex: 1
+.author__link
+  font-size: 13px
+  line-height: 26px
+//Breadcrumbs
+.breadcrumbs__list
+    display: flex
+    justify-content: center
+    flex-direction: row
+    flex-flow: wrap
+    padding: 40px 0 0
+    margin-top: 15px
+    border-top: 1px solid $lighGrey-2
+.breadcrumbsItem
+  list-style-type: square
+  margin-left: 20px
+  margin-right: 10px
+  &:first-child
+    margin-left: 0
+    list-style-type: none
+  &:last-child
+    margin-right: 0
+  &__link
+    font-size: 13px
+    line-height: 1.2
+    font-family: $Rbtl
+    color: $black
+//About Us
+.introductory
+  max-width: 841px
+  margin: 0 auto
+  &__text
+    text-align: center
+    font-family: $Csbi
+    font-size: 30px
+    line-height: 44px
+    margin-bottom: 35px
+  &__author
+    text-align: center
+.author
+  font-size: 22px
+  line-height: 32px
+  &__name
+    font-family: $Cgbi
+    margin-right: 5px
+  &__company
+    font-family: $Cgi
+    color: #6b6b6b
+.aboutUsText
+  margin-bottom: 50px
+.firstBig:first-letter
+  font-weight: bold
+  float: left
+  clear: both
+  font-family: $Pnb
+  font-size: 70px
+  line-height: 68px
+  margin-right: 10px
+.wrapping
+  max-width: 78%
+  &__img
+    float: left
+    margin-right: 50px
+  &__text
+    padding: 0 15px
+//Blog
+.networkStatic
+  margin-bottom: 50px
+  &__item
+    text-transform: uppercase
+    font-size: 15px
+    line-height: 34px
+    color: $dark
+    font-family: $Prsb
+.grid
+  margin: 0 -15px
+
+.grid-item
+  width: 33.33333333%
+  float: left
+  padding: 15px 15px
+.gridArticleImg
+   margin-bottom: 30px
+.btnSilver
+  border-color: $lightGrey
+  color: $dark
+.btnBig
+  padding: 1.25em 7.5em
+  i
+    font-size: 24px
+    vertical-align: middle
+    margin-left: 15px
+.btnMd
+  padding: 1.25em 3em
+  i
+    font-size: 20px
+    vertical-align: middle
+    margin-left: 15px
+.showMore.tac
+  margin: 20px 0
+//Blog-page
+.articleTitleSinglePage
+  font-family: $Pnb
+  font-size: 36px
+  line-height: 44px
+  text-align: center
+  letter-spacing: 1px
+  text-transform: none
+.articleNetworkSinglePage
+  padding: 15px 0
+  &__data
+    font-size: 17px
+    font-family: $Pne
+.spacer
+  border-top: 4px solid #d7d7d7
+  margin: 5px 0
+.wrapping-2
+  max-width: 86%
+  &__content
+    overflow: hidden
+    max-height: 550px
+
+.counter
+  margin-left: 15px
+  font-family: $Rbtl
+  font-size: 13px
+  line-height: 34px
+.subtitle
+  font-size: 26px
+  line-height: 34px
+  margin-bottom: 20px
+  font-family: $Pnb
+  &__lvl2
+    font-size: 20px
+    line-height: 28px
+    margin-bottom: 30px
+    font-family: $Rb
+.list
+  margin-bottom: 50px
+  &__item
+    list-style-type: square
+    padding-left: 10px
+    margin-left: 40px
+    line-height: 38px
+    font-size: 17px
+.similarArticles
+  //display: flex
+  //flex-direction: column
+  height: 100%
+  &__img
+    flex: 1
+    max-height: 160px
+    overflow: hidden
+.titleSectionSmall
+  &__title
+    font-size: 26px
+    line-height: 50px
+.box-after
+  position: relative
+  &:after
+    content: ''
+    width: 14em
+    height: 15em
+    border: 10px solid #f8f8f8
+    display: block
+    position: absolute
+    bottom: -10%
+    right: -5%
+    z-index: -1
+//Releases
+.releasesImgGrid
+  margin: 0
+  &__link
+    top: inherit
+    bottom: 40px
+    z-index: 1
+  &__title
+    position: absolute
+    top: inherit
+    left: 0
+    right: 0
+    bottom: 120px
+    display: none
+    z-index: 1
+  &:hover .releasesImgGrid__title
+    display: block
+.shadow
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: $dark
+    opacity: 0
+    transition: all 0.25s ease-in
+    z-index: 1
+  &:hover:before
+    opacity: .5
+.grid-css
+  width: 50%
+  text-align: center
+  padding: 15px
+.grid-col-xs-6
+  width: 50%
+//Contacts
+#map
+  height: 400px
+  width: 100%
+.mapWrapp
+  -webkit-filter: grayscale(100%)
+  -moz-filter: grayscale(100%)
+  -ms-filter: grayscale(100%)
+  -o-filter: grayscale(100%)
+  filter: grayscale(100%)
+  filter: grayscale(1); /* Firefox 4+ */
+  filter: gray /* IE 6-9 */
+.contacts
+  padding: 15px 15px 15px 70px
+  &__title
+    font-size: 20px
+    line-height: 28px
+    color: $lightGrey-3
+    text-transform: uppercase
+    margin-bottom: 15px
+    font-family: $Pne
+  &__link
+    margin: 0 0 30px
+.contactInfo
+  margin-bottom: 50px
+  &:last-child
+    margin-bottom: 0
+  &__name
+    font-size: 27px
+    text-align: left
+    margin-bottom: 10px
+  &__title
+    margin-bottom: 50px
+    font-size: 40px
+    line-height: 50px
+    color: $dark
+  &__link
+    text-transform: none
+    font-size: 21px
+  &__nameEng
+    font-size: 22px
+
+
+
+
+
+

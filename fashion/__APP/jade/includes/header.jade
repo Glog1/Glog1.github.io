@@ -1,0 +1,68 @@
+header.header
+    .headerLogoWrapp
+        .container
+            .row
+                .col.row-sm
+                    .btnMnu.hidden-md.hidden-lg
+                        .burger
+                            span.burger__line
+                            span.burger__line
+                            span.burger__line
+                    .logo
+                        a(href="/" class="logo__link")
+                            img(class="logo__img" src="img/logo.png" alt="logo")
+                    .search.hidden-md.hidden-lg
+                        ul.socLinkList.row-flex
+                            li.socLinkItem
+                                .socLinkItem__link.searchBtn
+                                    i(class="fa fa-search" aria-hidden="true")
+                                .searchFormWrapp
+                                    form(class="formSearch" action="" method="get")
+                                        input(class="formSearch__textfield" type="text" name="search" placeholder="Поиск")
+                                        button(class="formSearch__btn" type="submit" title="Искать")
+                                            i(class="fa fa-search" aria-hidden="true")
+    .navBarSection
+        .container
+            .row
+                .col.row-flex
+                    nav.navBarWrapp.middle
+                        span.close.hidden-md.hidden-lg +
+                        ul.navBar
+                            li.navBarItem
+                                a(href="/" class="navBarItem__link") Главная
+                            li.navBarItem.parent.sub-menu
+                                a(href="#" class="navBarItem__link carrent") Рубрики
+                                ul.childIList
+                                    li.childListItem.childIList__item
+                                        a(href="#" class="childListItem__link") Мода
+                                    li.childListItem.childIList__item
+                                        a(href="blog.html" class="childListItem__link") Красота
+                                    li.childListItem.childIList__item
+                                        a(href="#" class="childListItem__link") Стиль жизни
+                            li.navBarItem
+                                a(href="#" class="navBarItem__link") Выпуск
+                            li.navBarItem
+                                a(href="about-us.html" class="navBarItem__link") О нас
+                            li.navBarItem
+                                a(href="#" class="navBarItem__link") Партнеры
+                            li.navBarItem
+                                a(href="#" class="navBarItem__link") Светская хроника
+                            li.navBarItem
+                                a(href="#" class="navBarItem__link") Контакты
+                    .socLinkWrapp.middle.hidden-sm.hidden-xs
+                        ul.socLinkList.row-flex
+                            li.socLinkItem
+                                .socLinkItem__link.searchBtn
+                                    i(class="fa fa-search" aria-hidden="true")
+                                .searchFormWrapp
+                                    form(class="formSearch" action="" method="get")
+                                        input(class="formSearch__textfield" type="text" name="search" placeholder="Поиск")
+                                        button(class="formSearch__btn" type="submit" title="Искать")
+                                            i(class="fa fa-search" aria-hidden="true")
+                            li.socLinkItem
+                                a(href="#" class="socLinkItem__link")
+                                    i(class="fa fa-vk" aria-hidden="true")
+                            li.socLinkItem
+                                a(href="#" class="socLinkItem__link")
+                                    i(class="fa fa-facebook" aria-hidden="true")
+
