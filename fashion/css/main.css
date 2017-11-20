@@ -455,7 +455,7 @@ section.sliderWrapp {
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center center;
-  min-height: 72vh;
+  min-height: 65vh;
   display: -webkit-box !important;
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
@@ -771,7 +771,7 @@ section.sliderWrapp {
 .footer {
   border-top: 4px solid #e6e6e6; }
 
-.copyright {
+.copyright, .copyright p {
   padding-right: 30px;
   font-family: "RobotoLight", san-serif;
   font-size: 13px;
