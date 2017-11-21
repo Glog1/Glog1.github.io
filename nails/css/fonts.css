@@ -1,0 +1,93 @@
+@font-face {
+	font-family: "ProximaNovaLight";
+	src: url("../fonts/ProximaNova-Light/ProximaNovaLight.eot");
+	src: url("../fonts/ProximaNova-Light/ProximaNovaLight.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/ProximaNova-Light/ProximaNovaLight.woff") format("woff"),
+	url("../fonts/ProximaNova-Light/ProximaNovaLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNovaRegular";
+	src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot");
+	src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"),
+	url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNovaExtrabld";
+	src: url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.eot");
+	src: url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.woff") format("woff"),
+	url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNovaBold";
+	src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+	src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+	url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNovaSemibold";
+	src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot");
+	src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"),
+	url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNovaExtrabld";
+	src: url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.eot");
+	src: url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.woff") format("woff"),
+	url("../fonts/ProximaNova-Extrabld/ProximaNova-Extrabld.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "PlayfairDisplayRegular";
+	src: url("../fonts/PlayfairDisplayRegular/PlayfairDisplayRegular.eot");
+	src: url("../fonts/PlayfairDisplayRegular/PlayfairDisplayRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/PlayfairDisplayRegular/PlayfairDisplayRegular.woff") format("woff"),
+	url("../fonts/PlayfairDisplayRegular/PlayfairDisplayRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "PlayfairDisplayBold";
+	src: url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.eot");
+	src: url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.woff") format("woff"),
+	url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "PlayfairDisplayItalic";
+	src: url("../fonts/PlayfairDisplayItalic/PlayfairDisplayItalic.eot");
+	src: url("../fonts/PlayfairDisplayItalic/PlayfairDisplayItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/PlayfairDisplayItalic/PlayfairDisplayItalic.woff") format("woff"),
+	url("../fonts/PlayfairDisplayItalic/PlayfairDisplayItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "PlayfairDisplayBoldItalic";
+	src: url("../fonts/PlayfairDisplayBoldItalic/PlayfairDisplayBoldItalic.eot");
+	src: url("../fonts/PlayfairDisplayBoldItalic/PlayfairDisplayBoldItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/PlayfairDisplayBoldItalic/PlayfairDisplayBoldItalic.woff") format("woff"),
+	url("../fonts/PlayfairDisplayBoldItalic/PlayfairDisplayBoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
