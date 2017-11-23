@@ -148,7 +148,7 @@
     span.close{
         position: absolute;
         top: 12px;
-        left: 5%;
+        left: 15px;
         z-index: 9999;
         cursor: pointer;
         width: 50px;
