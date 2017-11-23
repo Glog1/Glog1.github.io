@@ -251,6 +251,9 @@
     .contacts-footer{
         padding-left: 0;
     }
+    .footer .logo {
+        margin-bottom: 20px;
+    }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
