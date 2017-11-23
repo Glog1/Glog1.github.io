@@ -7,14 +7,14 @@ $(document).ready(function() {
             itemSelector: ".grid-item"
         });
 // Menu MOBILE open
-    $(".close").click(function () {
+    $(".openMnu").click(function () {
         $(".burger").toggleClass( "open" );
         $(".desctop-menu" ).toggleClass( "active" );
     });
-    $("#btnMnu").click(function () {
-        $(".burger").toggleClass( "open" );
-        $(".desctop-menu" ).toggleClass( "active" );
-    });
+    // $("#btnMnu").click(function () {
+    //     $(".burger").toggleClass( "open" );
+    //     $(".desctop-menu" ).toggleClass( "active" );
+    // });
     // Slider only mobile
     $slick_slider = $('.only-mobile');
     settings_slider = {
