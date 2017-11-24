@@ -3432,7 +3432,8 @@ div.tab button.active {
 
 .breadcrumbs {
 	margin: 30px 0 20px;
-	font-size: 18px;
+	font-size: 15px;
+	font-family: 'ProximaNovaLight';
 }
 
 .breadcrumbs a {
