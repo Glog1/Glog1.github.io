@@ -1,0 +1,121 @@
+$(document).ready(function() {
+	$('.masked').mask('+7 (999) 999 99 99');
+	$('.field-name').bind('keyup blur', function() {
+		var node = $(this);
+		node.val(node.val().replace(/[^а-яА-ЯёЁa-zA-Z\s]/g,''));}
+	);
+	$('body').on('submit', '.ajax-form', function(event) {
+		event.preventDefault();
+		var error = false;
+		$(this).find('.required').each(function(index, el) {
+			if($(el).val() == '') {
+				$(el).addClass('error');
+				error = true;
+			} else {
+				$(el).removeClass('error');
+			}			
+		});
+		if(!error) {
+			var form = $(this);
+			$.post($(this).attr('action'), $(this).serialize(), function(data, textStatus, xhr) {
+				$('.popup').removeClass('active');
+				if (data.status == 'success') {
+					$('#modal_form').addClass('active');
+					$(form).trigger("reset");
+					setTimeout(function() { $('#modal_form').removeClass('active')}, 3000);
+				}
+			}, "json");
+		}
+		return false;
+	});
+});
+
+jQuery(document).ready(function($) {
+
+	$(document).on('click', '.js-send-form', function() {
+		event.preventDefault();
+
+		var form = $(this).closest('form')[0];
+		var name  = $(this).closest('form').find('input[name="name"]').val();
+		var phone  = $(this).closest('form').find('input[name="phone"]').val();
+		var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+		var valid = re.test(phone);
+		if (valid){
+			output = 'Номер телефона введен правильно!';
+			/*alert(output);*/
+		} else {
+			output = 'Номер телефона введен неправильно!';
+			alert(output);
+			return false;
+		}
+		if (name == "" || phone == '') {
+			alert('Введите номер телефона и имя!');
+			return false;
+		}
+
+		var data = {
+			action: 'sendForm',
+			name: name,
+			phone: phone
+		};
+
+		jQuery.post( myajax.url, data, function(response) {
+			/*console.log(response);
+			alert(response.message);*/
+			if (response.result == 'success') {
+				form.reset();
+				$('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+					function(){ // пoсле выпoлнения предъидущей aнимaции
+						$('#modal_form')
+							.css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+							.animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+					});
+			}
+		});
+
+
+		return false;
+	});
+	/* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
+	$('#modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+		$('#modal_form')
+			.animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+				function(){ // пoсле aнимaции
+					$(this).css('display', 'none'); // делaем ему display: none;
+					$('#overlay').fadeOut(400); // скрывaем пoдлoжку
+				}
+			);
+	});
+
+
+	// Popup
+	$('.popup-open').on('click', function(event) {
+		event.preventDefault();
+		var popup = $(this).attr('href');
+		$(popup).addClass('active');
+	});
+
+	$('.popup').on('click', function(event) {
+		if($(event.target).is('.popup-close') || $(event.target).is('.popup')) {
+			$(this).removeClass('active');
+			$('.popup-form')[0].reset();
+		}
+	});
+
+	$(document).keyup(function(event) {
+		if(event.which=='27') {
+			$('.popup').removeClass('active');
+			$('.popup-form')[0].reset();
+		}
+	});
+
+	$(window).scroll(function () {
+		$('.progress-bar').each(function () {
+		    var imagePos = $(this).offset().top;
+		    var topOfWindow = $(window).scrollTop();
+		    if (imagePos < topOfWindow + 500) {
+		        $(this).addClass('active')
+		    }
+		});
+	});
+});
