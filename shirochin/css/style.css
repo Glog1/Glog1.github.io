@@ -8,8 +8,8 @@ Template:       blanskslate
     font-style: normal;
     font-weight: 400;
     src: local('Open Sans'), local('OpenSans-Regular'),
-        url(http://allfont.de/cache/fonts/open-sans_5f14bd2f3cd41e7b13ff8bc4177c9d06.woff) format('woff'),
-        url(http://allfont.de/cache/fonts/open-sans_5f14bd2f3cd41e7b13ff8bc4177c9d06.ttf) format('truetype');
+        url(../fonts/open-sans.woff) format('woff'),
+        url(../fonts/open-sans.ttf) format('truetype');
 }
 @font-face {
     font-family: 'Open Sans';
