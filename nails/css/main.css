@@ -269,7 +269,8 @@ body .m-b-40 {
   padding: 10px 0; }
 
 .logo {
-  padding: 0 15px; }
+  padding: 0 15px;
+  width: 100px;}
 
 .nav-bar {
   -webkit-box-flex: 1;
