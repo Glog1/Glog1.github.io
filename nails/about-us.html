@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="logo mobile-logo">
-                <a href="/" class="logo__link"><img src="img/logo-mobile.svg" alt="logo" class="logo__img"></a>
+                <a href="/" class="logo__link"><img src="img/logo.svg" alt="logo" class="logo__img"></a>
             </div>
             <div class="col">
                 <button class="btn-mobile__blue btn-mobile btn-i"><i class="note icn__xs icn m-0"></i></button>
@@ -38,25 +38,25 @@
             </div>
             <nav class="nav-bar col">
                 <ul class="nav-bar-list">
-                    <li class="nav-bar-list__item nav-bar-list-item"><a href="" class="nav-bar-list-item__link">Главная</a></li>
+                    <li class="nav-bar-list__item nav-bar-list-item"><a href="index.html" class="nav-bar-list-item__link">Главная</a></li>
                     <li class="nav-bar-list__item nav-bar-list-item"><a href="services.html" class="nav-bar-list-item__link">Услуги</a></li>
-                    <li class="nav-bar-list__item nav-bar-list-item"><a href="" class="nav-bar-list-item__link">Цена</a></li>
-                    <li class="nav-bar-list__item nav-bar-list-item carent"><a class="nav-bar-list-item__link">О нас</a>
+                    <li class="nav-bar-list__item nav-bar-list-item"><a href="price.html" class="nav-bar-list-item__link">Цена</a></li>
+                    <li class="nav-bar-list__item nav-bar-list-item carent"><a href="about-us.html" class="nav-bar-list-item__link">О нас</a>
                         <ul class="sub-menu">
                             <li class="sub-menu-item"><a href="" class="sub-menu-item__link">Мастера</a></li>
                             <li class="sub-menu-item"><a href="" class="sub-menu-item__link">О салоне</a></li>
                             <li class="sub-menu-item"><a href="" class="sub-menu-item__link">О создателе</a></li>
                         </ul>
                     </li>
-                    <li class="nav-bar-list__item nav-bar-list-item"><a href="" class="nav-bar-list-item__link">Контакты</a></li>
+                    <li class="nav-bar-list__item nav-bar-list-item"><a href="contacts.html" class="nav-bar-list-item__link">Контакты</a></li>
                 </ul>
             </nav>
             <div class="contacts-header">
-                <div class="contacts-header__item phone-wrapp"><a href="tel: +74953562523" class="phone-wrapp__link"><span>+7 495 356 25 23</span></a></div>
-                <div class="contacts-header__item address-wrapp hidden-md-s"><a href="" class="address-wrapp__link call-back">Заказать звонок</a></div>
+                <div class="contacts-header__item phone-wrapp"><a href="tel: +74953562523" class="phone-wrapp__link"><i class="call icn__xs icn hidden-md-s"></i><span>+7 495 356 25 23</span></a></div>
+                <div class="contacts-header__item address-wrapp hidden-md-s"><a href="mailto: info@fcollection.ru" class="address-wrapp__link"><i class="address icn__xs icn"></i><span>г. Самара, ул. Гастелло, 35а</span></a></div>
             </div>
             <div class="col mobile-recording">
-                <button class="btn btn__trs"><i class="note icn__xs icn"></i><span>Онлайн запись</span></button>
+                <button class="btn btn__trs"><i class="note icn__xs icn hidden-lg-s"></i><span>Онлайн запись</span></button>
             </div>
             <div class="follow col"><a href="" class="soc-link"><i class="vk icn__xs icn"></i></a><a href="" class="soc-link"><i class="inst icn__xs icn"></i></a></div>
         </div>
@@ -66,7 +66,7 @@
 <section style="background-image: url(img/founder-big.png)" class="vh-xs-60 bg-right-top bg-grey bg-md about-us-banner">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 crown banner-content crown__2">
+            <div class="col-md-6 crown banner-content">
                 <div class="m-b-40">
                     <h1 class="h1">О нас</h1>
                     <h2 class="p">Наш салон открыт для посетителей более шести лет. За это время более 700 клиентов ушли от нас довольными результатом и порекомендовали наши услуги своим друзьям. В нашем салоне работают опытные и творческие профессионалы. В нашем салоне очень уютная атмосфера. Каждому будет</h2></div>
@@ -161,11 +161,11 @@
 <!--Footer-->
 <footer class="footer bg-light-2">
     <div class="container">
-        <div class="row middle-xs footer-content">
-            <div class="logo">
-                <a href="/" class="logo__link"><img src="img/logo-mobile.svg" alt="logo" class="logo__img"></a>
+        <div class="row footer-content">
+            <div class="logo footer-logo">
+                <a href="/" class="logo__link"><img src="img/logo.svg" alt="logo" class="logo__img"></a>
             </div>
-            <div class="col flex1">
+            <div class="col flex1 footer-box p-0">
                 <nav class="nav-bar footer-acordion">
                     <ul class="nav-bar-list footer-acordion-list">
                         <li class="nav-bar-list__item nav-bar-list-item footer-acordion-list-item"><a href="" class="nav-bar-list-item__link footer-link">Главная</a></li>
@@ -185,13 +185,14 @@
                     <p class="copyright">2017 © INFANTA - Салон красоты. Все права защищены</p>
                 </div>
             </div>
-            <div class="col contacts-footer-wrap">
+            <div class="col footer-box">
                 <div class="contacts-header contacts-footer">
-                    <div class="contacts-header__item phone-wrapp m-0"><a href="tel: +74953562523" class="phone-wrapp__link footer-phone"><span>+7 495 356 25 23</span></a></div>
+                    <div class="contacts-header__item address-wrapp hidden-md-s flex1"><a href="mailto: info@fcollection.ru" class="address-wrapp__link footer-address"><i class="address icn__xs icn"></i><span>г. Самара, ул. Гастелло, 35а</span></a></div>
+                    <div class="contacts-header__item phone-wrapp m-0"><a href="tel: +74953562523" class="phone-wrapp__link footer-phone"><i class="call icn__xs icn hidden-md-s"></i><span>+7 495 356 25 23</span></a></div>
                 </div>
             </div>
-            <div class="col end-md start-xs-s">
-                <div class="follow m-b-25 end-xs"><a href="" class="soc-link"><i class="vk icn__xs icn icn__grey"></i></a><a href="" class="soc-link"><i class="inst icn__xs icn icn__grey"></i></a></div>
+            <div class="col start-xs-s footer-box">
+                <div class="follow end-xs flex1"><a href="" class="soc-link"><i class="vk icn__xs icn icn__grey"></i></a><a href="" class="soc-link"><i class="inst icn__xs icn icn__grey"></i></a></div>
                 <div class="copyright-wrapp hidden-lg-s">
                     <p class="copyright">2017 © INFANTA - Салон красоты. Все права защищены</p>
                 </div>
