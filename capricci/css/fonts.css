@@ -1,0 +1,133 @@
+@font-face {
+			font-family: "LatoRegular";
+			src: url("../fonts/Lato/LatoRegular/LatoRegular.eot");
+			src: url("../fonts/Lato/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/Lato/LatoRegular/LatoRegular.woff") format("woff"),
+			url("../fonts/Lato/LatoRegular/LatoRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "LatoBold";
+			src: url("../fonts/Lato/LatoBold/LatoBold.eot");
+			src: url("../fonts/Lato/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/Lato/LatoBold/LatoBold.woff") format("woff"),
+			url("../fonts/Lato/LatoBold/LatoBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "LatoItalic";
+			src: url("../fonts/Lato/LatoItalic/LatoItalic.eot");
+			src: url("../fonts/Lato/LatoItalic/LatoItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/Lato/LatoItalic/LatoItalic.woff") format("woff"),
+			url("../fonts/Lato/LatoItalic/LatoItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "LatoLight";
+			src: url("../fonts/Lato/LatoLight/LatoLight.eot");
+			src: url("../fonts/Lato/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/Lato/LatoLight/LatoLight.woff") format("woff"),
+			url("../fonts/Lato/LatoLight/LatoLight.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "LatoBoldItalic";
+			src: url("../fonts/Lato/LatoBoldItalic/LatoBoldItalic.eot");
+			src: url("../fonts/Lato/LatoBoldItalic/LatoBoldItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/Lato/LatoBoldItalic/LatoBoldItalic.woff") format("woff"),
+			url("../fonts/Lato/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "LatoLightItalic";
+			src: url("../fonts/Lato/LatoLightItalic/LatoLightItalic.eot");
+			src: url("../fonts/Lato/LatoLightItalic/LatoLightItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/Lato/LatoLightItalic/LatoLightItalic.woff") format("woff"),
+			url("../fonts/Lato/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+        @font-face {
+			font-family: "LatoBlack";
+			src: url("../fonts/Lato/LatoBlack/Lato-Black.eot");
+			src: url("../fonts/Lato/LatoBlack/Lato-Black.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/Lato/LatoBlack/Lato-Black.woff") format("woff"),
+			url("../fonts/Lato/LatoBlack/Lato-Black.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+        @font-face {
+			font-family: "LatoHeavy";
+			src: url("../fonts/Lato/LatoHeavy/Lato-Heavy.eot");
+			src: url("../fonts/Lato/LatoHeavy/Lato-Heavy.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/Lato/LatoHeavy/Lato-Heavy.woff") format("woff"),
+			url("../fonts/Lato/LatoHeavy/Lato-Heavy.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+@font-face {
+	font-family: "Cormorant-SemiBoldItalic";
+	src: url("../fonts/CormorantGaramond/Cormorant-SemiBoldItalic.eot");
+	src: url("../fonts/CormorantGaramond/Cormorant-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/CormorantGaramond/Cormorant-SemiBoldItalic.woff") format("woff"),
+	url("../fonts/CormorantGaramond/Cormorant-SemiBoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "CormorantGaramond-BoldItalic";
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-BoldItalic.eot");
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-BoldItalic.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-BoldItalic.woff") format("woff"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-BoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "CormorantGaramond-SemiBoldItalic";
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-SemiBoldItalic.eot");
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-SemiBoldItalic.woff") format("woff"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-SemiBoldItalic.ttf") format("truetype");
+
+}
+@font-face {
+	font-family: "CormorantGaramond-Italic";
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-Italic.eot");
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-Italic.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-Italic.woff") format("woff"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-Italic.ttf") format("truetype");
+
+}
+@font-face {
+	font-family: "CormorantGaramond-Bold";
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-Bold.eot");
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-Bold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-Bold.woff") format("woff"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-Bold.ttf") format("truetype");
+
+}
+@font-face {
+	font-family: "CormorantGaramond-Medium";
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-Medium.eot");
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-Medium.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-Medium.woff") format("woff"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-Medium.ttf") format("truetype");
+}
+@font-face {
+	font-family: "CormorantGaramond-Light";
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-Light.eot");
+	src: url("../fonts/CormorantGaramond/CormorantGaramond-Light.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-Light.woff") format("woff"),
+	url("../fonts/CormorantGaramond/CormorantGaramond-Light.ttf") format("truetype");
+}

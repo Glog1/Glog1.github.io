@@ -1,0 +1,165 @@
+doctype html
+html
+    //include head
+    include ./includes/head.jade
+    body
+        //HEADER
+        include ./includes/header.jade
+         //HOME BANNER
+        section(style="background-image: url(img/section-bg/item-1.png) " class="overlay vh-85 home-banner" id="block1")
+            .col
+                .section-content
+                    h2.h1.section-content__title ТЕКСТИЛЬНЫЕ ПРИХОТИ
+                    h3.h2.section-content__desc для вашего дома
+                    button.btn.btn__white Перейти в каталог
+        //Product categories
+        section.light-grey-1
+            .container
+                .section-title
+                    h3.section-title__sub-title Категории
+                    h2.section-title__title Товаров
+
+                .row
+                    .grid
+                        .grid-item.col-md-6
+                            div(class="grid-item__bg" style="background-image: url(img/category-masonry/item-1.png)")
+                                .grid-item__title
+                                    p.grid-item__title__text Текстиль
+                        .grid-item.col-md-3
+                            div(class="grid-item__bg" style="background-image: url(img/category-masonry/item-2.png)")
+                                .grid-item__title
+                                    p.grid-item__title__text Карнизы
+                        .grid-item.col-md-3.grid-row-2
+                            div(class="grid-item__bg" style="background-image: url(img/category-masonry/item-3.png)")
+                                .grid-item__title
+                                    p.grid-item__title__text Басонные изделия
+                        .grid-item.col-md-3
+                            div(class="grid-item__bg" style="background-image: url(img/category-masonry/item-4.png)")
+                                .grid-item__title
+                                    p.grid-item__title__text Готовые изделия
+                        .grid-item.col-md-6
+                            div(class="grid-item__bg" style="background-image: url(img/category-masonry/item-5.png)")
+                                .grid-item__title
+                                    p.grid-item__title__text Столовый текстиль
+                        .grid-item.col-md-6
+                            div(class="grid-item__bg" style="background-image: url(img/category-masonry/item-6.png)")
+                                .grid-item__title
+                                    p.grid-item__title__text Картины
+                        .grid-item.col-md-6
+                            div(class="grid-item__bg" style="background-image: url(img/category-masonry/item-7.png)")
+                                .grid-item__title
+                                    p.grid-item__title__text Светильники
+        //Gallery
+        section
+            .container
+                .section-title
+                    h3.section-title__sub-title галерея
+                    h2.section-title__title готовых работ
+                .row
+                    .col
+                        .slider.gallery-work
+                            .slider-item.slide-h-360
+                                img(src="img/gallery/item-1.png" alt="alt" class="slider-item__img ")
+                                a(href="img/gallery/item-1.png" class="hover-content popup")
+                                    p.hover-content__title Бархат
+                                    i.icn.search
+                            .slider-item.slide-h-360
+                                img(src="img/gallery/item-2.png" alt="alt" class="slider-item__img")
+                                a(href="img/gallery/item-2.png" class="hover-content popup")
+                                    p.hover-content__title Бархат
+                                    i.icn.search
+                            .slider-item.slide-h-360
+                                img(src="img/gallery/item-1.png" alt="alt" class="slider-item__img")
+                                a(href="img/gallery/item-1.png" class="hover-content popup")
+                                    p.hover-content__title Бархат
+                                    i.icn.search
+                            .slider-item.slide-h-360
+                                img(src="img/gallery/item-2.png" alt="alt" class="slider-item__img")
+                                a(href="img/gallery/item-2.png" class="hover-content popup")
+                                    p.hover-content__title Бархат
+                                    i.icn.search
+                            .slider-item.slide-h-360
+                                img(src="img/gallery/item-1.png" alt="alt" class="slider-item__img")
+                                a(href="img/gallery/item-1.png" class="hover-content popup")
+                                    p.hover-content__title Бархат
+                                    i.icn.search
+                            .slider-item.slide-h-360
+                                img(src="img/gallery/item-2.png" alt="alt" class="slider-item__img")
+                                a(href="img/gallery/item-2.png" class="hover-content popup")
+                                    p.hover-content__title Бархат
+                                    i.icn.search
+        // We are The best
+        section.light-grey-1
+            .container
+                .section-title
+                    h3.section-title__sub-title почему
+                    h2.section-title__title мы лучшие
+                .row
+                    .col
+                        nav
+                            ol.best
+                                li.best-item
+                                    h2.best-item__title лидеры
+                                        span на рынке
+                                    p.best-item__text Роскошный бархат цвета марсала с вкючениями голубого и  сереневого цветов с золотисто-серебристым принтом. Возможно применение в шторах, мякгой обивки мебели, покрывало на кровати
+                                li.best-item
+                                    h2.best-item__title эксклюзивные коллекции из
+                                        span италии и франции
+                                    p.best-item__text Роскошный бархат цвета марсала с вкючениями голубого и  сереневого цветов с золотисто-серебристым принтом. Возможно применение в шторах, мякгой обивки мебели, покрывало на кровати
+                                li.best-item
+                                    h2.best-item__title индивидуальный
+                                        span пошив штор
+                                    p.best-item__text Роскошный бархат цвета марсала с вкючениями голубого и  сереневого цветов с золотисто-серебристым принтом. Возможно применение в шторах, мякгой обивки мебели, покрывало на кровати
+        // Reviews
+        section
+            .container
+                .section-title
+                    h3.section-title__sub-title отзывы
+                    h2.section-title__title клиентов
+                .row
+                    .col
+                        .slider-dots
+                            .slider-reviews
+                                img(src="img/people/item-1.png" alt="alt" class="slider-reviews__img")
+                                h2.slider-reviews__caption
+                                    span.slider-reviews__caption__name Татьяна,
+                                    span.slider-reviews__caption__city г. Екатеринбург
+                                p.slider-reviews__text Роскошный бархат цвета марсала с вкючениями голубого и  сереневого цветов с золотисто-серебристым принтом. Возможно применение в шторах, мякгой обивки мебели, покрывало на кровати, диванные подушки. При желании шторы могут быть декорированы бахрамой и кистями.
+                            .slider-reviews
+                                img(src="img/people/item-1.png" alt="alt" class="slider-reviews__img")
+                                h2.slider-reviews__caption
+                                    span.slider-reviews__caption__name Татьяна,
+                                    span.slider-reviews__caption__city г. Екатеринбург
+                                p.slider-reviews__text Роскошный бархат цвета марсала с вкючениями голубого и  сереневого цветов с золотисто-серебристым принтом. Возможно применение в шторах, мякгой обивки мебели, покрывало на кровати, диванные подушки. При желании шторы могут быть декорированы бахрамой и кистями.
+                            .slider-reviews
+                                img(src="img/people/item-1.png" alt="alt" class="slider-reviews__img")
+                                h2.slider-reviews__caption
+                                    span.slider-reviews__caption__name Татьяна,
+                                    span.slider-reviews__caption__city г. Екатеринбург
+                                p.slider-reviews__text Роскошный бархат цвета марсала с вкючениями голубого и  сереневого цветов с золотисто-серебристым принтом. Возможно применение в шторах, мякгой обивки мебели, покрывало на кровати, диванные подушки. При желании шторы могут быть декорированы бахрамой и кистями.
+                        //SLIDER NAVIGATION
+                        .row-flex.jus-center
+                            button(class="prev_custom nav-custom")
+                            .dot_custom
+                            button(class="next_custom nav-custom")
+        //Order & SEO
+        section
+            .container
+                .row-flex
+                    .col-md-6.create-curtain
+                        .border
+                            .section-title
+                                h3.section-title__sub-title готовая
+                                h2.section-title__title штора на заказ
+                            .clearfix.create-curtain-content
+                                img(src="img/order-1.png" alt="" class="create-curtain__img")
+                                p.create-curtain__text Создайте свою штору на заказ с помощью нашего конструктора. Вы точно будете знать что такой шторы ни у кого нет, потому что вы создаете уникальную штору только для вас.
+                            .create-curtain__btn
+                                button.btn.btn__basic Создать свою штору
+                    .col-md-6.seo
+                        h1.seo__text Роскошный бархат цвета марсала с вкючениями голубого и  сереневого цветов с золотисто-серебристым принтом. Возможно применение в шторах, мякгой обивки мебели, покрывало на кровати, диванные подушки. При желании шторы могут быть декорированы бахрамой и кистями. Применив бархат, шелка и велюры,Вы получите идеальный облик интерьера  . Текстиль - это финальный штрих в создании уютного дома, который может быть роскошным, благородным, праздничным и удивительным.  Бархат с ажурным цветочным орнаментом цвета слоновой кости и мокрого асфальта, обрамленный <span>роскошным дамаском</span> и тиснением цвета шампань и жемчужно-серым. Его поверхность покрыта плотным ворсом.  Возможно применение в шторах, мякгой обивки мебели, покрывало на кровати, диванные подушки. При желании шторы могут быть декорированы бахрамой и кистями. Применив бархат, шелка и велюры, Вы получите идеальный облик интерьера. Текстиль - это финальный штрих в создании уютного дома, который может быть роскошным, благородным, праздничным и удивительным. Роскошный бархат цвета марсала с вкючениями голубого и  сереневого цветов с золотисто-серебристым принтом. Возможно применение в шторах, мякгой обивки мебели, покрывало на кровати, диванные подушки. При желании шторы могут быть декорированы бахрамой и кистями. Применив бархат, шелка и велюры, Вы получите <span>идеальный облик интерьера</span>. Текстиль - это финальный штрих в создании уютного дома, который может быть роскошным, благородным, праздничным и удивительным.  Бархат с ажурным цветочным орнаментом цвета слоновой кости и мокрого асфальта, обрамленный роскошным дамаском и тиснением цвета шампань и жемчужно-серым. Его поверхность покрыта плотным ворсом.  Возможно применение в шторах, мякгой обивки мебели, покрывало на кровати, диванные
+        //Footer
+        include ./includes/footer.jade
+        //Scripts
+        include ./includes/scripts.jade
+

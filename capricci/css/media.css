@@ -1,0 +1,35 @@
+/*==========  Desktop First Method  ==========*/
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    .home-banner{
+        height: 730px;
+    }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .navbar-item{
+        padding: 10px 8px;
+    }
+    .header-category-item{
+        padding: 25px 8px;
+    }
+    .navbar{
+        padding: 0 0 0 15px;
+    }
+    .header-category-item__link{
+        line-height: 1.2;
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .grid-item__title{
+        min-width: 230px;
+    }
+}
