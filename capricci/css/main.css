@@ -248,9 +248,9 @@ header {
 .logo-header {
   color: #ffffff;
   background-color: #9f9683; }
-.logo-header a{
-  color: #ffffff;
-}
+  .logo-header__title {
+    color: #ffffff; }
+
 .navbar-wrap {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -383,6 +383,9 @@ header {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    padding: 15px;
+    position: relative; }
+  .grid-item__link {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -391,7 +394,8 @@ header {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding: 15px; }
+    width: 100%;
+    height: 100%; }
 
 .grid-row-2 {
   height: 540px; }
