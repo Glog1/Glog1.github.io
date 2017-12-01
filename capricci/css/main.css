@@ -248,7 +248,9 @@ header {
 .logo-header {
   color: #ffffff;
   background-color: #9f9683; }
-
+.logo-header a{
+  color: #ffffff;
+}
 .navbar-wrap {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
