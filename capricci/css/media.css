@@ -19,7 +19,10 @@
         line-height: 1.2;
         font-size: 15px;
     }
-
+    .add-to-cart{
+        display: block;
+        text-align: center;
+    }
 }
 
 
