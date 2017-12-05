@@ -1292,19 +1292,20 @@ select {
   .contacts-item__icn {
     height: 60px; }
 
-.contacts-phone {
+.contacts-link {
   font-family: "LatoBlack", sans-serif;
   font-size: 15px;
   line-height: 50px; }
-
-.contacts-mail {
-  color: #b0a171;
-  text-decoration: underline;
-  font-family: "LatoBlack", sans-serif;
-  line-height: 50px; }
+  .contacts-link:hover {
+    color: #b0a171;
+    text-decoration: underline;
+    font-family: "LatoBlack", sans-serif;
+    line-height: 50px; }
 
 .contacts-address {
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 24px; }
 
 #map {
   height: 670px;
