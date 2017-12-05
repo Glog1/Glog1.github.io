@@ -3,6 +3,23 @@
     .home-banner{
         height: 730px;
     }
+    .add-to-cart{
+        display: block;
+    }
+    .add-to-cart .product-content__price {
+        float: left;
+       line-height: 52px;
+    }
+    .all-look,.add-to-cart__form{
+        float: left;
+    }
+    .add-to-cart__input{
+        height: 52px;
+        margin: 0 11px;
+    }
+    select::-ms-expand {
+        display: none;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -23,6 +40,10 @@
         display: block;
         text-align: center;
     }
+    #map{
+        height: 905px
+    }
+
 }
 
 

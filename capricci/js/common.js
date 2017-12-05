@@ -4,7 +4,7 @@ $(function() {
 /*----------------HEADER-------------------*/
     $(window).on('scroll', function() {
         var height = $(window).scrollTop();
-        if(height > 10){
+        if(height > 150){
             $('.header').addClass('active');
         } else{
             $('.header').removeClass('active');

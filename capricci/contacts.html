@@ -1,0 +1,319 @@
+<!DOCTYPE html><html><!--include head--><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--meta(name="viewport" content="width=device-width, initial-scale=1.0")--><meta charset="UTF-8"><title class="Document"></title><link rel="stylesheet" href="css/fonts.css"><link rel="stylesheet" href="css/libs.min.css"><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/media.css"></head><body><!--HEADER--><header class="header"><div class="row-flex storey-1"><div class="logo logo-header"><a href="index.html"></a><h2 class="logo__title logo-header__title">Capricci</h2></div><nav class="navbar-wrap"><ul class="navbar"><li class="navbar-item"><a href="index.html" class="navbar-item__link">Главная</a></li><li class="navbar-item"><a href="#" class="navbar-item__link">Ткани в интерьере</a></li><li class="navbar-item"><a href="#" class="navbar-item__link">Оплата</a></li><li class="navbar-item"><a href="#" class="navbar-item__link">Доставка</a></li><li class="navbar-item"><a href="about-us.html" class="navbar-item__link">О нас</a></li><li class="navbar-item"><a href="contacts.html" class="navbar-item__link">Контакты</a></li></ul></nav><div class="header-phone"><a href="tel: +79879807433 " class="header-phone__link">+7 987 980 74 33</a></div><div class="header-cart"><span>Корзина</span><i class="icn cart header-cart__icn"></i><span class="header-cart__count">5</span></div></div><div class="row-flex storey-2"><nav class="header-category-wrap"><ul class="header-category"><li class="header-category-item"><a href="catalog.html" class="header-category-item__link">Текстиль</a></li><li class="header-category-item"><a href="catalog.html" class="header-category-item__link">Карнизы</a></li><li class="header-category-item"><a href="catalog.html" class="header-category-item__link">Басонные изделия</a></li><li class="header-category-item"><a href="catalog.html" class="header-category-item__link">Готовые изделия</a></li><li class="header-category-item"><a href="catalog.html" class="header-category-item__link">Столовый текстиль</a></li><li class="header-category-item"><a href="catalog.html" class="header-category-item__link">Картины</a></li><li class="header-category-item"><a href="catalog.html" class="header-category-item__link">Светильники</a></li></ul></nav></div></header><!--Contacts--><section class="p-0"><div class="col-md-6 contacts-wrapp"><!--Breadcrumbs--><div class="breadcrumbs-wrapp"><div class="row-flex jus-center"><nav class="breadcrumbs"><ul class="breadcrumbs__list"><li class="breadcrumbsItem"><a href="" class="breadcrumbsItem__link">Главная</a></li><li class="breadcrumbsItem"><span class="breadcrumbsItem__span">Контакты</span></li></ul></nav></div></div><div class="contacts-content"><div class="contacts-title"><h2 class="contacts-title__title">Контакты</h2></div><div class="row-fl contacts-item-wrapp"><div class="contacts-item"><div class="contacts-item__icn"><i class="icn phone"></i></div><p class="contacts-phone">+7 987 980 74 33</p></div><div class="contacts-item"><div class="contacts-item__icn"><i class="icn loc"></i></div><p><a href="mailto: capricci2004@mail.ru" class="contacts-mail">capricci2004@mail.ru</a></p></div><div class="contacts-item"><div class="contacts-item__icn"><i class="icn map"></i></div><p class="contacts-address">ул. Венцека, д.50, оф.32, Самара, 443099, Россия</p></div></div><div class="contacts-form-wrapp"><form class="contacts-form row-fl"><div class="contacts-form__td"><input type="text" placeholder="Имя" class="contacts-form__input"><input type="email" placeholder="E-mail" class="contacts-form__input"><input type="email" placeholder="Тема" class="contacts-form__input"></div><div class="contacts-form__td"><textarea placeholder="Сообщение" class="contacts-form__textarea"></textarea><button class="btn btn__form">Отправить</button></div></form></div></div></div><div class="col-md-6 map-wrapp p-0"><div id="map"></div></div></section><!--Footer--><footer class="footer"><div class="row-flex"><div class="logo footer__box"><a href="index.html"><h2 class="logo__title">Capricci</h2></a></div><div class="copyright footer__box"><p class="copyright__text">©2017 «Каприччи» Все права защищены</p></div><div class="follow footer__box"><ul class="row-flex follow-list"><li class="follow-item"><a href="" class="follow-item__link"><i class="icn vk"></i></a></li><li class="follow-item"><a href="" class="follow-item__link"><i class="icn fb"></i></a></li><li class="follow-item"><a href="" class="follow-item__link"><i class="icn tw"></i></a></li><li class="follow-item"><a href="" class="follow-item__link"><i class="icn inst"></i></a></li></ul></div></div></footer><!--Scripts--><script>function initMap() {
+    var uluru = {lat: 53.184136, lng: 50.093972};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: uluru,
+         styles: [
+             {
+                 "elementType": "geometry",
+                 "stylers": [
+                     {
+                         "color": "#f5f5f5"
+                     }
+                 ]
+             },
+             {
+                 "elementType": "labels.icon",
+                 "stylers": [
+                     {
+                         "visibility": "off"
+                     }
+                 ]
+             },
+             {
+                 "elementType": "labels.text.fill",
+                 "stylers": [
+                     {
+                         "color": "#616161"
+                     }
+                 ]
+             },
+             {
+                 "elementType": "labels.text.stroke",
+                 "stylers": [
+                     {
+                         "color": "#f5f5f5"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "administrative.land_parcel",
+                 "elementType": "labels.text.fill",
+                 "stylers": [
+                     {
+                         "color": "#bdbdbd"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "administrative.locality",
+                 "elementType": "geometry.stroke",
+                 "stylers": [
+                     {
+                         "visibility": "simplified"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "administrative.locality",
+                 "elementType": "labels.icon",
+                 "stylers": [
+                     {
+                         "visibility": "simplified"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "administrative.locality",
+                 "elementType": "labels.text",
+                 "stylers": [
+                     {
+                         "visibility": "simplified"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "administrative.locality",
+                 "elementType": "labels.text.fill",
+                 "stylers": [
+                     {
+                         "visibility": "simplified"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "landscape.man_made",
+                 "elementType": "geometry.fill",
+                 "stylers": [
+                     {
+                         "visibility": "off"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "landscape.man_made",
+                 "elementType": "geometry.stroke",
+                 "stylers": [
+                     {
+                         "visibility": "simplified"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "landscape.man_made",
+                 "elementType": "labels.text",
+                 "stylers": [
+                     {
+                         "visibility": "on"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi",
+                 "elementType": "geometry",
+                 "stylers": [
+                     {
+                         "color": "#eeeeee"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi",
+                 "elementType": "labels.text.fill",
+                 "stylers": [
+                     {
+                         "color": "#757575"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi.attraction",
+                 "elementType": "geometry.fill",
+                 "stylers": [
+                     {
+                         "visibility": "on"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi.attraction",
+                 "elementType": "labels.text.fill",
+                 "stylers": [
+                     {
+                         "visibility": "on"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi.attraction",
+                 "elementType": "labels.text.stroke",
+                 "stylers": [
+                     {
+                         "visibility": "on"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi.government",
+                 "stylers": [
+                     {
+                         "visibility": "on"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi.medical",
+                 "stylers": [
+                     {
+                         "visibility": "on"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi.park",
+                 "stylers": [
+                     {
+                         "visibility": "on"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi.park",
+                 "elementType": "geometry",
+                 "stylers": [
+                     {
+                         "color": "#e5e5e5"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi.park",
+                 "elementType": "labels.text.fill",
+                 "stylers": [
+                     {
+                         "color": "#9e9e9e"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi.school",
+                 "stylers": [
+                     {
+                         "visibility": "on"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "poi.sports_complex",
+                 "stylers": [
+                     {
+                         "visibility": "on"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "road",
+                 "elementType": "geometry",
+                 "stylers": [
+                     {
+                         "color": "#ffffff"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "road.arterial",
+                 "elementType": "labels.text.fill",
+                 "stylers": [
+                     {
+                         "color": "#757575"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "road.highway",
+                 "elementType": "geometry",
+                 "stylers": [
+                     {
+                         "color": "#dadada"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "road.highway",
+                 "elementType": "labels.text.fill",
+                 "stylers": [
+                     {
+                         "color": "#616161"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "road.local",
+                 "elementType": "labels.text.fill",
+                 "stylers": [
+                     {
+                         "color": "#9e9e9e"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "transit.line",
+                 "elementType": "geometry",
+                 "stylers": [
+                     {
+                         "color": "#e5e5e5"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "transit.station",
+                 "elementType": "geometry",
+                 "stylers": [
+                     {
+                         "color": "#eeeeee"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "transit.station.bus",
+                 "stylers": [
+                     {
+                         "visibility": "on"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "transit.station.rail",
+                 "stylers": [
+                     {
+                         "visibility": "on"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "water",
+                 "elementType": "geometry",
+                 "stylers": [
+                     {
+                         "color": "#c9c9c9"
+                     }
+                 ]
+             },
+             {
+                 "featureType": "water",
+                 "elementType": "labels.text.fill",
+                 "stylers": [
+                     {
+                         "color": "#9e9e9e"
+                     }
+                 ]
+             }
+         ]
+    });
+    var image = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAmCAMAAADkx9tQAAABp1BMVEUpKSn///8pKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSnB9WsnAAAAjHRSTlMAAAECAwQGCAkMDQ8QFBUWHB0eICEjJygqKywuLzAyMzQ1Nzg7PD0/QEJESElKTE5QVVhZW11eX2BkZWZoaWtub3J0dnh6e3x9foKGh4qLjY+Qm56goaWmp6ipqquwt7u+v8DDxsjKy87P0NHV19nb3uDh4uPk5ejp6uzu7/Dx8vP09fb3+Pn6+/z9/o3bxKgAAAG4SURBVHgBddF5ewtRFMfx35mppqpVSxElQUNKqX1Xi1goSisWsUQkEsQSEvsuMUKcF23m3Mncmcn4/nPucz65z5NnLnRjmVzlZa1848Qq8upa3/4n7PVotxnkpEapssbPR9scyjqg+QxHlOnyNEe2T3Gizaqv1w9vm5q++YNVzbjD5mOWrPMLYUc0dOk3SyXD5r0svUtCIrv0J5a226wufx9zbOWuFDmNW7J8QIizdAhAoszMG8Qzsvy7DOrw3AQ2tthuXLj/tXvprsyzwMAb+1czk6SalfVVPJWZAA4yF2OAyxOyLuKVzH4gy5yCxyOyrroM4DZ3YpqH1F/CM5mDQDJ/HJqXqpdFXuZmSJp3yvoOrsicC3NW1ucwJfPjYJCH1bukEFPfd16zvlw3gTmW9vj5CEszBIz+kWPnmMfGaaU/F9uMa6wqpIWNyYesmieHl1vsVr81ezn3lt2+DQvjAkd2khQP1KK0usBlbOr06q+11GVc7OVTpLmvENZ7ho8x0gjqi0XkZ6z+4tf3oxRkTLS1NtdRmLHD89YWCrF20SjG1qajn9MUzVj/gbkRp/8xVpTuLyF//wBIdzX2fgKq/gAAAABJRU5ErkJggg==';
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+        icon: image
+    });
+}</script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZIOVlLdQbI7U_aQQU1msO3zaHHRgimFQ&amp;callback=initMap" async defer></script><!--Scripts--><script src="js/libs.min.js"></script><script src="js/common.js"></script></body></html>
