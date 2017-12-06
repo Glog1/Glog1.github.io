@@ -20,6 +20,28 @@
     select::-ms-expand {
         display: none;
     }
+    .article-img,
+    .slider-reviews-img{
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .article-img__img,
+    .slider-reviews__img{
+        position: absolute !important;
+        left: -100% !important;
+        right: -100% !important;
+        top: -100% !important;
+        bottom: -100% !important;
+        margin: auto !important;
+        max-width: none;
+        width: auto;
+        max-height: none;
+    }
+    .article-detail-header{
+        height: 461px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
