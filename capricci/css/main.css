@@ -419,7 +419,8 @@ header {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  text-align: center;}
 
 .section-title {
   text-align: center;
