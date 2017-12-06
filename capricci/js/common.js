@@ -111,5 +111,10 @@ $(function() {
         prevArrow: $('.prev_thumb-img'),
         nextArrow: $('.next_thumb-img')
     });
+// -----------------------------Objfill ----------------------
+    objectFit.polyfill({
+        selector: 'img',
+        fittype: 'none'
+    });
 
 });

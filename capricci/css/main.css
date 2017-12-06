@@ -85,6 +85,10 @@ ul, nav, li {
   min-height: 85%;
   min-height: 85vh; }
 
+.vh-60 {
+  min-height: 60%;
+  min-height: 60vh; }
+
 section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -250,6 +254,9 @@ section {
   font-size: 44px;
   line-height: 65px;
   font-family: "CormorantGaramond-Medium", sans-serif; }
+
+.p {
+  margin-bottom: 35px; }
 
 .btn {
   text-transform: uppercase;
@@ -1359,8 +1366,6 @@ select {
     clear: both; }
   .content__p {
     margin-bottom: 40px; }
-    .content__p:last-child {
-      margin-bottom: 0; }
 
 .inside-wrapper {
   width: 100%; }
@@ -1534,3 +1539,88 @@ input[type=number], input[type=text], input[type=password], input[type=email], t
 
 .br-n {
   border: none; }
+
+.articles-wrapp {
+  margin: 0 auto;
+  max-width: 970px; }
+
+.article {
+  padding: 35px 0;
+  border-bottom: 1px solid #e8e8e8; }
+  .article:after {
+    display: block;
+    content: "";
+    clear: both; }
+  .article__title {
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: "CormorantGaramond-Medium", sans-serif; }
+  .article__date {
+    font-size: 13px;
+    line-height: 33px;
+    color: #616161; }
+  .article__text {
+    font-size: 15px;
+    line-height: 28px; }
+
+.article-img {
+  float: left;
+  width: 270px;
+  height: 180px;
+  margin-right: 30px; }
+  .article-img__img {
+    width: 100%;
+    height: 180px;
+    -o-object-fit: none;
+       object-fit: none;
+    overflow: hidden; }
+
+.article-content {
+  float: left;
+  width: -webkit-calc(100% - 300px);
+  width: calc(100% - 300px); }
+
+.article-detail-header {
+  -webkit-background-size: contain;
+          background-size: contain;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.article-detail-date-wrapp {
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 3px 30px;
+  height: 38px; }
+
+.article-detail-date {
+  font-size: 15px;
+  line-height: 56px; }
+
+.article-detail-title {
+  text-align: center;
+  margin-bottom: 35px; }
+
+.inside-container {
+  max-width: 970px;
+  margin: 0 auto; }
+
+.highlight-text {
+  max-width: 770px;
+  margin: 0 auto; }
+  .highlight-text__p {
+    color: #888888; }
+
+.back-link {
+  font-family: "CormorantGaramond-Bold", san-serif;
+  font-size: 17px;
+  line-height: 23px;
+  text-transform: uppercase; }
+
+.left-arrows:before {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAMAAABs8jdaAAAATlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADEoqZZAAAAGnRSTlMABgoMDxUcLTU3QkdOVVdbYmerr7a4v8TFx+BL824AAAA9SURBVHgBY4ADdl4EU5INxuSQgDM5xVnxM7nEkJgs+JkMgkKMCLv5hYni8IkwITg8org5zAgON5KdDFwCAEgbArsIvtOjAAAAAElFTkSuQmCC); }
