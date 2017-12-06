@@ -420,7 +420,7 @@ header {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;}
+  text-align: center; }
 
 .section-title {
   text-align: center;
@@ -678,7 +678,11 @@ ol.best {
 
 .create-curtain {
   background-color: #f6f6f6;
-  padding: 20px; }
+  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   .create-curtain__img {
     width: 125px;
     height: 110px;
@@ -698,7 +702,6 @@ ol.best {
 .border {
   border: 1px solid #9f9683;
   padding: 50px 25px 25px;
-  height: 100%;
   width: 100%; }
 
 .seo {
@@ -1051,7 +1054,9 @@ select {
           box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: 94% 49%;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAICAMAAAARDVXAAAAASFBMVEWwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXHaOWjcAAAAGHRSTlMAMzU5Oz0/RkhKS05PUlRWV16u4Orr7O0u+BwGAAAARElEQVR4AU3BhxWFIBRAsUvnF1DxAftv6hGLJhTPwxdCc1xcDxCb5WB7BPiIYWfky/ATDWj5c0qiUDVxy7LUzMu0zgwbgAACDM9r3c0AAAAASUVORK5CYII=); }
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAICAMAAAARDVXAAAAASFBMVEWwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXGwoXHaOWjcAAAAGHRSTlMAMzU5Oz0/RkhKS05PUlRWV16u4Orr7O0u+BwGAAAARElEQVR4AU3BhxWFIBRAsUvnF1DxAftv6hGLJhTPwxdCc1xcDxCb5WB7BPiIYWfky/ATDWj5c0qiUDVxy7LUzMu0zgwbgAACDM9r3c0AAAAASUVORK5CYII=);
+  -webkit-border-radius: 0;
+  border-radius: 0; }
   .sorting__item {
     padding: 13px 20px;
     line-height: 40px; }
@@ -1237,10 +1242,10 @@ select {
     line-height: 28px; }
 
 .add-to-cart {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -1251,7 +1256,7 @@ select {
       -ms-flex-align: center;
           align-items: center; }
   .add-to-cart__input {
-    margin: 0 12px;
+    margin: 0 10px;
     width: 80px;
     padding: 11px 0 11px 20px;
     border: 1px solid #e8e8e8;
@@ -1391,7 +1396,7 @@ select {
   text-align: center; }
 
 .content {
-  max-width: 1300px; }
+  max-width: 1350px; }
   .content:after {
     display: block;
     content: "";
