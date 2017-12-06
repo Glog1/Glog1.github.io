@@ -67,31 +67,17 @@ $(function() {
         $('.filter').css(cssValues)
     });
 // -----------------------------Price----------------------
-
-    $("#slider-range").slider({
-        range: true,
-        min: 0,
-        max: 50000,
-        values: [0, 300],
-        step: 10,
-        slide: function(event, ui) {
-            $("#rub-left").text(ui.values[0] + 'р.'); // текст левого span
-            $("#rub-right").text(ui.values[1] + 'р.'); // текст правого span
-
-            if (ui.handleIndex === 0) {
-                // потянули левый ползунок - переместим левый span
-                $("#rub-left").css('left', ui.handle.style.left);
-            } else {
-                // потянули правый ползунок - переместим правый span
-                $("#rub-right").css('left', ui.handle.style.left);
-            }
-        }
-    });
-
-// задать начальный текст левого span
-    $("#rub-left").text($("#slider-range").slider("values", 0) + 'р.');
-// задать начальный текст правого span
-    $("#rub-right").text($("#slider-range").slider("values", 1) + 'р.');
+     $("#slider-range").rangeSlider({
+         bounds:{
+             min: 0,
+             max: 25000
+         },
+         formatter:function(val){
+             var value = Math.round(val),
+                 decimal = value - Math.round(val);
+             return decimal == 0 ? value.toString() + "руб." : value.toString();
+         }
+     });
 
 // -----------------------------Product img slider ----------------------
     $('.slider-for').slick({

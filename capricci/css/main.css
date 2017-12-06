@@ -951,44 +951,67 @@ ol.best {
   display: block;
   left: 0; }
 
-#rub-right {
-  left: 30%;
-  margin-left: -20px; }
+.ui-rangeSlider-arrow, .ui-rangeSlider-noArrow .ui-rangeSlider-container, .ui-rangeSlider-withArrows .ui-rangeSlider-container {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
-.ui-widget-content, .ui-widget.ui-widget-content {
-  background-color: transparent;
+.ui-rangeSlider-arrow, .ui-rangeSlider-container, .ui-rangeSlider-label {
+  background: #e8e8e8; }
+
+.ui-rangeSlider-container {
+  height: 2px; }
+
+.ui-rangeSlider-arrow, .ui-rangeSlider-container {
   border: none;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: auto auto;
-          background-size: auto;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAACCAMAAACe2sJYAAAAA1BMVEXo6Og4/a9sAAAADklEQVR4AWPACUbBKAAAAh4AAaWY8s0AAAAASUVORK5CYII=);
   -webkit-border-radius: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  margin: 0; }
 
-.ui-widget {
-  height: 20px; }
+.ui-rangeSlider-bar {
+  background: #9f9683;
+  height: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 0;
+          border-radius: 0; }
 
-.ui-button, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, html .ui-button.ui-state-disabled:active, html .ui-button.ui-state-disabled:hover {
+.ui-rangeSlider-arrow {
+  display: none; }
+
+.ui-rangeSlider-label-inner {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAMAAAC3SZ14AAAAS1BMVEWfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOfloOvf3jVAAAAGHRSTlMAAQYPFSQ3Qlt4h4mKjKS9ycvb6vHy+f73gfy3AAAAa0lEQVR42nXQ2xKAEBSF4V0KHYnKev8nTSeF+i7/GYZFt6ahhHROxkWswCrehc/wZv6U2uJg67tUBhdTnYVpBJrtpVR4USVRMSIyFtQh0dKARP91ML/eY9NTJpY/9eNDAV/gLTwf53/CfOgNZLsQs4LlzNUAAAAASUVORK5CYII=);
   background-color: transparent;
-  border: none;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
           background-size: contain;
-  background-position: 0 0; }
-
-.ui-slider-horizontal .ui-slider-range {
-  background: #9f9683; }
-
-.ui-slider .ui-slider-handle {
-  width: 18px;
+  background-position: 0 0;
+  background-color: transparent;
+  border: none;
   height: 20px;
-  top: 0; }
+  width: 20px; }
 
-.ui-slider-horizontal .ui-slider-range {
-  top: 9px;
-  height: 2px; }
+.ui-rangeSlider-label {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+  color: #292929; }
+
+.ui-rangeSlider-label-value {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.ui-rangeSlider-label {
+  top: 20px; }
+
+.ui-rangeSlider {
+  padding-top: 13px;
+  padding-bottom: 40px; }
+
+.ui-rangeSlider-label-inner {
+  top: -16px; }
 
 .sorting-wrap {
   display: -webkit-box;
