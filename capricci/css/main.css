@@ -268,10 +268,12 @@ section {
   font-family: "LatoBlack", sans-serif;
   color: #ffffff;
   padding: 0 30px;
-  background: none; }
+  background: none;
+  display: inline-block; }
   .btn:hover {
     border-color: #9f9683;
-    background-color: #9f9683; }
+    background-color: #9f9683;
+    color: #ffffff; }
   .btn__basic {
     border-color: #9f9683;
     color: #9f9683; }
