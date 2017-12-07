@@ -694,7 +694,10 @@ ol.best {
     text-align: center; }
   .create-curtain__text {
     font-size: 15px;
-    line-height: 28px; }
+    line-height: 28px;
+    float: right;
+    width: -webkit-calc(100% - 145px);
+    width: calc(100% - 145px); }
 
 .create-curtain-content {
   margin-bottom: 40px; }
@@ -1413,7 +1416,8 @@ select {
 .img-left {
   float: left;
   margin-left: -15px;
-  margin-right: 50px; }
+  margin-right: 50px;
+  margin-bottom: 10px; }
 
 .cart-step {
   margin-left: 5px;

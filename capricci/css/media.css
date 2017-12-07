@@ -63,11 +63,18 @@
         font-size: 15px;
     }
     .add-to-cart{
-        display: block;
+        display: block !important;
         text-align: center;
     }
     #map{
         height: 905px
+    }
+    span.product-content__price {
+        margin-bottom: 20px;
+        display: block;
+    }
+    .all-look {
+        margin-top: 10px;
     }
 
 }
