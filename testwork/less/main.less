@@ -1,0 +1,235 @@
+@import "fonts.less";
+
+/* Fonts */
+@PlayReg: 'Playfair Display SC';
+@NotoSerReg: 'NotoSerifRegular';
+@NotoSerBol: 'NotoSerifBold';
+body {
+  margin: 0;
+  font-family: @NotoSerReg, sans-serif;
+  font-size: 16px;
+  color: #353535;
+  * {
+    outline: none !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+a {
+  text-decoration: none;
+  color: #353535; }
+
+img {
+  max-width: 100%; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 2.1em;
+  max-width: 768px;
+}
+.title-wrapp{
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  margin-bottom: 23px;
+}
+.title{
+  font-family: @PlayReg;
+  text-transform: uppercase;
+  font-size: 3.1em;
+  margin-right: 3%;
+}
+.title-desc{
+    flex: 1;
+  position: relative;
+  &:before{
+    position: absolute;
+    bottom: 8px;
+    content: '';
+    border-bottom: 2px solid #000;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    right: 0;
+  }
+  }
+.article{
+  &__img{
+    position: relative;
+  }
+  &__title{
+    font-family: @NotoSerBol;
+    font-size: 0.81em;
+    line-height: 1;
+    margin-top: 10px;
+  }
+  &__auth{
+    font-size: .81em;
+    color: #bebebe;
+  }
+}
+.article__date{
+  position: absolute;
+  left: 3%;
+  top: 4%;
+  padding: 3.2% 5.36%;
+}
+.date{
+  background-color: rgba(255,255,255, .8);
+  &:before{
+    position: absolute;
+    top: 2.25em;
+    right: 1.2em;
+    content: '';
+    width: 3px;
+    height: 5px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAMAAAC3r6aQAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABRJREFUeAFjYGRgYGBkBGFGMA1EAAByAAq6WU2lAAAAAElFTkSuQmCC);
+  }
+  &__d,&__m{
+    display: block;
+    text-align: center;
+  }
+  &__d{
+    font-size: 2.3em;
+    line-height: .8;
+
+  }
+  &__m{
+    text-transform: lowercase;
+    font-size: 1.15em;
+    line-height: 1.7;
+  }
+}
+.grid{
+  position: relative;
+  margin: 0 -8px;
+  padding-top: 14px;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &__item{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin: 0 0 20px;
+    position: relative;
+    /* vertical-align: middle; */
+    align-items: center;
+    /* align-content: center; */
+    display: flex;
+    justify-content: center;
+    /* vertical-align: middle; */
+    height: 104px;
+  }
+  &__date{
+    margin-top: 5px;
+    &:before{
+      top: 2.4em;
+      right: 1.9em;
+    }
+  }
+  &__img{
+    height: 100%;
+  }
+}
+.grid-col-2{
+  height: 228px;
+}
+.pages{
+  font-size: .789em;
+  color: #848484;
+}
+.pagination {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 6px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;}
+.pagination__back, .pagination__next {
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0.83em;}
+
+.pagination-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0 19px;
+  padding: 0;}
+
+.pagination-list-item__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 5px .42em;
+  text-align: center;
+  font-size: .9em;
+  line-height: 32px;
+&.active{
+  background-color: #e6e6e6;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-family: @NotoSerBol;
+}
+}
+body .tizer{
+  float: left;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  background-color: #fbf6e8;
+  margin-bottom: 11px;
+
+&__sign{
+  color: #cbcac7;
+  font-family: @NotoSerBol;
+  font-size: .6em;
+}
+&__title{
+  font-family: @NotoSerBol;
+  font-size: .82em;
+}
+&__content {
+  padding-left: 18px;
+}
+&__text{
+  font-size: .74em;
+}
+}
+/*Adaptive*/
+@import "media.less";
+
+
