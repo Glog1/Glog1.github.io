@@ -872,10 +872,12 @@
 </div>
 <!-- end o-wrapper -->
 <script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEVvt0_HUnLBSt-kBot2yjm1s-2KUYoxo&callback=initMap" async defer></script>
+<!--<script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>-->
 <script type="text/javascript">
-    google.maps.event.addDomListener(window, 'load', init);
+    google.maps.event.addDomListener(window, 'load', initMap);
 
-    function init() {
+    function initMap() {
         var mapOptions = {
             zoom: 16,
             scrollwheel: false,
@@ -921,6 +923,6 @@
         });
     }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgGIXcrQe-kuRJCYs7Gz2prI5dAGNHpU8&callback=initMap" async defer></script>
+
 </body>
 </html>
