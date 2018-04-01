@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <!--include head-->
+<html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title class="Document"></title>
+    <title class="Document">Document</title>
+    <style>.preloader{position:fixed;left:0;top:0;right:0;bottom:0;background-color:#333;z-index:99999999999}.circle-preloader,.preloader__load{width:50px;height:50px;position:absolute}.preloader__load{top:50vh;left:50%;margin-top:-25px;margin-left:-25px}.circle-preloader{display:block;border:4px solid #444;border-bottom-color:#888;border-radius:50%;top:0;left:0;right:0;bottom:0;margin:auto;animation:spin .75s infinite linear}@keyframes spin{100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}</style>
   </head>
   <body>
-  <style>.preloader{position:fixed;left:0;top:0;right:0;bottom:0;background-color:#333;z-index:99999999999}.circle-preloader,.preloader__load{width:50px;height:50px;position:absolute}.preloader__load{top:50vh;left:50%;margin-top:-25px;margin-left:-25px}.circle-preloader{display:block;border:4px solid #444;border-bottom-color:#888;border-radius:50%;top:0;left:0;right:0;bottom:0;margin:auto;animation:spin .75s infinite linear}@keyframes spin{100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}</style>
   <div class="preloader" style="display: none;">
     <div class="preloader__load"><i class="circle-preloader"></i></div>
   </div>
     <header class="main-header">
       <div class="top-line">
         <div class="container">
-          <div class="clearfix"><a href="tel: +001 555 801" class="main-header__call"><i class="icn call"></i> Call +001 555 801</a>
+          <div class="clearfix"><a href="tel:+001555801" class="main-header__call"><i class="icn call"></i> Call +001 555 801</a>
             <ul class="top-bar">
               <li class="top-bar__item"><a href="#" class="top-bar__link">WELCOME MSG!<span class="top-bar__btn"><i class="icn caretdown"></i></span></a></li>
               <li class="top-bar__item"><a href="#" class="top-bar__link">MY ACCOUNT</a></li>
@@ -85,6 +84,7 @@
       </div>
     </section>
     <section>
+      <h2 class="hidden">map</h2>
       <div id="map" class="map"></div>
     </section>
     <link rel="stylesheet" href="css/libs.min.css">
