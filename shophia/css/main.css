@@ -23,7 +23,8 @@
   font-family: 'Krinkes';
   font-style: normal;
   font-weight: normal;
-  src: local("Krinkes Decor PERSONAL USE"), url("../fonts/Krinkes/KrinkesDecorPERSONAL.woff") format("woff"); }
+  src: local("Krinkes Decor PERSONAL USE"), url("../fonts/Krinkes/KrinkesDecorPERSONAL.woff") format("woff"),
+  url("../fonts/Krinkes/KrinkesDecorPERSONAL.ttf") format("truetype");}
 
 body, html {
   height: 100%;
@@ -175,7 +176,7 @@ ul, li {
   .carret:before {
     content: '';
     position: absolute;
-    top: 15px;
+    top: 40%;
     right: 10px;
     width: 8px;
     height: 4px;
@@ -309,6 +310,9 @@ ul, li {
 
 .currency {
   border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   background-color: #000000;
   width: 90px;
   padding: 1em .5em 1em 1em;
