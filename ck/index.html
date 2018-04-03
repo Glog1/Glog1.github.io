@@ -8,9 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <link rel="shortcut icon" href="wp-content/themes/stroykompleks_v2/favicon.ico"/>
     <title>Ремонт квартир под ключ. Акции и скидки на стройматериалы</title>
-    <style>
-        .layout{position:relative;overflow:hidden;height:100vh}.layout:after{content:"";position:absolute;background:#fff;left:0;right:0;top:0;height:100vh;z-index:9999;transition:.5s;opacity:1;visibility:visible}.layout.is-load:after,.progress.is-load{opacity:0;visibility:hidden}.layout.is-load{overflow:auto;height:auto}.progress{transition:.5s;position:fixed;bottom:0;z-index:99999;width:100%;height:3px}.progress span{display:block;position:absolute;top:0;left:0;width:0;height:100%;background:#fe4800;box-shadow:0 0 10px 1px rgba(254,72,0,.5);transition:1s}.progress span.is-load{width:100%}
-    </style>
+    <style>.layout{position:relative;overflow:hidden;height:100vh}.layout:after{content:"";position:absolute;background:#fff;left:0;right:0;top:0;height:100vh;z-index:9999;transition:.5s;opacity:1;visibility:visible}.layout.is-load:after,.progress.is-load{opacity:0;visibility:hidden}.layout.is-load{overflow:auto;height:auto}.progress{transition:.5s;position:fixed;bottom:0;z-index:99999;width:100%;height:3px}.progress span{display:block;position:absolute;top:0;left:0;width:0;height:100%;background:#fe4800;box-shadow:0 0 10px 1px rgba(254,72,0,.5);transition:1s}.progress span.is-load{width:100%}</style>
     <link rel="stylesheet" href="wp-content/themes/stroykompleks_v2/css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -107,7 +105,6 @@
 <!-- Layout -->
 
 <div class="layout">
-
     <nav class="nav" id="nav">
         <div class="container-fluid">
             <ul class="nav-menu">
@@ -152,7 +149,6 @@
                             <img src="wp-content/themes/stroykompleks_v2/img/logo.png" alt="logo">
                         </div>
                     </div>
-
                     <h1>
                         <small>Делаем качественный ремонт<br/>
                             в квартирах, домах и офисах
@@ -2231,28 +2227,20 @@
     <div class="bpopup-content">
         <div class="bpopup-form bg-image"
              style="background-image: url(wp-content/uploads/2016/03/skachat`-svezhij-prajs.jpg)">
-            <div role="form" class="wpcf7" id="wpcf7-f159-o14" lang="ru-RU" dir="ltr">
+            <div role="form" class="">
                 <div class="screen-reader-response"></div>
-                <form action="#wpcf7-f159-o14" method="post" class="wpcf7-form" novalidate="novalidate">
-                    <div style="display: none;">
-                        <input type="hidden" name="_wpcf7" value="159"/>
-                        <input type="hidden" name="_wpcf7_version" value="4.4"/>
-                        <input type="hidden" name="_wpcf7_locale" value="ru_RU"/>
-                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f159-o14"/>
-                        <input type="hidden" name="_wpnonce" value="29bdd2fe85"/>
-                    </div>
+                <form class="">
                     <h2>Получите актуальный прайс</h2>
-                    <span class="wpcf7-form-control-wrap name"><input type="tel" name="name" value="" size="40"
-                                                                      class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel c-text c-text-lg c-text-dark is-phone"
-                                                                      aria-required="true" aria-invalid="false"
-                                                                      placeholder="Введите телефон"/></span>
+                    <span class="name"><input type="tel" name="name" value="" size="40"
+                                              class="c-text c-text-lg c-text-dark is-phone"
+                                              aria-required="true" aria-invalid="false"
+                                              placeholder="Введите телефон"/></span>
                     <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40"
-                                                                       class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email c-text c-text-lg c-text-dark"
+                                                                       class="c-text c-text-lg c-text-dark"
                                                                        aria-required="true" aria-invalid="false"
                                                                        placeholder="Введите e-mail"/></span>
 
-                    <input type="submit" value="Получить"
-                           class="wpcf7-form-control wpcf7-submit btn btn-lg btn-orange"/>
+                    <input type="submit" value="Получить" class="btn btn-lg btn-orange"/>
                     <div class="row">
                         <div class="col-md-12">
                             <small class="begin-ctrl-text">Прайс будет отправлен на вашу почту</small>
@@ -2552,16 +2540,12 @@
 </div>
 <!-- /bPopup Read -->
 
-<script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.min.js?ver=1.9.1' defer='defer'></script>
-<script type='text/javascript'
-        src='wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js@ver=3.51.0-2014.06.20'
-        defer='defer'></script>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 
-<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts.js@ver=4.4'
-        defer='defer'></script>
-<script type='text/javascript' src='wp-content/themes/stroykompleks_v2/js/vendor.js@ver=1.0.0' defer='defer'></script>
-<script type='text/javascript' src='wp-content/themes/stroykompleks_v2/js/main.js@ver=1.0.3' defer='defer'></script>
-<script type='text/javascript' src='wp-content/themes/stroykompleks_v2/js/wp.js@ver=1.0.1' defer='defer'></script>
+
+<script type='text/javascript' src='wp-content/themes/stroykompleks_v2/js/vendor.js' defer='defer'></script>
+<script type='text/javascript' src='wp-content/themes/stroykompleks_v2/js/main.js' defer='defer'></script>
+<script type='text/javascript' src='wp-content/themes/stroykompleks_v2/js/wp.js' defer='defer'></script>
 
 <!-- AddToAny BEGIN -->
 <!--<script async src="https://static.addtoany.com/menu/page.js"></script>-->
