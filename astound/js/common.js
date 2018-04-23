@@ -24,7 +24,6 @@ function carousel() {
 
         slides[slideIndex - 1].style.display = "block";
     }
-
     prev.onclick = function plusSlides(n) {
         showSlides(slideIndex -= 1);
     }
@@ -32,9 +31,7 @@ function carousel() {
         showSlides(slideIndex += 1);
     }
 }
-
 /****/
-
 window.onload = function () {
     social.style.display = "none";
     var shareBtn = document.querySelector('.share-btn');
@@ -58,5 +55,4 @@ window.onload = function () {
             carousel();
         }
     }
-
 };
