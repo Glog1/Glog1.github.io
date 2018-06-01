@@ -11,8 +11,7 @@
 
 @font-face {
   font-family: 'Nunito-ExtraBold';
-  src: url("../fonts/Nunito/Nunito-ExtraBold.eot");
-  src: url("../fonts/Nunito/Nunito.woff2") format("woff2"), url("../fonts/Nunito/Nunito-ExtraBold.woff") format("woff"), url("../fonts/Nunito/Nunito-ExtraBold.ttf") format("truetype"), url("../fonts/Nunito/Nunito-ExtraBold.svg#Nunito-ExtraBold") format("svg"), url("../fonts/Nunito/Nunito-ExtraBold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Nunito/Nunito-ExtraBold.eot"), url("../fonts/Nunito/Nunito-ExtraBold.woff") format("woff"), url("../fonts/Nunito/Nunito-ExtraBold.ttf") format("truetype"), url("../fonts/Nunito/Nunito-ExtraBold.svg#Nunito-ExtraBold") format("svg"), url("../fonts/Nunito/Nunito-ExtraBold.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 
@@ -150,25 +149,8 @@ img {
     background-color: #f5f5f5;
     color: #3f495a; }
 
-.jspContainer {
-  height: 100% !important; }
-
-.scroll-pane,
-.jspContainer,
-.jspPane {
-  width: 100% !important;
-  max-width: 100%; }
-
-.jspTrack,
-.jspVerticalBar {
-  background: transparent; }
-
-.jspDrag {
-  width: 5px;
-  background: red;
-  margin: 0 0 0 auto;
-  -webkit-border-radius: 6px;
-  border-radius: 6px; }
+.div {
+  min-height: 100vh; }
 
 .c-header {
   position: fixed;
@@ -499,13 +481,18 @@ img {
         left: 50px;
         font-size: 120px; } }
   .c-welcome__title {
-    font: 900 37px/1 "Nunito-ExtraBold", sans-serif;
+    font: 900 30px/1 "Nunito-ExtraBold", sans-serif;
     position: relative;
     z-index: 2;
     margin-bottom: 15px; }
     .c-welcome__title span {
       color: #ff6c3a;
-      font-size: 50px; }
+      font-size: 40px; }
+    @media screen and (min-width: 480px) {
+      .c-welcome__title {
+        font-size: 37px; }
+        .c-welcome__title span {
+          font-size: 50px; } }
     @media screen and (min-width: 768px) {
       .c-welcome__title {
         font-size: 48px; }

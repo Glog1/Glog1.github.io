@@ -1,5 +1,11 @@
-$(function () {
-
+$(document).ready(function(){
+ //$('.scroll-pane').jScrollPane();
+   // $("html").niceScroll();
+    $("html").niceScroll({
+        cursorcolor: '#ff6c3a',
+        cursorwidth: 7,
+        cursorborder: 'none'
+    });
 //Open menu
     $('.c-header__burger').click(function () {
         $(this).toggleClass('active');
@@ -187,5 +193,5 @@ setInterval(function() {
 
 // $(function () {
 //     $('.scroll-pane').jScrollPane();
-//    
+//
 // });
