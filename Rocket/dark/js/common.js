@@ -96,7 +96,7 @@ presets.o = function(x, y, s, dx, dy) {
                 false
             );
             ctx.lineWidth = this.w;
-            ctx.strokeStyle = "#fff";
+            ctx.strokeStyle = "transparent";
             ctx.stroke();
         }
     };
