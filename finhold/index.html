@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<!--include Head-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Finholod</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<!--Sprite-->
+<div class="wrapper">
+    <!--Sidebar-->
+    <header class="c-sidebar"><a class="c-sidebar__btn-mob" href="#" id="btn-map">
+        <svg class="icon icon-locate-place c-sidebar__icon-mob">
+            <use xlink:href="img/sprite/sprite.svg#locate-place"></use>
+        </svg>
+    </a><a class="c-sidebar__logo" href="#"><img class="c-sidebar__logo-img" src="img/logo.png" alt="Finholod">
+        <p class="c-sidebar__logo-desc">Запчасти для бытовой техники</p></a><a class="c-sidebar__btn-mob" href="#">
+        <svg class="icon icon-telephone c-sidebar__icon-mob">
+            <use xlink:href="img/sprite/sprite.svg#telephone"></use>
+        </svg>
+    </a>
+        <div class="c-sidebar__phone-wrapp"><a class="c-sidebar__phone" href="tel:88123362216">
+            <svg class="icon icon-telephone c-sidebar__icon">
+                <use xlink:href="img/sprite/sprite.svg#telephone"></use>
+            </svg>
+            8 (812) 336-22-16</a><a class="c-sidebar__phone" href="tel:89811221329">8 (981) 122-13-29</a></div>
+        <a class="c-sidebar__email" href="malito:sale@finholod.spb.ru">
+            <svg class="icon icon-mail c-sidebar__icon c-sidebar__icon--mail">
+                <use xlink:href="img/sprite/sprite.svg#mail"></use>
+            </svg>
+            sale@finholod.spb.ru</a>
+        <p class="c-sidebar__address">
+            <svg class="icon icon-map-loc c-sidebar__icon c-sidebar__icon--map-loc">
+                <use xlink:href="img/sprite/sprite.svg#map-loc"></use>
+            </svg>
+            г. Санкт-Петербург<br>ул. Седова д. 10, Бизнес-центр "Точка"
+        </p>
+        <a class="c-sidebar__address-link" href="#">посмотреть на карте</a>
+        <div class="c-sidebar__btn-wrap"><a class="button button--sidebar js-modal-open" href="#feedback">Запрос
+            детали</a></div>
+        <p class="c-sidebar__desc">Это широкий ассортимент комплектующих и аксессуаров к различной бытовой технике от
+            мировых производителей. Мы существуем на рынке запчастей и комплектующих к бытовой технике уже порядка 10
+            лет и поэтому точно знаем, что именно необходимо покупателям.</p>
+        <p class="c-sidebar__desc c-sidebar__desc--bold">Вы легко сможете выбрать деталь или аксессуар, который идеально
+            подойдет к той или иной модели.</p>
+        <div class="c-sidebar__lists">
+            <div class="c-sidebar__list"><span class="c-sidebar__caption">Сервисы</span><a class="c-sidebar__list-link"
+                                                                                           href="#">Главная</a><a
+                    class="c-sidebar__list-link" href="#">Отзывы</a><a class="c-sidebar__list-link"
+                                                                       href="#">Услуги</a><a
+                    class="c-sidebar__list-link" href="#">Доставка</a><a class="c-sidebar__list-link"
+                                                                         href="#">Гарантия</a><a
+                    class="c-sidebar__list-link" href="#">О магазине</a><a class="c-sidebar__list-link" href="#">Контакты</a>
+            </div>
+            <div class="c-sidebar__list"><span class="c-sidebar__caption">Каталог</span><a class="c-sidebar__list-link"
+                                                                                           href="#">Холодильники</a><a
+                    class="c-sidebar__list-link" href="#">Стиральные машины</a><a class="c-sidebar__list-link" href="#">Посудомоечные
+                машины</a><a class="c-sidebar__list-link" href="#">Пылесосы</a><a class="c-sidebar__list-link" href="#">Микроволновые
+                печи</a><a class="c-sidebar__list-link" href="#">Электрические плиты</a><a class="c-sidebar__list-link"
+                                                                                           href="#">Полный каталог</a>
+            </div>
+        </div>
+        <a class="c-sidebar__link" href="#">Политика конфиденциальности</a><a class="c-sidebar__link" href="#">Пользовательское
+            соглашение</a>
+        <!--a(href="#").c-sidebar__link.c-sidebar__link--copyright Сайт разработан веб-студией CREON-->
+    </header>
+    <main class="main">
+        <!--.Header-->
+        <div class="c-header">
+            <div class="container-fluid">
+                <div class="row align-items-center"><a class="c-header__link c-header__burger" href="#">
+                    <svg class="icon icon-list c-header__icon c-header__burger--open">
+                        <use xlink:href="img/sprite/sprite.svg#list"></use>
+                    </svg>
+                    <svg class="icon icon-multiply c-header__icon c-header__burger--close">
+                        <use xlink:href="img/sprite/sprite.svg#multiply"></use>
+                    </svg>
+                    <span class="c-header__burger-span">Меню</span></a>
+                    <div class="col-md-6 c-navigation__wrapp">
+                        <nav class="c-navigation"><a class="c-navigation__item" href="#">О компании</a><a
+                                class="c-navigation__item" href="#">Каталог</a><a class="c-navigation__item" href="#">Гарантия</a><a
+                                class="c-navigation__item" href="#">Доставка</a><a class="c-navigation__item" href="#">Оплата</a>
+                        </nav>
+                        <a class="c-navigation__item--table" href="#">
+                            <svg class="icon icon-lock c-header__icon">
+                                <use xlink:href="img/sprite/sprite.svg#lock"></use>
+                            </svg>
+                            Личный кабинет</a>
+                    </div>
+                    <div class="col-md-3 c-form__wrap">
+                        <form class="c-form" action="/" method="POST">
+                            <input class="c-form__input" type="text">
+                            <label class="c-form__label">
+                                <button class="c-form__btn" type="submit">
+                                    <svg class="icon icon-search c-form__btn-icon">
+                                        <use xlink:href="img/sprite/sprite.svg#search"></use>
+                                    </svg>
+                                </button>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="col-md-3 c-header__links">
+                        <div class="c-header__link-wrap"><a class="c-header__link" href="cart.html">
+                            <svg class="icon icon-shopping-cart2 c-header__icon">
+                                <use xlink:href="img/sprite/sprite.svg#shopping-cart2"></use>
+                            </svg>
+                            Корзина<span class="c-header__count">(25)</span></a><a
+                                class="c-header__link c-header__link--desctop" href="#">
+                            <svg class="icon icon-lock c-header__icon">
+                                <use xlink:href="img/sprite/sprite.svg#lock"></use>
+                            </svg>
+                            Личный кабинет</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Category-->
+        <div class="c-categories-list">
+            <div class="container-fluid">
+                <div class="c-categories-list__row">
+                    <div class="col-md-2 c-categories-list__caption-wrapp">
+                        <h1 class="c-categories-list__caption"><span class="c-categories-list__caption--bold">Запчасти для</span><span>бытовой техники</span>
+                        </h1>
+                    </div>
+                    <div class="col-md-8 c-categories-list__categories"><a class="c-categories-list__item"
+                                                                           href="catalog.html">
+                        <div class="c-categories-list__inside-wrap">
+                            <svg class="icon icon-refrigerator c-categories-list__icon c-categories-list__icon--refrigerator">
+                                <use xlink:href="img/sprite/sprite.svg#refrigerator"></use>
+                            </svg>
+                            <span class="c-categories-list__item-title">ХОЛОДИЛЬНИКИ</span>
+                        </div>
+                    </a><a class="c-categories-list__item" href="catalog.html">
+                        <div class="c-categories-list__inside-wrap">
+                            <svg class="icon icon-washing-machine c-categories-list__icon c-categories-list__icon--washing-machine">
+                                <use xlink:href="img/sprite/sprite.svg#washing-machine"></use>
+                            </svg>
+                            <span class="c-categories-list__item-title">СТИРАЛЬНЫЕ МАШИНЫ</span>
+                        </div>
+                    </a><a class="c-categories-list__item" href="catalog.html">
+                        <div class="c-categories-list__inside-wrap">
+                            <svg class="icon icon-dishwasher c-categories-list__icon c-categories-list__icon--dishwasher">
+                                <use xlink:href="img/sprite/sprite.svg#dishwasher"></use>
+                            </svg>
+                            <span class="c-categories-list__item-title">ПОСУДОМОЕЧНЫЕ МАШИНЫ</span>
+                        </div>
+                    </a><a class="c-categories-list__item" href="catalog.html">
+                        <div class="c-categories-list__inside-wrap">
+                            <svg class="icon icon-stove c-categories-list__icon c-categories-list__icon--stove">
+                                <use xlink:href="img/sprite/sprite.svg#stove"></use>
+                            </svg>
+                            <span class="c-categories-list__item-title">ЭЛЕКТРИЧЕСКИЕ, ГАЗОВЫЕ ПЛИТЫ</span>
+                        </div>
+                    </a>
+                        <!--Hidden category-->
+                        <div class="c-categories-list__hidden-categoris">
+                            <div class="col-md-2 c-categories-list__caption-wrapp"></div>
+                            <div class="col-md-8 c-categories-list__categories"><a
+                                    class="c-categories-list__item c-categories-list__item--hidden" href="catalog.html">
+                                <div class="c-categories-list__inside-wrap">
+                                    <svg class="icon icon-vacuum-cleaner c-categories-list__icon c-categories-list__icon--vacuum-cleaner">
+                                        <use xlink:href="img/sprite/sprite.svg#vacuum-cleaner"></use>
+                                    </svg>
+                                    <span class="c-categories-list__item-title">Пылесосы</span>
+                                </div>
+                            </a><a class="c-categories-list__item c-categories-list__item--hidden" href="catalog.html">
+                                <div class="c-categories-list__inside-wrap">
+                                    <svg class="icon icon-microwave-oven c-categories-list__icon c-categories-list__icon--microwave-oven">
+                                        <use xlink:href="img/sprite/sprite.svg#microwave-oven"></use>
+                                    </svg>
+                                    <span class="c-categories-list__item-title">Микроволновки</span>
+                                </div>
+                            </a><a class="c-categories-list__item c-categories-list__item--hidden" href="catalog.html">
+                                <div class="c-categories-list__inside-wrap">
+                                    <svg class="icon icon-mixer-1 c-categories-list__icon c-categories-list__icon--mixer">
+                                        <use xlink:href="img/sprite/sprite.svg#mixer-1"></use>
+                                    </svg>
+                                    <span class="c-categories-list__item-title">Кухонные комбайны</span>
+                                </div>
+                            </a><a class="c-categories-list__item c-categories-list__item--hidden" href="catalog.html">
+                                <div class="c-categories-list__inside-wrap">
+                                    <svg class="icon icon-iron c-categories-list__icon c-categories-list__icon--iron">
+                                        <use xlink:href="img/sprite/sprite.svg#iron"></use>
+                                    </svg>
+                                    <span class="c-categories-list__item-title">Мелкая бытовая техника</span>
+                                </div>
+                            </a><a class="c-categories-list__item c-categories-list__item--hidden" href="catalog.html">
+                                <div class="c-categories-list__inside-wrap">
+                                    <svg class="icon icon-boiler c-categories-list__icon c-categories-list__icon--boiler">
+                                        <use xlink:href="img/sprite/sprite.svg#boiler"></use>
+                                    </svg>
+                                    <span class="c-categories-list__item-title">Водонагреватели</span>
+                                </div>
+                            </a><a class="c-categories-list__item c-categories-list__item--hidden" href="catalog.html">
+                                <div class="c-categories-list__inside-wrap">
+                                    <svg class="icon icon-multicooker c-categories-list__icon c-categories-list__icon--multicooker">
+                                        <use xlink:href="img/sprite/sprite.svg#multicooker"></use>
+                                    </svg>
+                                    <span class="c-categories-list__item-title">Хлебопечки</span>
+                                </div>
+                            </a><a class="c-categories-list__item c-categories-list__item--hidden" href="catalog.html">
+                                <div class="c-categories-list__inside-wrap">
+                                    <svg class="icon icon-meat-grinder c-categories-list__icon c-categories-list__icon--meat-grinder">
+                                        <use xlink:href="img/sprite/sprite.svg#meat-grinder"></use>
+                                    </svg>
+                                    <span class="c-categories-list__item-title">Мясорубки</span>
+                                </div>
+                            </a></div>
+                            <div class="col-md-2 hidden-table"></div>
+                        </div>
+                        <!--Open all category--><a
+                                class="c-categories-list__item c-categories-list__open-category-btn only-table"
+                                href="#">
+                            <div class="c-categories-list__inside-wrap">
+                                <svg class="icon icon-gears c-categories-list__icon c-categories-list__icon--gears">
+                                    <use xlink:href="img/sprite/sprite.svg#gears"></use>
+                                </svg>
+                                <svg class="icon icon-multiply c-categories-list__icon c-categories-list__icon--close">
+                                    <use xlink:href="img/sprite/sprite.svg#multiply"></use>
+                                </svg>
+                                <span class="c-categories-list__item-title">Все запчасти</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-2 hidden-table">
+                        <!--Open all category--><a class="c-categories-list__item c-categories-list__open-category-btn"
+                                                   href="#">
+                        <div class="c-categories-list__inside-wrap">
+                            <svg class="icon icon-gears c-categories-list__icon c-categories-list__icon--gears">
+                                <use xlink:href="img/sprite/sprite.svg#gears"></use>
+                            </svg>
+                            <svg class="icon icon-multiply c-categories-list__icon c-categories-list__icon--close">
+                                <use xlink:href="img/sprite/sprite.svg#multiply"></use>
+                            </svg>
+                            <span class="c-categories-list__item-title">Все запчасти</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Products-->
+        <div class="c-products-list">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-4 c-product__wrapp">
+                        <div class="c-product">
+                            <div class="c-product__front"><a class="c-product__title" href="product.html">Термостат
+                                среднетемпературный К-59L1275 (2,5)</a><img class="c-product__img"
+                                                                            src="img/product/product-1.png" alt="alt">
+                                <div class="c-product__bottom"><span class="c-product__country"><span
+                                        class="c-product__name-value">Страна:</span><span
+                                        class="c-product__value">Китай</span></span><span class="c-product__name-value">В наличии</span>
+                                </div>
+                                <div class="c-product__bottom--mobile"><span class="c-product__price">10 800 ₧</span>
+                                    <button class="button button--btn-cart" type="submit">
+                                        <svg class="icon icon-shopping-cart button--btn-icon">
+                                            <use xlink:href="img/sprite/sprite.svg#shopping-cart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="c-product__back"><a class="c-product__caption" href="product.html">Вентилятор
+                                С09 в сборе (С00851151) холодильника Indesit</a>
+                                <p class="c-product__price">10 800 ₧</p>
+                                <div>
+                                    <div class="c-product__country-back"><span class="c-product__name-value-back">Страна:</span><span
+                                            class="c-product__value-back">Китай</span></div>
+                                    <span class="c-product__name-value-back">В наличии</span>
+                                </div>
+                                <button class="button button--product" type="submit">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 c-product__wrapp">
+                        <div class="c-product">
+                            <div class="c-product__front"><a class="c-product__title" href="product.html">Термостат
+                                среднетемпературный К-59L1275 (2,5)</a><img class="c-product__img"
+                                                                            src="img/product/product-1.png" alt="alt">
+                                <div class="c-product__bottom"><span class="c-product__country"><span
+                                        class="c-product__name-value">Страна:</span><span
+                                        class="c-product__value">Китай</span></span><span class="c-product__name-value">В наличии</span>
+                                </div>
+                                <div class="c-product__bottom--mobile"><span class="c-product__price">10 800 ₧</span>
+                                    <button class="button button--btn-cart" type="submit">
+                                        <svg class="icon icon-shopping-cart button--btn-icon">
+                                            <use xlink:href="img/sprite/sprite.svg#shopping-cart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="c-product__back"><a class="c-product__caption" href="product.html">Вентилятор
+                                С09 в сборе (С00851151) холодильника Indesit</a>
+                                <p class="c-product__price">10 800 ₧</p>
+                                <div>
+                                    <div class="c-product__country-back"><span class="c-product__name-value-back">Страна:</span><span
+                                            class="c-product__value-back">Китай</span></div>
+                                    <span class="c-product__name-value-back">В наличии</span>
+                                </div>
+                                <button class="button button--product" type="submit">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 c-product__wrapp">
+                        <div class="c-product">
+                            <div class="c-product__front"><a class="c-product__title" href="product.html">Термостат
+                                среднетемпературный К-59L1275 (2,5)</a><img class="c-product__img"
+                                                                            src="img/product/product-1.png" alt="alt">
+                                <div class="c-product__bottom"><span class="c-product__country"><span
+                                        class="c-product__name-value">Страна:</span><span
+                                        class="c-product__value">Китай</span></span><span class="c-product__name-value">В наличии</span>
+                                </div>
+                                <div class="c-product__bottom--mobile"><span class="c-product__price">10 800 ₧</span>
+                                    <button class="button button--btn-cart" type="submit">
+                                        <svg class="icon icon-shopping-cart button--btn-icon">
+                                            <use xlink:href="img/sprite/sprite.svg#shopping-cart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="c-product__back"><a class="c-product__caption" href="product.html">Вентилятор
+                                С09 в сборе (С00851151) холодильника Indesit</a>
+                                <p class="c-product__price">10 800 ₧</p>
+                                <div>
+                                    <div class="c-product__country-back"><span class="c-product__name-value-back">Страна:</span><span
+                                            class="c-product__value-back">Китай</span></div>
+                                    <span class="c-product__name-value-back">В наличии</span>
+                                </div>
+                                <button class="button button--product" type="submit">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 c-product__wrapp">
+                        <div class="c-product">
+                            <div class="c-product__front"><a class="c-product__title" href="product.html">Термостат
+                                среднетемпературный К-59L1275 (2,5)</a><img class="c-product__img"
+                                                                            src="img/product/product-1.png" alt="alt">
+                                <div class="c-product__bottom"><span class="c-product__country"><span
+                                        class="c-product__name-value">Страна:</span><span
+                                        class="c-product__value">Китай</span></span><span class="c-product__name-value">В наличии</span>
+                                </div>
+                                <div class="c-product__bottom--mobile"><span class="c-product__price">10 800 ₧</span>
+                                    <button class="button button--btn-cart" type="submit">
+                                        <svg class="icon icon-shopping-cart button--btn-icon">
+                                            <use xlink:href="img/sprite/sprite.svg#shopping-cart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="c-product__back"><a class="c-product__caption" href="product.html">Вентилятор
+                                С09 в сборе (С00851151) холодильника Indesit</a>
+                                <p class="c-product__price">10 800 ₧</p>
+                                <div>
+                                    <div class="c-product__country-back"><span class="c-product__name-value-back">Страна:</span><span
+                                            class="c-product__value-back">Китай</span></div>
+                                    <span class="c-product__name-value-back">В наличии</span>
+                                </div>
+                                <button class="button button--product" type="submit">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 c-product__wrapp">
+                        <div class="c-product">
+                            <div class="c-product__front"><a class="c-product__title" href="product.html">Термостат
+                                среднетемпературный К-59L1275 (2,5)</a><img class="c-product__img"
+                                                                            src="img/product/product-1.png" alt="alt">
+                                <div class="c-product__bottom"><span class="c-product__country"><span
+                                        class="c-product__name-value">Страна:</span><span
+                                        class="c-product__value">Китай</span></span><span class="c-product__name-value">В наличии</span>
+                                </div>
+                                <div class="c-product__bottom--mobile"><span class="c-product__price">10 800 ₧</span>
+                                    <button class="button button--btn-cart" type="submit">
+                                        <svg class="icon icon-shopping-cart button--btn-icon">
+                                            <use xlink:href="img/sprite/sprite.svg#shopping-cart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="c-product__back"><a class="c-product__caption" href="product.html">Вентилятор
+                                С09 в сборе (С00851151) холодильника Indesit</a>
+                                <p class="c-product__price">10 800 ₧</p>
+                                <div>
+                                    <div class="c-product__country-back"><span class="c-product__name-value-back">Страна:</span><span
+                                            class="c-product__value-back">Китай</span></div>
+                                    <span class="c-product__name-value-back">В наличии</span>
+                                </div>
+                                <button class="button button--product" type="submit">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 c-product__wrapp">
+                        <div class="c-product">
+                            <div class="c-product__front"><a class="c-product__title" href="product.html">Термостат
+                                среднетемпературный К-59L1275 (2,5)</a><img class="c-product__img"
+                                                                            src="img/product/product-1.png" alt="alt">
+                                <div class="c-product__bottom"><span class="c-product__country"><span
+                                        class="c-product__name-value">Страна:</span><span
+                                        class="c-product__value">Китай</span></span><span class="c-product__name-value">В наличии</span>
+                                </div>
+                                <div class="c-product__bottom--mobile"><span class="c-product__price">10 800 ₧</span>
+                                    <button class="button button--btn-cart" type="submit">
+                                        <svg class="icon icon-shopping-cart button--btn-icon">
+                                            <use xlink:href="img/sprite/sprite.svg#shopping-cart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="c-product__back"><a class="c-product__caption" href="product.html">Вентилятор
+                                С09 в сборе (С00851151) холодильника Indesit</a>
+                                <p class="c-product__price">10 800 ₧</p>
+                                <div>
+                                    <div class="c-product__country-back"><span class="c-product__name-value-back">Страна:</span><span
+                                            class="c-product__value-back">Китай</span></div>
+                                    <span class="c-product__name-value-back">В наличии</span>
+                                </div>
+                                <button class="button button--product" type="submit">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 c-product__wrapp">
+                        <div class="c-product">
+                            <div class="c-product__front"><a class="c-product__title" href="product.html">Термостат
+                                среднетемпературный К-59L1275 (2,5)</a><img class="c-product__img"
+                                                                            src="img/product/product-1.png" alt="alt">
+                                <div class="c-product__bottom"><span class="c-product__country"><span
+                                        class="c-product__name-value">Страна:</span><span
+                                        class="c-product__value">Китай</span></span><span class="c-product__name-value">В наличии</span>
+                                </div>
+                                <div class="c-product__bottom--mobile"><span class="c-product__price">10 800 ₧</span>
+                                    <button class="button button--btn-cart" type="submit">
+                                        <svg class="icon icon-shopping-cart button--btn-icon">
+                                            <use xlink:href="img/sprite/sprite.svg#shopping-cart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="c-product__back"><a class="c-product__caption" href="product.html">Вентилятор
+                                С09 в сборе (С00851151) холодильника Indesit</a>
+                                <p class="c-product__price">10 800 ₧</p>
+                                <div>
+                                    <div class="c-product__country-back"><span class="c-product__name-value-back">Страна:</span><span
+                                            class="c-product__value-back">Китай</span></div>
+                                    <span class="c-product__name-value-back">В наличии</span>
+                                </div>
+                                <button class="button button--product" type="submit">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 c-product__wrapp">
+                        <div class="c-product">
+                            <div class="c-product__more-front"><span
+                                    class="c-product__more-title c-product__more-title--top">Более</span><span
+                                    class="c-product__more-count">456</span><span
+                                    class="c-product__more-title">товаров</span>
+                                <svg class="icon icon-right-arrow c-product__more-arrow">
+                                    <use xlink:href="img/sprite/sprite.svg#right-arrow"></use>
+                                </svg>
+                                <span class="c-product__more-text">еще  запчасти</span>
+                                <div class="c-product__bottom-bore">
+                                    <button class="button button--product button--product--sm" type="submit">Каталог
+                                        запчастей
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Banner-->
+        <div class="c-banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-8 c-banner__item-wrap">
+                        <div class="c-banner__item c-banner__item--lg"
+                             style="background-image: url('img/banner-1.png')"><img class="c-banner__img"
+                                                                                    src="img/refrigerator.png"
+                                                                                    alt="alt">
+                            <h2 class="c-banner__caption">ПАРТНЕРСКАЯ ПРОГРАММА</h2>
+                            <p class="c-banner__subcaption">для мастеров
+                                <svg class="icon icon-right-arrow-white c-banner__right-arrow">
+                                    <use xlink:href="img/sprite/sprite.svg#right-arrow-white"></use>
+                                </svg>
+                            </p>
+                            <a class="c-banner__btn" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 hidden-sm-down c-banner__item-wrap"><a
+                            class="c-banner__item c-banner__item--sm" href="#"
+                            style="background-image: url('img/banner-2.png')"><span class="c-banner__brand">Запчасти для<br>холодильник Атлант</span><span
+                            class="c-banner__novelty"><span class="c-banner__novelty-text">Новинки</span>
+                        <svg class="icon icon-right-arrow-white c-banner__right-arrow c-banner__right-arrow--novelty">
+                          <use xlink:href="img/sprite/sprite.svg#right-arrow-white"></use>
+                        </svg></span></a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<!--Footer-->
+<footer class="c-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3"><a class="c-footer__logo" href="#"><img class="c-footer__logo-img"
+                                                                          src="img/logo-footer.png" alt="alt"></a></div>
+            <div class="col-sm-9 c-footer__item-wrap">
+                <div class="c-footer__navigation"><a class="c-footer__navigation-item" href="#">О компании</a><a
+                        class="c-footer__navigation-item" href="#">Каталог</a><a class="c-footer__navigation-item"
+                                                                                 href="#">Гарантия</a><a
+                        class="c-footer__navigation-item" href="#">Доставка и оплата</a></div>
+                <div><a class="c-footer__link" href="#">Политика конфиденциальности</a><a class="c-footer__link"
+                                                                                          href="#">Пользовательское
+                    соглашение</a></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="c-footer__copyright"><a class="c-footer__link c-footer__link--copyright" href="#">Сайт
+                разработан веб-студией CREON</a></div>
+        </div>
+    </div>
+</footer>
+<!--Scripts-->
+<!--Modal-->
+<div class="c-modal__overlay">
+    <div class="c-modal" id="feedback">
+        <h2 class="c-modal__caption">Оставьте заявку</h2>
+        <h3 class="c-modal__sub-caption">Менеджер перезвонит и ответит на все вопросы</h3>
+        <form class="c-modal__form" action="#" method="post">
+            <input class="main-input main-input--plc-black main-input--modal required" type="text" placeholder="Имя"
+                   required>
+            <input class="main-input main-input--plc-black main-input--modal required js-masked" type="text"
+                   placeholder="Телефон" required>
+            <textarea class="main-input main-input--plc-black main-input--modal required c-modal__textarea"
+                      placeholder="Комментарий о детали" required></textarea>
+            <div class="c-profile__input-item c-modal__item">
+                <div class="main-checkbox">
+                    <input class="main-checkbox__check" id="checkbox" type="checkbox" style="display: none">
+                    <label class="main-checkbox__label" for="checkbox"><span
+                            class="main-checkbox__item main-checkbox__item--icon">
+                  <svg class="main-checkbox__svg" width="12px" height="10px" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span><span class="main-checkbox__label-text c-modal__label-text">Отправляя сообщение, я принимаю<a
+                            class="main-checkbox__label-link" href="">пользовательское соглашение</a>и подтверждаю, что ознакомлен и согласен с<a
+                            class="main-checkbox__label-link"
+                            href="#">политикой конфиденциальности</a>данного сайта</span></label>
+                </div>
+            </div>
+            <div class="c-modal__btn">
+                <button class="button button--md button--modal send" type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/scripts.min.js"></script>
+<!--script(src="js/common.js")-->
+</body>
+</html>
