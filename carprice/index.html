@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<!--include Head-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>CarPrice</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <style>
+    @font-face{font-family:Ubuntu;font-weight:400;font-style:normal;src:url(fonts/Ubuntu/UbuntuRegular/UbuntuRegular.eot);src:url(fonts/Ubuntu/UbuntuRegular/UbuntuRegular.eot?#iefix) format("embedded-opentype"),url(fonts/Ubuntu/UbuntuRegular/UbuntuRegular.woff) format("woff"),url(fonts/Ubuntu/UbuntuRegular/UbuntuRegular.ttf) format("truetype")}@font-face{font-family:UbuntuBold;font-weight:400;font-style:normal;src:url(fonts/Ubuntu/UbuntuBold/UbuntuBold.eot);src:url(fonts/Ubuntu/UbuntuBold/UbuntuBold.eot?#iefix) format("embedded-opentype"),url(fonts/Ubuntu/UbuntuBold/UbuntuBold.woff) format("woff"),url(fonts/Ubuntu/UbuntuBold/UbuntuBold.ttf) format("truetype")}@font-face{font-family:UbuntuMedium;font-weight:400;font-style:normal;src:url(fonts/Ubuntu/UbuntuMedium/UbuntuMedium.eot);src:url(fonts/Ubuntu/UbuntuMedium/UbuntuMedium.eot?#iefix) format("embedded-opentype"),url(fonts/Ubuntu/UbuntuMedium/UbuntuMedium.woff) format("woff"),url(fonts/Ubuntu/UbuntuMedium/UbuntuMedium.ttf) format("truetype")}
+    .icon{display:inline-block;width:1em;height:1em;fill:currentColor}.icon-arrow-left{font-size:49.2rem;width:1em}.icon-arrow-right{font-size:49.2rem;width:1em}.icon-arrow_down{font-size:56rem;width:1.71429em}.icon-check{font-size:1.7rem;width:1.35294em}.icon-close{font-size:3.111rem;width:1em}.icon-coffee-cup{font-size:51.2rem;width:1em}.icon-cross{font-size:1.6rem;width:1em}.icon-hand{font-size:51.2rem;width:1em}.icon-location{font-size:2.9rem;width:.7931em}.icon-logo{font-size:2.8rem;width:6.75em}.icon-play{font-size:2.4rem;width:.875em}.icon-shield{font-size:51.2rem;width:1em}.icon-stopwatch{font-size:6rem;width:1em}.button{display:inline-block;font:500 12px UbuntuMedium,sans-serif;letter-spacing:.14px;padding:9px 10px 11px;background-color:#00a550;color:#fff;border:none;-webkit-box-shadow:2px 3px 5px 1px rgba(0,0,0,.24);box-shadow:2px 3px 5px 1px rgba(0,0,0,.24);-webkit-border-radius:2px;border-radius:2px;-webkit-transition:all .35s ease;-o-transition:all .35s ease;transition:all .35s ease}.button:focus,.button:hover{background-color:#00a862;color:#fff}.button:active{background-color:#0a8646;-webkit-box-shadow:0 13px 19px 1px rgba(0,0,0,.24);box-shadow:0 13px 19px 1px rgba(0,0,0,.24);color:#fff}@media only screen and (min-width:576px){.button{font-size:14px;padding:9px 18px 11px}}::-webkit-input-placeholder{color:#929292;font-family:Ubuntu,sans-serif}::-moz-placeholder{color:#929292;font-family:Ubuntu,sans-serif}:-ms-input-placeholder{color:#929292;font-family:Ubuntu,sans-serif}::-ms-input-placeholder{color:#929292;font-family:Ubuntu,sans-serif}::placeholder{color:#929292;font-family:Ubuntu,sans-serif}::-moz-selection{background-color:#00a550;color:#fff}::selection{background-color:#00a550;color:#fff}body{font-size:16px;position:relative;line-height:1.3333;font-family:Ubuntu,sans-serif;color:#000;margin:0}body *{outline:0;-webkit-box-sizing:border-box;box-sizing:border-box}body :focus,body :hover{outline:0}body.hidden{overflow:hidden}img{vertical-align:middle;max-width:100%}input,textarea{border:#666 1px solid;outline:0}input:focus:required:invalid,textarea:focus:required:invalid{border-color:#f62845}input:required:valid,textarea:required:valid{border-color:green}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.main-input{background-color:#fff;padding:19px 25px 17px;border:1px solid #f5f5f5;-webkit-box-shadow:none;box-shadow:none;display:block;width:100%;margin-bottom:23px;-webkit-transition:all .35s ease;-o-transition:all .35s ease;transition:all .35s ease}a{text-decoration:none;color:#000;-webkit-transition:all .35s ease;-o-transition:all .35s ease;transition:all .35s ease}a:focus,a:hover{text-decoration:none;color:#00a862}li,ul{list-style-type:none;margin:0;padding:0}h1,h2,h3,h4,h5,h6,p{margin:0}p{color:rgba(0,0,0,.64)}.g-container{width:100%;max-width:1140px;margin:0 auto;padding:0 15px}.g-row{-webkit-box-sizing:border-box;box-sizing:border-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:flex;-ms-flex:0 1 auto;-webkit-box-flex:0;-webkit-flex:0 1 auto;flex:0 1 auto;-ms-flex-direction:row;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap;margin:0 -15px}.nicescroll-rails{background-color:#f5f5f5}.c-header__top-line{padding:10px 0}.c-header__row{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.c-header__logo{padding:0 15px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;-webkit-flex:0 0 auto;flex:0 0 auto;line-height:0}.c-header__logo-img{width:100px}@media only screen and (min-width:480px){.c-header__logo-img{width:130px}}@media only screen and (min-width:576px){.c-header__logo-img{width:189px}}.c-header__logo-desc{font:700 12px/1 UbuntuBold,sans-serif}@media only screen and (max-width:768px){.c-header__logo-desc{display:none}}.c-header__right{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding:0 15px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;-webkit-flex:0 0 auto;flex:0 0 auto}.c-header__burger-wrapp{padding:0 15px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;-webkit-flex:0 0 auto;flex:0 0 auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-right:0}@media screen and (min-width:1025px){.c-header__burger-wrapp{display:none}}.c-header__burger{position:relative;width:30px;height:22px;-webkit-transition-duration:.5s;-o-transition-duration:.5s;transition-duration:.5s;z-index:100}.c-header__burger:hover{cursor:pointer}.c-header__burger--icon{-webkit-transition-duration:.5s;-o-transition-duration:.5s;transition-duration:.5s;position:absolute;height:2px;width:30px;top:50%;background-color:#000}.c-header__burger--icon:before{-webkit-transition-duration:.5s;-o-transition-duration:.5s;transition-duration:.5s;position:absolute;width:30px;height:2px;background-color:#000;content:"";top:-8px}.c-header__burger--icon:after{-webkit-transition-duration:.5s;-o-transition-duration:.5s;transition-duration:.5s;position:absolute;width:30px;height:2px;background-color:#000;content:"";top:8px}.c-header__burger.active .c-header__burger--icon{-webkit-transition-duration:.5s;-o-transition-duration:.5s;transition-duration:.5s;background:0 0}.c-header__burger.active .c-header__burger--icon:before{-webkit-transform:rotateZ(45deg) scaleX(1.25) translate(4px,5px);-ms-transform:rotate(45deg) scaleX(1.25) translate(4px,5px);transform:rotateZ(45deg) scaleX(1.25) translate(4px,5px);background-color:#fff}@media only screen and (max-width:1024px){.c-header__burger.active .c-header__burger--icon:before{background-color:#fff}}.c-header__burger.active .c-header__burger--icon:after{-webkit-transform:rotateZ(-45deg) scaleX(1.25) translate(5px,-6px);-ms-transform:rotate(-45deg) scaleX(1.25) translate(5px,-6px);transform:rotateZ(-45deg) scaleX(1.25) translate(5px,-6px);background-color:#fff}@media only screen and (max-width:1024px){.c-header__burger.active .c-header__burger--icon:after{background-color:#fff}}@media only screen and (max-width:768px){.c-header__btn{display:none}}.c-location{padding:12px 0;position:relative}@media only screen and (min-width:576px){.c-location{padding:12px 20px}}@media only screen and (min-width:769px){.c-location{margin-right:10px}}@media only screen and (min-width:1025px){.c-location{padding:12px 35px}}@media only screen and (min-width:1025px){.c-location{min-width:225px}}.c-location.active{background-color:#f5f5f5}.c-location.active .c-location__arrow-icn{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.c-location__select{color:#00a550;font-size:16px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}@media only screen and (min-width:576px){.c-location__select{font-size:18px}}.c-location__name{margin:0 10px}.c-location__loc-icn{font-size:20px}@media only screen and (min-width:576px){.c-location__loc-icn{font-size:29px}}.c-location__arrow-icn{font-size:10px;color:#00a550;margin-top:6px;-webkit-transition:all .35s ease;-o-transition:all .35s ease;transition:all .35s ease}@media only screen and (min-width:576px){.c-location__arrow-icn{font-size:12px}}.c-location__list-wrap{min-width:225px;background-color:#fff;padding:10px;position:absolute;right:0;top:100%;opacity:0;visibility:hidden;z-index:2;-webkit-transform:scale(.5);-ms-transform:scale(.5);transform:scale(.5);-webkit-transition:all .35s ease;-o-transition:all .35s ease;transition:all .35s ease;-webkit-box-shadow:0 16px 46px 0 rgba(0,0,0,.23);box-shadow:0 16px 46px 0 rgba(0,0,0,.23);-webkit-border-radius:2px;border-radius:2px}@media screen and (min-width:1025px){.c-location__list-wrap{left:0;right:initial}}.c-location__list-wrap.active{opacity:1;visibility:visible;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}.c-location__list{padding:10px;overflow-y:auto;max-height:310px}.c-location__list-item{margin-bottom:15px;padding:0 5px 0 0}@media screen and (min-width:576px){.c-location__list-item{font-size:18px}}.c-location__list-item:last-child{margin-bottom:0}.c-location__list-child{padding-left:10px}.c-location__list-child-item{color:rgba(0,0,0,.64)}.c-navbar-wrap{background-color:#f5f5f5}@media only screen and (max-width:1024px){.c-navbar-wrap{position:fixed;left:-50%;top:0;right:0;bottom:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;background-color:#00a550;opacity:0;visibility:hidden;-webkit-transform:scale(.5);-ms-transform:scale(.5);transform:scale(.5);-webkit-transition:all .35s ease;-o-transition:all .35s ease;transition:all .35s ease}.c-navbar-wrap.active{opacity:1;visibility:visible;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);left:0}}.c-navbar{-webkit-box-sizing:border-box;box-sizing:border-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:flex;-ms-flex:0 1 auto;-webkit-box-flex:0;-webkit-flex:0 1 auto;flex:0 1 auto;-ms-flex-direction:row;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;width:100%;max-width:700px;margin:0 auto}.c-navbar__item{position:relative;font-size:18px;display:block;padding:0 15px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;-webkit-flex:0 0 auto;flex:0 0 auto;padding:12px 0 14px;opacity:.7}@media only screen and (max-width:1024px){.c-navbar__item{color:#fff;opacity:1}}.c-navbar__item:before{content:'';position:absolute;left:50%;right:0;bottom:0;width:0;background-color:#00a550;height:3px;-webkit-transition:all .35s ease;-o-transition:all .35s ease;transition:all .35s ease}@media only screen and (max-width:1024px){.c-navbar__item:before{background-color:#fff}}.c-navbar__item:active,.c-navbar__item:focus,.c-navbar__item:hover{opacity:1;color:#000}@media only screen and (max-width:1024px){.c-navbar__item:active,.c-navbar__item:focus,.c-navbar__item:hover{color:#fff}}.c-navbar__item:active:before,.c-navbar__item:focus:before,.c-navbar__item:hover:before{left:0;width:100%}@media only screen and (max-width:1024px){.c-navbar{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}}.c-valuation__bg-img{background:#fff no-repeat right;padding:40px 0 210px;width:100%;-webkit-background-size:300px 300px;background-size:300px;background-position:bottom center}@media only screen and (min-width:576px){.c-valuation__bg-img{padding:100px 0 180px;-webkit-background-size:450px 450px;background-size:450px;background-position:bottom right}}@media only screen and (min-width:769px){.c-valuation__bg-img{-webkit-background-size:auto;background-position:bottom right;-webkit-background-size:520px 520px;background-size:520px}}@media only screen and (min-width:1025px){.c-valuation__bg-img{padding:130px 0;-webkit-background-size:auto auto;background-size:auto}}.c-valuation__apparition{padding:0 15px}.c-valuation__caption{font:18px UbuntuMedium,sans-serif;margin-bottom:20px}@media only screen and (min-width:576px){.c-valuation__caption{font-size:28px}}@media only screen and (min-width:1025px){.c-valuation__caption{font-size:32px}}.c-valuation__content{border-left:2px solid #00a550;padding-left:10px;margin-bottom:25px}@media only screen and (min-width:576px){.c-valuation__content{margin-bottom:50px;max-width:470px}}@media only screen and (min-width:1025px){.c-valuation__content{max-width:510px}}.c-valuation__subcaption{font-size:12px;font-weight:400;letter-spacing:.24px;margin-bottom:10px}@media only screen and (min-width:576px){.c-valuation__subcaption{font-size:20px}}@media only screen and (min-width:1025px){.c-valuation__subcaption{font-size:24px}}.c-valuation__desc{font-size:12px;font-weight:400}@media only screen and (min-width:1025px){.c-valuation__desc{font-size:14px}}
+  </style>
+</head>
+<body>
+<!--Sprite-->
+<!--Header-->
+<header class="c-header">
+  <div class="c-header__top-line">
+    <div class="g-container">
+      <div class="g-row c-header__row"><a class="c-header__logo" href="/">
+        <svg class="icon icon-logo c-header__logo-img">
+          <use xlink:href="img/sprite/sprite.svg#logo"></use>
+        </svg>
+        <p class="c-header__logo-desc">Сервис №1 по продаже автомобилей с пробегом</p></a>
+        <div class="c-header__right">
+          <div class="c-location"><span class="c-location__select">
+                      <svg class="icon icon-location c-location__loc-icn">
+                        <use xlink:href="img/sprite/sprite.svg#location"></use>
+                      </svg><span class="c-location__name">Москва</span>
+                      <svg class="icon icon-arrow_down c-location__arrow-icn">
+                        <use xlink:href="img/sprite/sprite.svg#arrow_down"></use>
+                      </svg></span>
+            <div class="c-location__list-wrap">
+              <ul class="c-location__list js-scroll">
+                <li class="c-location__list-item"><a class="c-location__list-item" href="">Москва</a>
+                  <ul class="c-location__list-child">
+                    <li class="c-location__list-item"><a class="c-location__list-child-item" href="">МО</a></li>
+                  </ul>
+                </li>
+                <li class="c-location__list-item"><a class="c-location__list-item" href="">Санкт-Петербург</a>
+                  <ul class="c-location__list-child">
+                    <li class="c-location__list-item"><a class="c-location__list-child-item" href="">Петербургская область</a></li>
+                  </ul>
+                </li>
+                <li class="c-location__list-item"><a class="c-location__list-item" href="">Абакан</a></li>
+                <li class="c-location__list-item"><a class="c-location__list-item" href="">Белгород</a></li>
+                <li class="c-location__list-item"><a class="c-location__list-item" href="">Великий Новгород</a></li>
+                <li class="c-location__list-item"><a class="c-location__list-item" href="">Владимир</a></li>
+                <li class="c-location__list-item"><a class="c-location__list-item" href="">Волгоград</a></li>
+                <li class="c-location__list-item"><a class="c-location__list-item" href="">Великий Новгород2</a></li>
+                <li class="c-location__list-item"><a class="c-location__list-item" href="">Великий Новгород3</a></li>
+                <li class="c-location__list-item"><a class="c-location__list-item" href="">Великий Новгород2</a></li>
+                <li class="c-location__list-item"><a class="c-location__list-item" href="">Великий Новгород3</a></li>
+              </ul>
+            </div>
+          </div><a class="button c-header__btn" href="#">Оценить авто</a>
+          <!--Burger-->
+          <div class="c-header__burger-wrapp">
+            <div class="c-header__burger">
+              <div class="c-header__burger--icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-navbar-wrap">
+    <div class="g-container">
+      <div class="g-row">
+        <nav class="c-navbar"><a class="c-navbar__item" href="#">Оценка авто</a><a class="c-navbar__item" href="#">Советы</a><a class="c-navbar__item" href="#">Отзывы</a><a class="c-navbar__item" href="#">Вопросы и ответы</a></nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!--Valuation-->
+<section class="c-valuation">
+  <div class="g-container">
+    <div class="g-row">
+      <div class="c-valuation__bg-img" style="background-image: url('img/valuation.png')">
+        <div class="c-valuation__apparition">
+          <h1 class="c-valuation__caption">Как за 2 часа выгодно продать авто в Москве</h1>
+          <div class="c-valuation__content">
+            <h2 class="c-valuation__subcaption">Гарантированно купим любой автомобиль комфортно и безопасно</h2>
+            <h3 class="c-valuation__desc">Вся сумма выплачивается наличными или переводом на банковскую карту сразу после принятия решения о продаже автомобиля</h3>
+          </div><a class="button" href="#">Продать автомобиль</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Features-->
+<section class="c-features">
+  <div class="g-container">
+    <div class="g-row">
+      <div class="c-features__item">
+        <svg class="icon icon-stopwatch c-features__icn">
+          <use xlink:href="img/sprite/sprite.svg#stopwatch"></use>
+        </svg>
+        <h3 class="c-features__caption">Быстро</h3>
+        <p class="c-features__desc">Техническая диагностика, онлайн-аукцион, оформление документов и выдача денег за 2 часа.</p>
+      </div>
+      <div class="c-features__item">
+        <svg class="icon icon-hand c-features__icn">
+          <use xlink:href="img/sprite/sprite.svg#hand"></use>
+        </svg>
+        <h3 class="c-features__caption">Выгодно</h3>
+        <p class="c-features__desc">Цена на 20% выше, чем в автосалонах по программе Trade-In, благодаря конкуренции 27 000 аккредитованных автодилеров.</p>
+      </div>
+      <div class="c-features__item">
+        <svg class="icon icon-shield c-features__icn">
+          <use xlink:href="img/sprite/sprite.svg#shield"></use>
+        </svg>
+        <h3 class="c-features__caption">Безопасно</h3>
+        <p class="c-features__desc">CarPrice гарантирует юридическую «чистоту» сделки. Заключается договор и выплачивается  вся сумма без каких-либо комиссий и удержаний.</p>
+      </div>
+      <div class="c-features__item">
+        <svg class="icon icon-coffee-cup c-features__icn">
+          <use xlink:href="img/sprite/sprite.svg#coffee-cup"></use>
+        </svg>
+        <h3 class="c-features__caption">Комфортно</h3>
+        <p class="c-features__desc">Приезжайте в удобное время в ближайший филиал Карпрайса, где на мягком диване с кофе будете наблюдать за продажей.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Steps-->
+<section class="c-steps-wrap">
+  <div class="g-container">
+    <div class="g-row">
+      <div class="c-steps__col c-steps__col--md-4">
+        <h2 class="c-steps__caption">Несколько простых шагов, которые приведут тебя к цели</h2>
+        <ol class="c-step">
+          <li class="c-step__item active"><span class="c-step__title" data-main="a">Отправь заявку</span>
+            <div class="c-step__content">
+              <p class="c-step__desc">Узнай стоимость авто, заполнив<br>простую форму, и дождись<br>звонка менеджера.</p><a class="button c-step__btn" href="#">Отправить</a>
+            </div>
+          </li>
+          <li class="c-step__item"><span class="c-step__title" data-main="b">Пройди бесплатную диагностику</span>
+            <div class="c-step__content">
+              <p class="c-step__desc">Узнай стоимость авто, заполнив простую форму, и дождись звонка менеджера.</p>
+            </div>
+          </li>
+          <li class="c-step__item"><span class="c-step__title" data-main="c">Участвуй в онлайн-аукционе</span>
+            <div class="c-step__content">
+              <p class="c-step__desc">Узнай стоимость авто, заполнив простую форму, и дождись звонка</p>
+            </div>
+          </li>
+          <li class="c-step__item"><span class="c-step__title" data-main="d">Получи деньги</span>
+            <div class="c-step__content">
+              <p class="c-step__desc">Узнай стоимость авто, заполнив простую форму, и дождись звонка</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="c-steps__col c-steps__col--md-6">
+        <figure class="c-steps__figure active" data-child="a"><img src="img/step-1.jpg" alt="step"></figure>
+        <figure class="c-steps__figure" data-child="b"><img src="img/step-2.jpg" alt="step"></figure>
+        <figure class="c-steps__figure" data-child="c"><img src="img/step-3.jpg" alt="step"></figure>
+        <figure class="c-steps__figure" data-child="d"><img src="img/step-4.jpg" alt="step"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Banner-->
+<section class="c-banner c-banner--black" style="background-image: url('img/register.jpg')">
+  <div class="g-container">
+    <div class="g-row">
+      <div class="c-banner__content">
+        <h2 class="c-banner__caption">Запишись на продажу автомобиля.<br>Если цена не устроит — ничего не потеряешь</h2><a class="button" href="#">Записаться</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Comparison-->
+<section class="c-comparison">
+  <div class="g-container">
+    <div class="g-row">
+      <div class="c-comparison__item c-comparison__item--carprice">
+        <div class="c-comparison__choice c-comparison__choice--carprice">
+          <div class="c-comparison__caption c-comparison__caption--carprice">
+            <h2 class="c-comparison__title c-comparison__title--white">CarPrice</h2>
+          </div>
+          <ul class="c-comparison__list">
+            <li class="c-comparison__list-item">
+              <!--+icon('close','c-comparison__icn c-comparison__icn--not-receive')-->
+              <svg class="icon icon-check c-comparison__icn c-comparison__icn--chek">
+                <use xlink:href="img/sprite/sprite.svg#check"></use>
+              </svg>Быстро
+            </li>
+            <li class="c-comparison__list-item">
+              <svg class="icon icon-check c-comparison__icn c-comparison__icn--chek">
+                <use xlink:href="img/sprite/sprite.svg#check"></use>
+              </svg>Безопасно
+            </li>
+            <li class="c-comparison__list-item">
+              <svg class="icon icon-check c-comparison__icn c-comparison__icn--chek">
+                <use xlink:href="img/sprite/sprite.svg#check"></use>
+              </svg>Деньги сразу
+            </li>
+            <li class="c-comparison__list-item">
+              <svg class="icon icon-check c-comparison__icn c-comparison__icn--chek">
+                <use xlink:href="img/sprite/sprite.svg#check"></use>
+              </svg>Комфортно
+            </li>
+            <li class="c-comparison__list-item">
+              <svg class="icon icon-check c-comparison__icn c-comparison__icn--chek">
+                <use xlink:href="img/sprite/sprite.svg#check"></use>
+              </svg>Выгодно
+            </li>
+          </ul><a class="button c-comparison__btn" href="#">Выбрать</a>
+        </div>
+      </div>
+      <div class="c-comparison__item">
+        <div class="c-comparison__choice">
+          <div class="c-comparison__caption">
+            <h3 class="c-comparison__title">Автосалоны</h3>
+          </div>
+          <ul class="c-comparison__list">
+            <li class="c-comparison__list-item">
+              <svg class="icon icon-check c-comparison__icn c-comparison__icn--chek">
+                <use xlink:href="img/sprite/sprite.svg#check"></use>
+              </svg>Быстро
+            </li>
+            <li class="c-comparison__list-item">
+              <svg class="icon icon-check c-comparison__icn c-comparison__icn--chek">
+                <use xlink:href="img/sprite/sprite.svg#check"></use>
+              </svg>Безопасно
+            </li>
+            <li class="c-comparison__list-item c-comparison__list-item--not-receiv">
+              <svg class="icon icon-cross c-comparison__icn">
+                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+              </svg>Деньги сразу
+            </li>
+            <li class="c-comparison__list-item c-comparison__list-item--not-receiv">
+              <svg class="icon icon-cross c-comparison__icn">
+                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+              </svg>Комфортно
+            </li>
+            <li class="c-comparison__list-item c-comparison__list-item--not-receiv">
+              <svg class="icon icon-cross c-comparison__icn">
+                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+              </svg>Выгодно
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-comparison__item">
+        <div class="c-comparison__choice">
+          <div class="c-comparison__caption">
+            <h3 class="c-comparison__title">Перекупщики</h3>
+          </div>
+          <ul class="c-comparison__list">
+            <li class="c-comparison__list-item">
+              <svg class="icon icon-check c-comparison__icn c-comparison__icn--chek">
+                <use xlink:href="img/sprite/sprite.svg#check"></use>
+              </svg>Быстро
+            </li>
+            <li class="c-comparison__list-item c-comparison__list-item--not-receiv">
+              <svg class="icon icon-cross c-comparison__icn">
+                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+              </svg>Безопасно
+            </li>
+            <li class="c-comparison__list-item">
+              <svg class="icon icon-check c-comparison__icn c-comparison__icn--chek">
+                <use xlink:href="img/sprite/sprite.svg#check"></use>
+              </svg>Деньги сразу
+            </li>
+            <li class="c-comparison__list-item c-comparison__list-item--not-receiv">
+              <svg class="icon icon-cross c-comparison__icn">
+                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+              </svg>Комфортно
+            </li>
+            <li class="c-comparison__list-item c-comparison__list-item--not-receiv">
+              <svg class="icon icon-cross c-comparison__icn">
+                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+              </svg>Выгодно
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-comparison__item">
+        <div class="c-comparison__choice">
+          <div class="c-comparison__caption">
+            <h3 class="c-comparison__title">Объявления</h3>
+          </div>
+          <ul class="c-comparison__list">
+            <li class="c-comparison__list-item c-comparison__list-item--not-receiv">
+              <svg class="icon icon-cross c-comparison__icn">
+                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+              </svg>Быстро
+            </li>
+            <li class="c-comparison__list-item c-comparison__list-item--not-receiv">
+              <svg class="icon icon-cross c-comparison__icn">
+                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+              </svg>Безопасно
+            </li>
+            <li class="c-comparison__list-item c-comparison__list-item--not-receiv">
+              <svg class="icon icon-cross c-comparison__icn">
+                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+              </svg>Деньги сразу
+            </li>
+            <li class="c-comparison__list-item c-comparison__list-item--not-receiv">
+              <svg class="icon icon-cross c-comparison__icn">
+                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+              </svg>Комфортно
+            </li>
+            <li class="c-comparison__list-item">
+              <svg class="icon icon-check c-comparison__icn c-comparison__icn--chek">
+                <use xlink:href="img/sprite/sprite.svg#check"></use>
+              </svg>Выгодно
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Reviews-->
+<section class="c-reviews-wrap">
+  <div class="g-container">
+    <div class="g-row">
+      <h2 class="c-reviews-caption">Отзывы тех, кто реально продал</h2>
+    </div>
+    <div class="g-row">
+      <div class="carousel">
+        <div class="c-reviews">
+          <div class="c-reviews__item"><a class="c-reviews__thumb js-popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img class="c-reviews__img" src="img/reviews/item-1.png" alt="alt"></a></div>
+          <div class="c-reviews__item"><a class="c-reviews__thumb js-popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img class="c-reviews__img" src="img/reviews/item-2.png" alt="alt"></a></div>
+          <div class="c-reviews__item"><a class="c-reviews__thumb js-popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img class="c-reviews__img" src="img/reviews/item-3.png" alt="alt"></a></div>
+          <div class="c-reviews__item"><a class="c-reviews__thumb js-popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img class="c-reviews__img" src="img/reviews/item-1.png" alt="alt"></a></div>
+          <div class="c-reviews__item"><a class="c-reviews__thumb js-popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img class="c-reviews__img" src="img/reviews/item-2.png" alt="alt"></a></div>
+          <div class="c-reviews__item"><a class="c-reviews__thumb js-popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img class="c-reviews__img" src="img/reviews/item-3.png" alt="alt"></a></div>
+        </div>
+        <button class="carousel__btn carousel__btn--prev">
+          <svg class="icon icon-arrow-left carousel__btn-icn">
+            <use xlink:href="img/sprite/sprite.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button class="carousel__btn carousel__btn--next">
+          <svg class="icon icon-arrow-right carousel__btn-icn">
+            <use xlink:href="img/sprite/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="c-reviews-more"><a class="c-reviews-more__link" href="#">ВСЕ ОТЗЫВЫ</a></div>
+    </div>
+  </div>
+</section>
+<!--Banner-->
+<section class="c-banner c-banner--contain" style="background-image: url('img/banner.png')">
+  <div class="g-container">
+    <div class="g-row">
+      <div class="c-banner__content">
+        <h2 class="c-banner__caption">Заполни простую форму и узнай<br>цену своего авто</h2><a class="button" href="#">Заполнить</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Brands-->
+<section class="c-brands">
+  <div class="g-container">
+    <div class="g-row">
+      <div class="c-brands__content"><img src="img/brands.png" alt="brand"></div>
+    </div>
+  </div>
+</section>
+<!--Questions-->
+<section class="c-questions-wrap">
+  <div class="g-container c-questions-wrap__container">
+    <h2 class="c-questions-caption">Остались вопросы?</h2>
+    <div class="g-row">
+      <div class="c-questions">
+        <div class="c-questions__item"><div class="c-questions__btn">
+                <h2 class="c-questions__title">Но я же могу получить более выгодную цену в Trade-In</h2></div>
+          <div class="c-questions__content">
+            <p class="c-questions__text">Негативные отзывы, как правило, связаны с тем, что клиент не получил ту сумму, на которую рассчитывал. Специфика аукциона заключается в том, что максимальная ставка зависит от состояния автомобиля и его актуальности для дилеров. За 2 года мы помогли продать более 50 000 автомобилей.</p>
+            <p class="c-questions__text">Наша статистика говорит о том, что около 46% всех автомобилей, выставленных на аукцион, успешно продается. Кроме того, Вы можете проходить процедуру аукциона неограниченное количество раз, ведь все услуги компании для Вас абсолютно бесплатны.</p>
+          </div>
+        </div>
+        <div class="c-questions__item"><div class="c-questions__btn">
+                <h2 class="c-questions__title">Но можно же немного подождать и продать дороже</h2></div>
+          <div class="c-questions__content">
+            <p class="c-questions__text">Негативные отзывы, как правило, связаны с тем, что клиент не получил ту сумму, на которую рассчитывал. Специфика аукциона заключается в том, что максимальная ставка зависит от состояния автомобиля и его актуальности для дилеров. За 2 года мы помогли продать более 50 000 автомобилей.</p>
+            <p class="c-questions__text">Наша статистика говорит о том, что около 46% всех автомобилей</p>
+          </div>
+        </div>
+        <div class="c-questions__item"><div class="c-questions__btn">
+                <h2 class="c-questions__title">Я могу продать на вторичном рынке и получить более высокую цену</h2></div>
+          <div class="c-questions__content">
+            <p class="c-questions__text">Негативные отзывы, как правило, связаны с тем, что клиент не получил ту сумму, на которую рассчитывал. Специфика аукциона заключается в том, что максимальная ставка зависит от состояния автомобиля и его актуальности для дилеров. За 2 года мы помогли продать более 50 000 автомобилей.</p>
+            <p class="c-questions__text">Наша статистика говорит о том, что около 46% всех автомобилей</p>
+          </div>
+        </div>
+        <div class="c-questions__item"><div class="c-questions__btn">
+                <h2 class="c-questions__title">Я находил негативные отзывы от тех, кто прошел аукцион</h2></div>
+          <div class="c-questions__content">
+            <p class="c-questions__text">Негативные отзывы, как правило, связаны с тем, что клиент не получил ту сумму, на которую рассчитывал. Специфика аукциона заключается в том, что максимальная ставка зависит от состояния автомобиля и его актуальности для дилеров. За 2 года мы помогли продать более 50 000 автомобилей.</p>
+            <p class="c-questions__text">Наша статистика говорит о том, что около 46% всех автомобилей</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Footer-->
+<footer class="c-footer">
+  <div class="g-container">
+    <hr class="c-footer__border">
+    <div class="g-row c-footer__row">
+      <div class="c-footer__item c-footer__item--md-9">
+        <ul class="c-footer__list">
+          <li class="c-footer__list-item"><a class="c-footer__link" href="#">Оценка авто</a></li>
+          <li class="c-footer__list-item"><a class="c-footer__link" href="#">Советы</a></li>
+          <li class="c-footer__list-item"><a class="c-footer__link" href="#">Отзывы</a></li>
+          <li class="c-footer__list-item"><a class="c-footer__link" href="#">Вопросы и ответы</a></li>
+        </ul>
+        <p class="c-footer__copyright">© 2014-2017 ООО «Селаникар»,<br>официальный сайт, все права защищены</p>
+      </div>
+      <div class="c-footer__item c-footer__item--md-3"><a class="callback" href="#">ОБРАТНАЯ СВЯЗЬ</a></div>
+    </div>
+  </div>
+</footer>
+<!--Scripts-->
+<!--Modal-->
+<div class="c-modal__overlay">
+  <div class="c-modal" id="rate">
+    <div class="c-modal__close">
+      <svg class="icon icon-close c-modal__close-icn">
+        <use xlink:href="img/sprite/sprite.svg#close"></use>
+      </svg>
+    </div>
+    <h2 class="c-modal__caption">Оставьте заявку</h2>
+    <h3 class="c-modal__sub-caption">Менеджер перезвонит и ответит на все вопросы</h3>
+    <form class="c-modal__form" action="#" method="post">
+      <input class="main-input main-input--plc-black main-input--modal required" type="text" placeholder="Имя" required>
+      <input class="main-input main-input--plc-black main-input--modal required js-masked" type="text" placeholder="Телефон" required>
+      <textarea class="main-input main-input--plc-black main-input--modal required c-modal__textarea" placeholder="Комментарий о детали" required></textarea>
+      <div class="c-profile__input-item c-modal__item">
+        <div class="main-checkbox">
+          <input class="main-checkbox__check" id="checkbox" type="checkbox" style="display: none">
+          <label class="main-checkbox__label" for="checkbox"><span class="main-checkbox__item main-checkbox__item--icon">
+                  <svg class="main-checkbox__svg" width="12px" height="10px" viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span><span class="main-checkbox__label-text c-modal__label-text">Отправляя сообщение, я принимаю<a class="main-checkbox__label-link" href="">пользовательское соглашение</a>и подтверждаю, что ознакомлен и согласен с<a class="main-checkbox__label-link" href="#">политикой конфиденциальности</a>данного сайта</span></label>
+        </div>
+      </div>
+      <div class="c-modal__btn">
+        <button class="button send" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+</body>
+</html>
