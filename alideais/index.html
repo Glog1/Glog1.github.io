@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#ffcc00"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link href="css/styles.min.css" type="text/css" rel="stylesheet"/><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js" data-skip-moving="true"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" data-skip-moving="true"></script><![endif]-->
+    <title>Markup
+    </title>
+  </head>
+  <body>
+    <div class="c-page">
+      <!--HEADER-->
+      <header class="c-header">
+        <div class="c-container">
+          <div class="c-header__top-line"><a class="c-header__link" href="#">Статьи</a><a class="c-header__link" href="#">Как пользоваться</a>
+            <div class="c-header__social">
+              <div class="b-social"><a class="b-social__item" href="#">
+                  <svg class="icon icon-vk e-icon e-icon--light">
+                    <use xlink:href="assets/img/sprite/sprite.svg#vk"></use>
+                  </svg></a><a class="b-social__item" href="#">
+                  <svg class="icon icon-tw e-icon e-icon--light">
+                    <use xlink:href="assets/img/sprite/sprite.svg#tw"></use>
+                  </svg></a><a class="b-social__item" href="#">
+                  <svg class="icon icon-fb e-icon e-icon--light">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fb"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <div class="c-row align-items-center justify-content-between">
+            <div class="c-header__logo"><a class="b-logo" href="#"><img class="b-logo__img js-change-logo-mob" src="assets/img/logo.png" alt="Logo" data-mobile-logo="assets/img/logo-white.png" data-default-logo="assets/img/logo.png"/><span class="b-logo__title">Купоны и скидки AliExpress</span></a></div>
+            <div class="c-header__menu js-mobile-menu">
+              <div class="c-header__navigation">
+                <nav class="b-navigation"><a class="b-navigation__item" href="#">Халява</a><a class="b-navigation__item" href="#">Купоны 99%</a><a class="b-navigation__item" href="#">Что купить?</a><a class="b-navigation__item" href="#">Дешевле $1</a><a class="b-navigation__item" href="#">Товары со скидкой</a><a class="b-navigation__item b-navigation__item--only-mob b-navigation__item--tdu b-navigation__item--mb-30" href="#">Все категории</a><a class="b-navigation__item b-navigation__item--only-mob" href="#">Статьи</a><a class="e-button e-button--transp" href="#">Все купоны</a></nav>
+              </div>
+            </div>
+            <div class="c-header__burger">
+              <div class="e-burger js-burger">
+                <svg class="icon icon-ellipsis e-icon e-burger__icon">
+                  <use xlink:href="assets/img/sprite/sprite.svg#ellipsis"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="c-main">
+        <div class="c-main-before"><span class="c-main-before__xxl"></span><span class="c-main-before__home-line"></span></div>
+        <!--Picked coupons-->
+        <section class="b-picked-coupons b-picked-coupons--desctop">
+          <div class="c-row align-items-center">
+            <div class="b-picked-coupons__desc">
+              <h1 class="h3">Посмотри, это интересно</h1>
+              <p class="b-picked-coupons__desc-text">Здесь мы собрали тематические подборки. Только лучшие купоны и скидки на любой случай.</p>
+              <div class="b-buton b-buton--right"><a class="e-button e-button--transp e-button--dark" href="#">Смотреть все</a></div>
+            </div>
+            <div class="b-picked-coupons__slider">
+              <div class="b-slider">
+                <div class="b-slider-controls js-picked-coupons-slider-controls">
+                  <button class="b-slider-controls__nav __prev" aria-controls="customize" tabindex="-1" data-controls="prev">
+                    <svg class="icon icon-arrow-left e-icon">
+                      <use xlink:href="assets/img/sprite/sprite.svg#arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button class="b-slider-controls__nav __next" aria-controls="customize" tabindex="-1" data-controls="next">
+                    <svg class="icon icon-arrow-right e-icon">
+                      <use xlink:href="assets/img/sprite/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="js-picked-coupons-slider">
+                  <div class="b-slider__item">
+                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
+                  </div>
+                  <div class="b-slider__item">
+                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
+                  </div>
+                  <div class="b-slider__item">
+                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
+                  </div>
+                  <div class="b-slider__item">
+                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Categories-->
+        <section class="b-categories-wrap">
+          <div class="b-slider">
+            <div class="b-slider-controls js-categories-slider-controls">
+              <button class="b-slider-controls__nav __prev" aria-controls="customize" tabindex="-1" data-controls="prev">
+                <svg class="icon icon-arrow-left e-icon">
+                  <use xlink:href="assets/img/sprite/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="b-slider-controls__nav __next" aria-controls="customize" tabindex="-1" data-controls="next">
+                <svg class="icon icon-arrow-right e-icon">
+                  <use xlink:href="assets/img/sprite/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="js-categories-slider">
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42"><defs><path id="bhyza" d="M171.5 562H182v-10.5h-10.5zm0-15.75H182v-10.5h-10.5zm-15.75-15.75h10.5V520h-10.5zM171.5 520v10.5H182V520zm-15.75 26.25h10.5v-10.5h-10.5zm-15.75 0h10.5v-10.5H140zm0 15.75h10.5v-10.5H140zm15.75 0h10.5v-10.5h-10.5zM140 530.5h10.5V520H140z"/><linearGradient id="bhyzb" x1="140" x2="182" y1="520" y2="562" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-140 -520)"><use fill="url(#bhyzb)" xlink:href="#bhyza"/></g></g></svg></div>
+                  <div class="b-category__title">Все категории</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="39" viewBox="0 0 44 39"><defs><path id="y3woa" d="M330.889 534.667l3.667-11h26.888l3.667 11zm30.555 12.222a3.662 3.662 0 0 1-3.666-3.667 3.662 3.662 0 0 1 3.666-3.666 3.662 3.662 0 0 1 3.667 3.666 3.662 3.662 0 0 1-3.667 3.667zm-26.888 0a3.662 3.662 0 0 1-3.667-3.667 3.662 3.662 0 0 1 3.667-3.666 3.662 3.662 0 0 1 3.666 3.666 3.662 3.662 0 0 1-3.666 3.667zm30.36-24.42a3.676 3.676 0 0 0-3.472-2.469h-26.888a3.676 3.676 0 0 0-3.472 2.469L326 537.11v19.556c0 1.344 1.1 2.444 2.444 2.444h2.445c1.357 0 2.444-1.1 2.444-2.444v-2.445h29.334v2.445c0 1.344 1.1 2.444 2.444 2.444h2.445c1.356 0 2.444-1.1 2.444-2.444V537.11z"/><linearGradient id="y3wob" x1="326" x2="370" y1="520" y2="559.11" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-326 -520)"><use fill="url(#y3wob)" xlink:href="#y3woa"/></g></g></svg></div>
+                  <div class="b-category__title">Автомобили и мотоциклы</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="40" viewBox="0 0 42 40"><defs><path id="i066a" d="M540.678 538.368c3.284 1.54 7.926.452 11.35-2.972 4.125-4.125 4.911-10.016 1.756-13.17-3.166-3.156-9.068-2.37-13.182 1.754-3.424 3.425-4.501 8.067-2.972 11.351a48651.935 48651.935 0 0 0-21.032 21.022l3.047 3.047 14.819-14.818 14.818 14.818 3.048-3.047-14.818-14.819zm-14.614 3.92l6.095-6.099-15.109-15.116c-3.36 3.361-3.36 8.824 0 12.186l9.014 9.028z"/><linearGradient id="i066b" x1="514.53" x2="555.72" y1="520.29" y2="559.4" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-514 -520)"><use fill="url(#i066b)" xlink:href="#i066a"/></g></g></svg></div>
+                  <div class="b-category__title">Еда</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="47" viewBox="0 0 44 47"><defs><path id="62kwa" d="M738.21 558.775c0-1.95-1.551-3.525-3.473-3.525s-3.474 1.575-3.474 3.525 1.552 3.525 3.474 3.525c1.922 0 3.474-1.575 3.474-3.525zm-20.842 0c0-1.95-1.551-3.525-3.473-3.525s-3.474 1.575-3.474 3.525 1.552 3.525 3.474 3.525c1.922 0 3.473-1.575 3.473-3.525zm25.474 0c0 4.547-3.624 8.225-8.105 8.225-4.088 0-7.445-3.067-8.013-7.05h-4.817c-.567 3.983-3.925 7.05-8.012 7.05-4.481 0-8.106-3.678-8.106-8.225a8.245 8.245 0 0 1 4.273-7.25c-.533-.81-4.91-10.375-4.91-10.375H700v-4.7h8.082l2.2 4.7H744c0 4.336-1.459 8.307-3.879 11.492a8.231 8.231 0 0 1 2.721 6.133zM744 538.8h-18.526V520c10.235 0 18.526 8.413 18.526 18.8z"/><linearGradient id="62kwb" x1="700" x2="744" y1="520" y2="567" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-700 -520)"><use fill="url(#62kwb)" xlink:href="#62kwa"/></g></g></svg></div>
+                  <div class="b-category__title">Мамам и детям</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="44" viewBox="0 0 45 44"><defs><path id="fjw1a" d="M891.578 536.583a3.33 3.33 0 0 0 3.346-3.324 3.33 3.33 0 0 0-3.346-3.323 3.33 3.33 0 0 0-3.347 3.323 3.33 3.33 0 0 0 3.347 3.324zM931 532.532c0-8.576-6.994-15.532-15.617-15.532-8.623 0-15.618 6.956-15.618 15.532 0 7.688 5.623 14.056 13.007 15.3v8.73h-17.848v-6.656h2.231v-8.876a2.232 2.232 0 0 0-2.23-2.219h-6.694a2.232 2.232 0 0 0-2.231 2.22v8.875h2.231V561h35.697v-4.438h-6.693v-8.609c7.752-.91 13.765-7.466 13.765-15.421z"/><linearGradient id="fjw1b" x1="886" x2="931" y1="517" y2="561" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-886 -517)"><use fill="url(#fjw1b)" xlink:href="#fjw1a"/></g></g></svg></div>
+                  <div class="b-category__title">Дом и сад</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46"><defs><path id="k6hta" d="M1107.444 557.338l3.091-3.087 3.922 3.916-3.091 3.088zM1120 540.636V545h-6.545v-4.364zm-10.91 2.182c0 7.233-5.857 13.091-13.09 13.091s-13.09-5.858-13.09-13.09c0-4.844 2.64-9.055 6.545-11.324V521h13.09v10.495c3.906 2.258 6.546 6.48 6.546 11.323zM1078.546 545H1072v-4.364h6.545zm15.273 15.273h4.364v6.436h-4.364zm-16.254-2.106l3.922-3.916 3.091 3.087-3.922 3.917z"/><linearGradient id="k6htb" x1="1072" x2="1120" y1="521" y2="566.71" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-1072 -521)"><use fill="url(#k6htb)" xlink:href="#k6hta"/></g></g></svg></div>
+                  <div class="b-category__title">Освещение</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46pt" height="46pt" viewBox="0 0 46 46" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(242, 235, 252);fill-opacity:1;" d="M 11.59375 0.542969 C 9.929688 0.730469 8.40625 1.570312 6.976562 3.070312 C 5.046875 5.09375 3.492188 8.398438 2.78125 11.976562 C 2.410156 13.789062 2.335938 14.585938 2.21875 17.734375 C 2.121094 20.492188 2.238281 27.074219 2.410156 27.96875 C 2.492188 28.417969 2.78125 28.761719 3.121094 28.84375 C 3.265625 28.871094 3.828125 28.769531 4.53125 28.574219 C 7.898438 27.652344 11.367188 27.074219 15.359375 26.785156 L 16.976562 26.65625 L 17.21875 26.386719 C 17.417969 26.171875 17.480469 25.972656 17.570312 25.265625 C 17.726562 24.136719 18.148438 22.523438 18.980469 19.902344 C 20.386719 15.460938 20.675781 13.960938 20.675781 11.054688 C 20.675781 8.21875 20.335938 6.386719 19.476562 4.640625 C 18.707031 3.070312 17.6875 2.03125 16.179688 1.300781 C 15.25 0.847656 14.546875 0.660156 13.335938 0.53125 C 12.398438 0.433594 12.460938 0.433594 11.59375 0.542969 Z M 11.59375 0.542969 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(242, 235, 252);fill-opacity:1;" d="M 32.605469 0.535156 C 31.523438 0.640625 30.726562 0.859375 29.816406 1.300781 C 27.578125 2.386719 26.242188 4.316406 25.625 7.371094 C 25.335938 8.75 25.230469 10.738281 25.335938 12.382812 C 25.5 14.703125 25.796875 16.066406 27.0625 20.039062 C 27.839844 22.484375 28.261719 24.128906 28.417969 25.269531 C 28.515625 25.972656 28.578125 26.171875 28.777344 26.386719 C 29.023438 26.660156 29.023438 26.660156 30.59375 26.777344 C 34.691406 27.089844 38.089844 27.652344 41.476562 28.574219 C 42.765625 28.933594 43.019531 28.925781 43.34375 28.527344 C 43.632812 28.183594 43.660156 27.96875 43.769531 23.96875 C 43.886719 20.148438 43.785156 15.847656 43.542969 13.90625 C 42.695312 7.082031 39.261719 1.652344 35.191406 0.6875 C 34.402344 0.507812 33.492188 0.453125 32.605469 0.535156 Z M 32.605469 0.535156 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(242, 235, 252);fill-opacity:1;" d="M 15.097656 32.058594 C 11.628906 32.328125 7.304688 33.152344 4.296875 34.117188 C 3.140625 34.488281 2.988281 34.648438 3.015625 35.488281 C 3.023438 35.832031 3.09375 36.589844 3.175781 37.167969 C 3.90625 42.550781 5.976562 45.144531 9.8125 45.503906 C 12.800781 45.785156 15.359375 44.386719 16.632812 41.757812 C 17.398438 40.175781 17.644531 38.707031 17.5 36.511719 C 17.445312 35.769531 17.382812 34.597656 17.34375 33.902344 C 17.316406 33.207031 17.246094 32.566406 17.199219 32.472656 C 17.082031 32.238281 16.578125 31.960938 16.316406 31.96875 C 16.1875 31.976562 15.648438 32.023438 15.097656 32.058594 Z M 15.097656 32.058594 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(242, 235, 252);fill-opacity:1;" d="M 29.257812 32.085938 C 28.785156 32.292969 28.714844 32.511719 28.652344 33.855469 C 28.613281 34.523438 28.542969 35.707031 28.496094 36.484375 C 28.390625 38.117188 28.480469 39.21875 28.832031 40.4375 C 29.554688 42.914062 31.332031 44.730469 33.625 45.332031 C 34.519531 45.566406 36.183594 45.59375 37.175781 45.378906 C 39.882812 44.800781 41.601562 42.777344 42.457031 39.148438 C 42.71875 38.035156 43.082031 35.28125 42.992188 35.003906 C 42.875 34.605469 42.566406 34.398438 41.699219 34.117188 C 39.550781 33.429688 36.542969 32.761719 34.105469 32.417969 C 32.957031 32.265625 32.261719 32.195312 30.042969 32.003906 C 29.726562 31.976562 29.4375 32.011719 29.257812 32.085938 Z M 29.257812 32.085938 "/>
+</g>
+</svg>
+
+                  </div>
+                  <div class="b-category__title">Обувь</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="25" viewBox="0 0 26 25"><defs><path id="jy7ua" d="M273.6 113.263h-5.2v-2.631h5.2zm7.8 0h-5.2v-2.631c0-1.454-1.163-2.632-2.6-2.632h-5.2c-1.437 0-2.6 1.178-2.6 2.632v2.631h-5.2c-1.437 0-2.587 1.178-2.587 2.632L258 130.368c0 1.454 1.163 2.632 2.6 2.632h20.8c1.437 0 2.6-1.178 2.6-2.632v-14.473c0-1.454-1.163-2.632-2.6-2.632z"/><linearGradient id="jy7ub" x1="258" x2="284" y1="108" y2="133" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-258 -108)"><use fill="url(#jy7ub)" xlink:href="#jy7ua"/></g></g></svg></div>
+                  <div class="b-category__title">Багаж и сумки</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="30" viewBox="0 0 24 30"><defs><path id="cdr5a" d="M368.33 126l-6.663-6.667 1.885-1.886 4.778 4.78 10.108-10.114 1.885 1.887zm12.003-20h-18.666a2.655 2.655 0 0 0-2.654 2.667L359 125.913c0 .92.467 1.734 1.173 2.214l10.82 7.206 10.82-7.206a2.674 2.674 0 0 0 1.174-2.214l.013-17.246a2.666 2.666 0 0 0-2.667-2.667z"/><linearGradient id="cdr5b" x1="359" x2="383" y1="106" y2="135.33" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-359 -106)"><use fill="url(#cdr5b)" xlink:href="#cdr5a"/></g></g></svg></div>
+                  <div class="b-category__title">Безопасность и защита</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="31" viewBox="0 0 24 31"><defs><path id="5hbra" d="M566 128.667h3v-7.556h-3zm0-13.59h3v-4.544h-3zm15 1.5h-18v-7.555h18zm0 16.623h-18v-13.638h18zm0-27.185L563 106c-1.657 0-3 1.352-3 3.022V133.2c0 1.67 1.343 3.022 3 3.022h18c1.657 0 3-1.352 3-3.022v-24.178a2.997 2.997 0 0 0-3-3.007z"/><linearGradient id="5hbrb" x1="560" x2="584" y1="106" y2="136.22" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-560 -106)"><use fill="url(#5hbrb)" xlink:href="#5hbra"/></g></g></svg></div>
+                  <div class="b-category__title">Бытовая техника</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="47" viewBox="0 0 44 47"><defs><path id="62kwa" d="M738.21 558.775c0-1.95-1.551-3.525-3.473-3.525s-3.474 1.575-3.474 3.525 1.552 3.525 3.474 3.525c1.922 0 3.474-1.575 3.474-3.525zm-20.842 0c0-1.95-1.551-3.525-3.473-3.525s-3.474 1.575-3.474 3.525 1.552 3.525 3.474 3.525c1.922 0 3.473-1.575 3.473-3.525zm25.474 0c0 4.547-3.624 8.225-8.105 8.225-4.088 0-7.445-3.067-8.013-7.05h-4.817c-.567 3.983-3.925 7.05-8.012 7.05-4.481 0-8.106-3.678-8.106-8.225a8.245 8.245 0 0 1 4.273-7.25c-.533-.81-4.91-10.375-4.91-10.375H700v-4.7h8.082l2.2 4.7H744c0 4.336-1.459 8.307-3.879 11.492a8.231 8.231 0 0 1 2.721 6.133zM744 538.8h-18.526V520c10.235 0 18.526 8.413 18.526 18.8z"/><linearGradient id="62kwb" x1="700" x2="744" y1="520" y2="567" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-700 -520)"><use fill="url(#62kwb)" xlink:href="#62kwa"/></g></g></svg></div>
+                  <div class="b-category__title">Мамам и детям</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="44" viewBox="0 0 45 44"><defs><path id="fjw1a" d="M891.578 536.583a3.33 3.33 0 0 0 3.346-3.324 3.33 3.33 0 0 0-3.346-3.323 3.33 3.33 0 0 0-3.347 3.323 3.33 3.33 0 0 0 3.347 3.324zM931 532.532c0-8.576-6.994-15.532-15.617-15.532-8.623 0-15.618 6.956-15.618 15.532 0 7.688 5.623 14.056 13.007 15.3v8.73h-17.848v-6.656h2.231v-8.876a2.232 2.232 0 0 0-2.23-2.219h-6.694a2.232 2.232 0 0 0-2.231 2.22v8.875h2.231V561h35.697v-4.438h-6.693v-8.609c7.752-.91 13.765-7.466 13.765-15.421z"/><linearGradient id="fjw1b" x1="886" x2="931" y1="517" y2="561" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-886 -517)"><use fill="url(#fjw1b)" xlink:href="#fjw1a"/></g></g></svg></div>
+                  <div class="b-category__title">Дом и сад</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46"><defs><path id="k6hta" d="M1107.444 557.338l3.091-3.087 3.922 3.916-3.091 3.088zM1120 540.636V545h-6.545v-4.364zm-10.91 2.182c0 7.233-5.857 13.091-13.09 13.091s-13.09-5.858-13.09-13.09c0-4.844 2.64-9.055 6.545-11.324V521h13.09v10.495c3.906 2.258 6.546 6.48 6.546 11.323zM1078.546 545H1072v-4.364h6.545zm15.273 15.273h4.364v6.436h-4.364zm-16.254-2.106l3.922-3.916 3.091 3.087-3.922 3.917z"/><linearGradient id="k6htb" x1="1072" x2="1120" y1="521" y2="566.71" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-1072 -521)"><use fill="url(#k6htb)" xlink:href="#k6hta"/></g></g></svg></div>
+                  <div class="b-category__title">Освещение</div>
+                </div>
+              </div>
+              <div class="b-slider__item">
+                <div class="b-category">
+                  <div class="b-category__figure"><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46pt" height="46pt" viewBox="0 0 46 46" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(242, 235, 252);fill-opacity:1;" d="M 11.59375 0.542969 C 9.929688 0.730469 8.40625 1.570312 6.976562 3.070312 C 5.046875 5.09375 3.492188 8.398438 2.78125 11.976562 C 2.410156 13.789062 2.335938 14.585938 2.21875 17.734375 C 2.121094 20.492188 2.238281 27.074219 2.410156 27.96875 C 2.492188 28.417969 2.78125 28.761719 3.121094 28.84375 C 3.265625 28.871094 3.828125 28.769531 4.53125 28.574219 C 7.898438 27.652344 11.367188 27.074219 15.359375 26.785156 L 16.976562 26.65625 L 17.21875 26.386719 C 17.417969 26.171875 17.480469 25.972656 17.570312 25.265625 C 17.726562 24.136719 18.148438 22.523438 18.980469 19.902344 C 20.386719 15.460938 20.675781 13.960938 20.675781 11.054688 C 20.675781 8.21875 20.335938 6.386719 19.476562 4.640625 C 18.707031 3.070312 17.6875 2.03125 16.179688 1.300781 C 15.25 0.847656 14.546875 0.660156 13.335938 0.53125 C 12.398438 0.433594 12.460938 0.433594 11.59375 0.542969 Z M 11.59375 0.542969 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(242, 235, 252);fill-opacity:1;" d="M 32.605469 0.535156 C 31.523438 0.640625 30.726562 0.859375 29.816406 1.300781 C 27.578125 2.386719 26.242188 4.316406 25.625 7.371094 C 25.335938 8.75 25.230469 10.738281 25.335938 12.382812 C 25.5 14.703125 25.796875 16.066406 27.0625 20.039062 C 27.839844 22.484375 28.261719 24.128906 28.417969 25.269531 C 28.515625 25.972656 28.578125 26.171875 28.777344 26.386719 C 29.023438 26.660156 29.023438 26.660156 30.59375 26.777344 C 34.691406 27.089844 38.089844 27.652344 41.476562 28.574219 C 42.765625 28.933594 43.019531 28.925781 43.34375 28.527344 C 43.632812 28.183594 43.660156 27.96875 43.769531 23.96875 C 43.886719 20.148438 43.785156 15.847656 43.542969 13.90625 C 42.695312 7.082031 39.261719 1.652344 35.191406 0.6875 C 34.402344 0.507812 33.492188 0.453125 32.605469 0.535156 Z M 32.605469 0.535156 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(242, 235, 252);fill-opacity:1;" d="M 15.097656 32.058594 C 11.628906 32.328125 7.304688 33.152344 4.296875 34.117188 C 3.140625 34.488281 2.988281 34.648438 3.015625 35.488281 C 3.023438 35.832031 3.09375 36.589844 3.175781 37.167969 C 3.90625 42.550781 5.976562 45.144531 9.8125 45.503906 C 12.800781 45.785156 15.359375 44.386719 16.632812 41.757812 C 17.398438 40.175781 17.644531 38.707031 17.5 36.511719 C 17.445312 35.769531 17.382812 34.597656 17.34375 33.902344 C 17.316406 33.207031 17.246094 32.566406 17.199219 32.472656 C 17.082031 32.238281 16.578125 31.960938 16.316406 31.96875 C 16.1875 31.976562 15.648438 32.023438 15.097656 32.058594 Z M 15.097656 32.058594 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(242, 235, 252);fill-opacity:1;" d="M 29.257812 32.085938 C 28.785156 32.292969 28.714844 32.511719 28.652344 33.855469 C 28.613281 34.523438 28.542969 35.707031 28.496094 36.484375 C 28.390625 38.117188 28.480469 39.21875 28.832031 40.4375 C 29.554688 42.914062 31.332031 44.730469 33.625 45.332031 C 34.519531 45.566406 36.183594 45.59375 37.175781 45.378906 C 39.882812 44.800781 41.601562 42.777344 42.457031 39.148438 C 42.71875 38.035156 43.082031 35.28125 42.992188 35.003906 C 42.875 34.605469 42.566406 34.398438 41.699219 34.117188 C 39.550781 33.429688 36.542969 32.761719 34.105469 32.417969 C 32.957031 32.265625 32.261719 32.195312 30.042969 32.003906 C 29.726562 31.976562 29.4375 32.011719 29.257812 32.085938 Z M 29.257812 32.085938 "/>
+</g>
+</svg>
+
+                  </div>
+                  <div class="b-category__title">Обувь</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Coupon list-->
+        <section class="b-coupon-list">
+          <div class="c-container-full">
+            <form class="b-search-options b-search-options--table" action="/" method="post">
+              <div class="b-search-options__caption">Параметры поиска:</div>
+              <div class="b-search-options__item">
+                <div class="b-select">
+                  <select class="b-select__select">
+                    <option selected="selected">Цена</option>
+                    <option value="Цена 1">Цена 1</option>
+                    <option value="Цена 2">Цена 2</option>
+                    <option value="Цена 3">Цена 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="b-search-options__item">
+                <div class="b-select">
+                  <select class="b-select__select">
+                    <option selected="selected">Новизна</option>
+                    <option value="Новизна 1">Новизна 1</option>
+                    <option value="Новизна 2">Новизна 2</option>
+                    <option value="Новизна 3">Новизна 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="b-search-options__item">
+                <div class="b-select">
+                  <select class="b-select__select">
+                    <option selected="selected">% скидки</option>
+                    <option value="% скидки 1">% скидки 1</option>
+                    <option value="% скидки 2">% скидки 2</option>
+                    <option value="% скидки 3">% скидки 3</option>
+                  </select>
+                </div>
+              </div>
+              <button class="e-button e-button--transp b-search-options__btn">Показать</button>
+            </form>
+            <div class="c-row c-row--gutter">
+              <div class="b-coupon-list__item b-coupon-list__item--mobile">
+                <div class="b-picked-coupons b-picked-coupons--row">
+                  <h1 class="h3 b-picked-coupons__caption b-picked-coupons__caption--white b-picked-coupons__caption--gutter-0">Лучшие за сутки</h1>
+                  <div class="b-buton"><a class="e-button e-button--transp" href="#">Смотреть все</a></div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item b-coupon-list__item--middle b-coupon-list__item--desctop">
+                <div class="b-picked-coupons b-picked-coupons">
+                  <h1 class="h3 b-picked-coupons__caption b-picked-coupons__caption--white">Лучшие купоны за сутки</h1>
+                  <p class="b-picked-coupons__desc-text b-picked-coupons__desc-text--white">Самые интересные новинки за последние 24 часа.</p>
+                  <div class="b-buton"><a class="e-button e-button--transp" href="#">Смотреть все</a></div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Pagination-->
+            <div class="b-pagination b-pagination--on-tablet"><a class="b-pagination__prev" href="#">
+                <svg class="icon icon-arrow-left e-icon">
+                  <use xlink:href="assets/img/sprite/sprite.svg#arrow-left"></use>
+                </svg></a><a class="b-pagination__item" href="#">1</a><a class="b-pagination__item" href="#">2</a><a class="b-pagination__item active" href="#">3</a><a class="b-pagination__item" href="#">4</a><a class="b-pagination__item" href="#">5</a><a class="b-pagination__item" href="#">6</a><span class="b-pagination__item">...</span><a class="b-pagination__item" href="#">7115</a><a class="b-pagination__next" href="#">
+                <svg class="icon icon-arrow-right e-icon">
+                  <use xlink:href="assets/img/sprite/sprite.svg#arrow-right"></use>
+                </svg></a></div>
+          </div>
+        </section>
+        <section class="b-picked-coupons b-picked-coupons--mobile">
+          <div class="c-row align-items-center">
+            <div class="b-picked-coupons__desc">
+              <h1 class="h3 b-picked-coupons__caption">Это интересно</h1>
+              <p class="b-picked-coupons__desc-text">Здесь мы собрали тематические подборки.</p>
+              <div class="b-buton b-buton--right"><a class="e-button e-button--transp e-button--dark" href="#">Смотреть все</a></div>
+            </div>
+            <div class="b-picked-coupons__slider">
+              <div class="b-slider">
+                <div class="b-slider-controls js-picked-coupons-slider-controls-mob">
+                  <button class="b-slider-controls__nav __prev" aria-controls="customize" tabindex="-1" data-controls="prev">
+                    <svg class="icon icon-arrow-left e-icon">
+                      <use xlink:href="assets/img/sprite/sprite.svg#arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button class="b-slider-controls__nav __next" aria-controls="customize" tabindex="-1" data-controls="next">
+                    <svg class="icon icon-arrow-right e-icon">
+                      <use xlink:href="assets/img/sprite/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="js-picked-coupons-slider-mob">
+                  <div class="b-slider__item">
+                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
+                  </div>
+                  <div class="b-slider__item">
+                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
+                  </div>
+                  <div class="b-slider__item">
+                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
+                  </div>
+                  <div class="b-slider__item">
+                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Articles list-->
+        <section class="b-articles-list">
+          <div class="c-container-full c-container-full--gutter-60">
+            <div class="b-caption">
+              <h3 class="b-caption__title">Статьи</h3><span class="b-caption__line"></span><a class="e-button e-button--transp e-button--dark" href="#">Открыть все</a>
+            </div>
+            <div class="c-row c-row--gutter-60">
+              <div class="b-articles-list__item">
+                <div class="b-article"><span class="b-article__date">сегодня</span>
+                  <h5 class="b-article__title">«Яндекс» запустил рейтинг российских сайтов: аудиторию вычисляет математическая модель на машинном обучении</h5><img class="b-article__preview" src="assets/img/article/item-1.jpg"/>
+                  <p class="b-article__text">После нескольких месяцев бета-тестирования сегодня компания «Яндекс» официально запустила «Топ интернет-проектов в России» — список 10 000 наиболее популярных ресурсов у российских пользователей. Все сайты распределены по тематическим категориям. Например, «Хабрахабр» определили в категории «Сообщества» (21 место) и «Техника и технологии» (19 место).</p><a class="b-article__more" href="#">Читать дальше</a>
+                </div>
+              </div>
+              <div class="b-articles-list__item">
+                <div class="b-article"><span class="b-article__date">18.11.2018</span>
+                  <h5 class="b-article__title">«Яндекс» запустил рейтинг российских сайтов: аудиторию вычисляет математическая модель на машинном обучении</h5><img class="b-article__preview" src="assets/img/article/item-1.jpg"/>
+                  <p class="b-article__text">После нескольких месяцев бета-тестирования сегодня компания «Яндекс» официально запустила «Топ интернет-проектов в России» — список 10 000 наиболее популярных ресурсов у российских пользователей. Все сайты распределены по тематическим категориям. Например, «Хабрахабр» определили в категории «Сообщества» (21 место) и «Техника и технологии» (19 место).</p><a class="b-article__more" href="#">Читать дальше</a>
+                </div>
+              </div>
+              <div class="b-articles-list__item">
+                <div class="b-article"><span class="b-article__date">18.11.2018</span>
+                  <h5 class="b-article__title">«Яндекс» запустил рейтинг российских сайтов: аудиторию вычисляет математическая модель на машинном обучении</h5><img class="b-article__preview" src="assets/img/article/item-1.jpg"/>
+                  <p class="b-article__text">После нескольких месяцев бета-тестирования сегодня компания «Яндекс» официально запустила «Топ интернет-проектов в России» — список 10 000 наиболее популярных ресурсов у российских пользователей. Все сайты распределены по тематическим категориям. Например, «Хабрахабр» определили в категории «Сообщества» (21 место) и «Техника и технологии» (19 место).</p><a class="b-article__more" href="#">Читать дальше</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--FOOTER-->
+      <footer class="c-footer">
+        <div class="c-container">
+          <div class="c-row c-row--gutter justify-content-between">
+            <div class="c-footer__item c-footer__item--column-mobile __md">
+              <div class="c-footer__logo"><a class="b-logo" href="#"><img class="b-logo__img b-logo__img--footer" src="assets/img/logo-white.png" alt="Logo"/></a></div>
+              <div class="c-footer__list c-footer__list--order-1-mobile"><a class="c-footer__list-item" href="#">Статьи</a><a class="c-footer__list-item" href="#">Как пользоваться</a></div>
+              <div class="c-footer__list">
+                <div class="c-footer__list-caption">Все купоны</div>
+                <div class="c-footer__list-items"><a class="c-footer__list-item" href="#">Халява</a><a class="c-footer__list-item" href="#">Купоны 99%</a><a class="c-footer__list-item" href="#">Что купить?</a><a class="c-footer__list-item" href="#">Дешевле 1$</a><a class="c-footer__list-item" href="#">Товары со скидкой</a><a class="c-footer__list-item c-footer__list-item--displ-mobile" href="#">Все категории</a></div>
+              </div>
+            </div>
+            <div class="c-footer__item __xl c-footer__item--hidden-mobile">
+              <div class="c-footer__list">
+                <div class="c-footer__list-caption">Все категории</div>
+                <div class="c-footer__list-items c-footer__list-items--column"><a class="c-footer__list-item" href="#">Автомобили и мотоциклы</a><a class="c-footer__list-item" href="#">Багаж и сумки</a><a class="c-footer__list-item" href="#">Безопасность и защита</a><a class="c-footer__list-item" href="#">Благоустройство дома</a><a class="c-footer__list-item" href="#">Бытовая техника</a><a class="c-footer__list-item" href="#">Дом и сад</a><a class="c-footer__list-item" href="#">Еда</a><a class="c-footer__list-item" href="#">Здоровье и красота</a><a class="c-footer__list-item" href="#">Игры и хобби</a><a class="c-footer__list-item" href="#">Компьютеры и офис</a><a class="c-footer__list-item" href="#">Мама и детям</a><a class="c-footer__list-item" href="#">Обувь</a><a class="c-footer__list-item" href="#">Одежда и аксессуары</a><a class="c-footer__list-item" href="#">Освещение</a><a class="c-footer__list-item" href="#">Офисные принадлежности</a><a class="c-footer__list-item" href="#">Спорт</a><a class="c-footer__list-item" href="#">Телефония и коммуникация</a><a class="c-footer__list-item" href="#">Украшения</a><a class="c-footer__list-item" href="#">Фурнитура</a><a class="c-footer__list-item" href="#">Часы</a><a class="c-footer__list-item" href="#">Электронные компоненты</a></div>
+              </div>
+            </div>
+            <div class="c-footer__item c-footer__item--hidden-table">
+              <div class="c-footer__list-caption c-footer__list-caption--hidden-mobile">Мы в соцсетях</div>
+              <div class="b-social b-social--footer"><a class="b-social__item" href="#">
+                  <svg class="icon icon-vk e-icon e-icon--dark">
+                    <use xlink:href="assets/img/sprite/sprite.svg#vk"></use>
+                  </svg></a><a class="b-social__item" href="#">
+                  <svg class="icon icon-tw e-icon e-icon--dark">
+                    <use xlink:href="assets/img/sprite/sprite.svg#tw"></use>
+                  </svg></a><a class="b-social__item" href="#">
+                  <svg class="icon icon-fb e-icon e-icon--dark">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fb"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <div class="c-footer__copyright">© 2018 AliDeals.ru. Все права защищены.
+            <div class="c-footer__display-tablet">
+              <div class="b-social b-social--footer"><a class="b-social__item" href="#">
+                  <svg class="icon icon-vk e-icon e-icon--dark">
+                    <use xlink:href="assets/img/sprite/sprite.svg#vk"></use>
+                  </svg></a><a class="b-social__item" href="#">
+                  <svg class="icon icon-tw e-icon e-icon--dark">
+                    <use xlink:href="assets/img/sprite/sprite.svg#tw"></use>
+                  </svg></a><a class="b-social__item" href="#">
+                  <svg class="icon icon-fb e-icon e-icon--dark">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fb"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--include ../global/modal-->
+    </div>
+    <script src="js/scripts.min.js" async="async" defer="defer"></script>
+  </body>
+</html>
