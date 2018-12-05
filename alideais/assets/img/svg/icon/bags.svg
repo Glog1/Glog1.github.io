@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="25" viewBox="0 0 26 25"><defs><path id="jy7ua" d="M273.6 113.263h-5.2v-2.631h5.2zm7.8 0h-5.2v-2.631c0-1.454-1.163-2.632-2.6-2.632h-5.2c-1.437 0-2.6 1.178-2.6 2.632v2.631h-5.2c-1.437 0-2.587 1.178-2.587 2.632L258 130.368c0 1.454 1.163 2.632 2.6 2.632h20.8c1.437 0 2.6-1.178 2.6-2.632v-14.473c0-1.454-1.163-2.632-2.6-2.632z"/><linearGradient id="jy7ub" x1="258" x2="284" y1="108" y2="133" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-258 -108)"><use fill="url(#jy7ub)" xlink:href="#jy7ua"/></g></g></svg>
+<svg id="ic_work_48px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44 42" width="44" height="42">
+    <defs>
+        <style>
+            .bags-cl1 {
+            fill: url(#linear-gradient);
+            }
+        </style>
+        <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="1" stop-color="#e1d2f8"/>
+        </linearGradient>
+    </defs>
+    <path id="bagsShape" class="bags-cl1" d="M39.6,41.8H4.4A4.4,4.4,0,0,1,0,37.4L.022,13.2A4.386,4.386,0,0,1,1.3,10.089,4.339,4.339,0,0,1,4.4,8.8h8.8V4.4A4.405,4.405,0,0,1,17.6,0h8.8a4.405,4.405,0,0,1,4.4,4.4V8.8h8.8A4.405,4.405,0,0,1,44,13.2V37.4A4.4,4.4,0,0,1,39.6,41.8ZM17.6,4.4V8.8h8.8V4.4Z"/>
+</svg>
