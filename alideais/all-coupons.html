@@ -51,16 +51,16 @@
       </header>
       <main class="c-main">
         <!--Picked coupons-->
-        <section class="b-picked-coupons b-picked-coupons--desctop">
-          <div class="c-row align-items-center">
+        <section class="b-picked-coupons b-picked-coupons--tablet">
+          <div class="c-row align-items-center justify-content-between">
             <div class="b-picked-coupons__desc">
-              <h1 class="h3">Посмотри, это интересно</h1>
-              <p class="b-picked-coupons__desc-text">Здесь мы собрали тематические подборки. Только лучшие купоны и скидки на любой случай.</p>
+              <h1 class="h3">Это интересно</h1>
+              <p class="b-picked-coupons__desc-text">Здесь мы собрали<br/>тематические подборки.</p>
               <div class="b-buton b-buton--right"><a class="e-button e-button--transp e-button--dark" href="#">Смотреть все</a></div>
             </div>
-            <div class="b-picked-coupons__slider">
+            <div class="b-picked-coupons__slider b-picked-coupons__slider--style-2">
               <div class="b-slider">
-                <div class="b-slider-controls js-picked-coupons-slider-controls">
+                <div class="b-slider-controls b-slider-controls--style-2 js-picked-coupons-slider-controls">
                   <button class="b-slider-controls__nav __prev" aria-controls="customize" tabindex="-1" data-controls="prev">
                     <svg class="icon icon-arrow-left e-icon">
                       <use xlink:href="assets/img/sprite/sprite.svg#arrow-left"></use>
@@ -72,7 +72,7 @@
                     </svg>
                   </button>
                 </div>
-                <div class="js-picked-coupons-slider">
+                <div class="js-picked-coupons-slider-st-2">
                   <div class="b-slider__item">
                     <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
                   </div>
@@ -91,7 +91,7 @@
           </div>
         </section>
         <!--Categories-->
-        <section class="b-categories-wrap">
+        <section class="b-categories-wrap b-categories-wrap--style-2">
           <div class="b-slider">
             <div class="b-slider-controls js-categories-slider-controls">
               <button class="b-slider-controls__nav __prev" aria-controls="customize" tabindex="-1" data-controls="prev">
@@ -105,7 +105,7 @@
                 </svg>
               </button>
             </div>
-            <div class="js-categories-slider">
+            <div class="js-categories-slider-st-2">
               <div class="b-slider__item">
                 <div class="b-category">
                   <div class="b-category__figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42"><defs><path id="bhyza" d="M171.5 562H182v-10.5h-10.5zm0-15.75H182v-10.5h-10.5zm-15.75-15.75h10.5V520h-10.5zM171.5 520v10.5H182V520zm-15.75 26.25h10.5v-10.5h-10.5zm-15.75 0h10.5v-10.5H140zm0 15.75h10.5v-10.5H140zm15.75 0h10.5v-10.5h-10.5zM140 530.5h10.5V520H140z"/><linearGradient id="bhyzb" x1="140" x2="182" y1="520" y2="562" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e1d2f8"/></linearGradient></defs><g><g transform="translate(-140 -520)"><use fill="url(#bhyzb)" xlink:href="#bhyza"/></g></g></svg></div>
@@ -231,7 +231,7 @@
         <!--Coupon list-->
         <section class="b-coupon-list">
           <div class="c-container-full">
-            <form class="b-search-options b-search-options--table" action="/" method="post">
+            <form class="b-search-options b-search-options--tablet-hidden" action="/" method="post">
               <div class="b-search-options__caption">Параметры поиска:</div>
               <div class="b-search-options__item">
                 <div class="b-select">
@@ -266,10 +266,30 @@
               <button class="e-button e-button--transp b-search-options__btn">Показать</button>
             </form>
             <div class="c-row c-row--gutter">
-              <div class="b-coupon-list__item b-coupon-list__item--mobile">
-                <div class="b-picked-coupons b-picked-coupons--row">
-                  <h1 class="h3 b-picked-coupons__caption b-picked-coupons__caption--white b-picked-coupons__caption--gutter-0">Лучшие за сутки</h1>
-                  <div class="b-buton"><a class="e-button e-button--transp" href="#">Смотреть все</a></div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item b-coupon-list__item--middle b-coupon-list__item--tablet-only">
+                <div class="b-picked-coupons b-picked-coupons--on-list">
+                  <h1 class="h3 b-picked-coupons__caption b-picked-coupons__caption--white-table">Лучшие купоны за сутки</h1>
+                  <p class="b-picked-coupons__desc-text b-picked-coupons__desc-text--white-table">Самые интересные новинки за<br/>последние 24 часа.</p>
+                  <div class="b-buton"><a class="e-button e-button--transp e-button--mobile-dark" href="#">Смотреть все</a></div>
                 </div>
               </div>
               <div class="b-coupon-list__item">
@@ -310,11 +330,118 @@
                   </div>
                 </div>
               </div>
-              <div class="b-coupon-list__item b-coupon-list__item--middle b-coupon-list__item--desctop">
-                <div class="b-picked-coupons b-picked-coupons">
-                  <h1 class="h3 b-picked-coupons__caption b-picked-coupons__caption--white">Лучшие купоны за сутки</h1>
-                  <p class="b-picked-coupons__desc-text b-picked-coupons__desc-text--white">Самые интересные новинки за последние 24 часа.</p>
-                  <div class="b-buton"><a class="e-button e-button--transp" href="#">Смотреть все</a></div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-coupon-list__item">
+                <div class="b-coupon">
+                  <div class="b-coupon__header">
+                    <div class="b-coupon__price">US $4.00</div><a class="b-coupon__store" href="#">
+                      <svg class="icon icon-store b-coupon__store-icon">
+                        <use xlink:href="assets/img/sprite/sprite.svg#store"></use>
+                      </svg>i3C Store</a>
+                  </div>
+                  <div class="b-coupon__body">
+                    <div class="b-coupon__picture"><img src="assets/img/coupon/item-1.jpg" alt="alt"/></div>
+                    <div class="b-coupon__desc">
+                      <h4 class="b-coupon__caption">Правильная тарелка для семечек и орехов <span class="b-coupon__category"> дом и сад</span></h4><span class="b-coupon__order-from">для заказа от US $99.00</span>
+                      <div class="b-coupon__desc-footer">
+                        <div class="b-coupon__date">до 22 ноября</div><a class="e-button e-button--add-accent b-coupon__btn" href="#">Получить</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="b-coupon-list__item">
@@ -433,7 +560,7 @@
               </div>
             </div>
             <!--Pagination-->
-            <div class="b-pagination b-pagination--on-tablet"><a class="b-pagination__prev" href="#">
+            <div class="b-pagination b-pagination--tablet-hidden"><a class="b-pagination__prev" href="#">
                 <svg class="icon icon-arrow-left e-icon">
                   <use xlink:href="assets/img/sprite/sprite.svg#arrow-left"></use>
                 </svg></a><a class="b-pagination__item" href="#">1</a><a class="b-pagination__item" href="#">2</a><a class="b-pagination__item active" href="#">3</a><a class="b-pagination__item" href="#">4</a><a class="b-pagination__item" href="#">5</a><a class="b-pagination__item" href="#">6</a><span class="b-pagination__item">...</span><a class="b-pagination__item" href="#">7115</a><a class="b-pagination__next" href="#">
@@ -442,47 +569,8 @@
                 </svg></a></div>
           </div>
         </section>
-        <section class="b-picked-coupons b-picked-coupons--mobile">
-          <div class="c-row align-items-center">
-            <div class="b-picked-coupons__desc">
-              <h1 class="h3 b-picked-coupons__caption">Это интересно</h1>
-              <p class="b-picked-coupons__desc-text">Здесь мы собрали тематические подборки.</p>
-              <div class="b-buton b-buton--right"><a class="e-button e-button--transp e-button--dark" href="#">Смотреть все</a></div>
-            </div>
-            <div class="b-picked-coupons__slider">
-              <div class="b-slider">
-                <div class="b-slider-controls js-picked-coupons-slider-controls-mob">
-                  <button class="b-slider-controls__nav __prev" aria-controls="customize" tabindex="-1" data-controls="prev">
-                    <svg class="icon icon-arrow-left e-icon">
-                      <use xlink:href="assets/img/sprite/sprite.svg#arrow-left"></use>
-                    </svg>
-                  </button>
-                  <button class="b-slider-controls__nav __next" aria-controls="customize" tabindex="-1" data-controls="next">
-                    <svg class="icon icon-arrow-right e-icon">
-                      <use xlink:href="assets/img/sprite/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </button>
-                </div>
-                <div class="js-picked-coupons-slider-mob">
-                  <div class="b-slider__item">
-                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
-                  </div>
-                  <div class="b-slider__item">
-                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
-                  </div>
-                  <div class="b-slider__item">
-                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
-                  </div>
-                  <div class="b-slider__item">
-                    <div class="b-picked-coupon"><img src="assets/img/stub.png" alt="alt"/></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <!--Articles list-->
-        <section class="b-articles-list b-articles-list--table-hidden">
+        <section class="b-articles-list b-articles-list--table-only">
           <div class="c-container-full c-container-full--gutter-60">
             <div class="b-caption">
               <h3 class="b-caption__title">Статьи</h3><span class="b-caption__line"></span><a class="e-button e-button--transp e-button--dark" href="#">Открыть все</a>
@@ -490,12 +578,6 @@
             <div class="c-row c-row--gutter-60">
               <div class="b-articles-list__item">
                 <div class="b-article"><span class="b-article__date">сегодня</span>
-                  <h5 class="b-article__title">«Яндекс» запустил рейтинг российских сайтов: аудиторию вычисляет математическая модель на машинном обучении</h5><img class="b-article__preview" src="assets/img/article/item-1.jpg"/>
-                  <p class="b-article__text">После нескольких месяцев бета-тестирования сегодня компания «Яндекс» официально запустила «Топ интернет-проектов в России» — список 10 000 наиболее популярных ресурсов у российских пользователей. Все сайты распределены по тематическим категориям. Например, «Хабрахабр» определили в категории «Сообщества» (21 место) и «Техника и технологии» (19 место).</p><a class="b-article__more" href="#">Читать дальше</a>
-                </div>
-              </div>
-              <div class="b-articles-list__item">
-                <div class="b-article"><span class="b-article__date">18.11.2018</span>
                   <h5 class="b-article__title">«Яндекс» запустил рейтинг российских сайтов: аудиторию вычисляет математическая модель на машинном обучении</h5><img class="b-article__preview" src="assets/img/article/item-1.jpg"/>
                   <p class="b-article__text">После нескольких месяцев бета-тестирования сегодня компания «Яндекс» официально запустила «Топ интернет-проектов в России» — список 10 000 наиболее популярных ресурсов у российских пользователей. Все сайты распределены по тематическим категориям. Например, «Хабрахабр» определили в категории «Сообщества» (21 место) и «Техника и технологии» (19 место).</p><a class="b-article__more" href="#">Читать дальше</a>
                 </div>
