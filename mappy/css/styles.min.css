@@ -73,6 +73,11 @@
   width: 0.90476em;
 }
 
+.icon-fullscreen {
+  font-size: 100rem;
+  width: 1em;
+}
+
 .icon-location {
   font-size: 2rem;
   width: 1em;
@@ -837,6 +842,41 @@ ul {
   text-align: center;
 }
 
+.b-editor-map__map-wrap {
+  position: relative;
+}
+
+.b-editor-map__fullscreen {
+  z-index: 3;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.b-editor-map__fullscreen-icon {
+  font-size: 14px;
+  opacity: .4;
+}
+
 @media screen and (min-width: 576px) {
   .b-editor-map {
     width: 520px;
@@ -862,6 +902,9 @@ ul {
   }
   .b-editor-map__desc-style-3 {
     bottom: 40px;
+  }
+  .b-editor-map__fullscreen {
+    display: none;
   }
 }
 
