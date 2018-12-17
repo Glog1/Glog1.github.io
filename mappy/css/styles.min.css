@@ -1452,7 +1452,8 @@ ul {
 }
 
 .b-table__remove-btn:hover, .b-table__remove-btn:focus {
-  color: #f7da5f;
+  color: #d8022a;
+  opacity: .8;
 }
 
 .b-table__td {
