@@ -497,14 +497,6 @@ ul {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
 }
 
-.e-button-green:focus, .e-button-green:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-box-shadow: 1px 10px 40px 0px #40ba87;
-  box-shadow: 1px 10px 40px 0px #40ba87;
-}
-
 @media screen and (min-width: 1025px) {
   .e-button-green {
     padding: 18px 26px;
@@ -1061,6 +1053,13 @@ ul {
   }
 }
 
+@media screen and (min-width: 1025px) {
+  .b-sidebar {
+    min-height: -webkit-calc(100vh - 101px);
+    min-height: calc(100vh - 101px);
+  }
+}
+
 .b-input {
   margin-bottom: 23px;
 }
@@ -1224,9 +1223,9 @@ ul {
           box-shadow: inset 0 0 0px 2px #ffffff;
   border: 2px solid #dde0e2;
   margin: 0 auto;
-  border-radius: 1.6em;
-  -webkit-border-radius: 1.6em;
-  -moz-border-radius: 1.6em;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -1259,6 +1258,7 @@ ul {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
   font-size: 18px;
   font-weight: 700;
   padding: 22px 20px 10px;
@@ -1565,7 +1565,8 @@ ul {
     text-align: center;
     margin-top: 0;
   }
-  .b-table__check-out {
+  .b-table__check-btn {
+    width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1578,17 +1579,8 @@ ul {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #40ba87;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15)));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
-  }
-  .b-table__price-btn {
-    font-size: 18px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-right: 16px;
+    -webkit-border-radius: 0;
+            border-radius: 0;
   }
 }
 
