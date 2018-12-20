@@ -1356,7 +1356,8 @@ ul {
   }
   .b-welcome-mappy__figure-4 {
     left: inherit;
-    right: 39.5%;
+    right: -webkit-calc(25% + 185px);
+    right: calc(25% + 185px);
     top: 438px;
   }
   .b-welcome-mappy__figure-4-icon {
