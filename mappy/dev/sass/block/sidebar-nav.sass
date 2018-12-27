@@ -1,0 +1,32 @@
+.b-sidebar-nav
+	display: flex
+	align-items: center
+
+	&__item
+
+		position: relative
+		flex: 1
+		text-align: center
+		cursor: pointer
+		font-size: 14px
+		font-weight: 600
+		padding: 5px
+		&:after
+			content: ''
+			position: absolute
+			top: 100%
+			right: 0
+			left: 0
+			display: none
+			width: 12px
+			height: 2px
+			background-color: $color-green
+			margin: 0 auto 0
+		&.js-active
+			color: $color-green
+			&:after
+				display: block
+
+		&:hover,
+		&:focus
+			color: $color-green

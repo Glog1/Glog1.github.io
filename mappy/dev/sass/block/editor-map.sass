@@ -1,0 +1,102 @@
+.b-editor-map
+	position: relative
+	width: 210px
+	margin: 0 auto
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.15)
+	background-color: #ffffff
+	&--style-2
+		padding: 5px
+	&__map
+		height: 180px
+		&--style-2
+			height: 280px
+	&__desc
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 7px 8px
+		min-height: 117px
+	&__desc-style-2
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 0
+			right: 0
+			background-color: #ffffff
+			width: 100%
+			height: 8px
+			+translate(0, -50%)
+	&__desc-style-3
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+	&__coordinates
+		text-transform: uppercase
+		font-size: 10px
+		font-weight: 300
+
+	&__city
+		font-weight: 700
+		font-size: 20px
+		text-transform: uppercase
+		line-height: .8
+	&__country
+		display: block
+		font-weight: 200
+
+	&__hint
+		font-size: 11px
+		opacity: .55
+		margin: 15px auto 0
+		text-align: center
+	&__map-wrap
+		position: relative
+	&__fullscreen
+		z-index: 3
+		position: absolute
+		top: 8px
+		right: 8px
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 24px
+		height: 24px
+		box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1)
+		border-radius: 6px
+		background-color: #ffffff
+	&__fullscreen-icon
+		font-size: 14px
+		height: 14px
+		opacity: .4
+
+	@media screen and (min-width: $sm)
+		width: 520px
+		&__map
+			height: 440px
+			&--style-2
+				height: 720px
+		&__desc
+			min-height: 283px
+			padding: 12px 20px
+
+		&__coordinates
+			font-size: 24px
+		&__city
+			font-size: 48px
+		&__desc-style-2
+			bottom: 100px
+		&__desc-style-3
+			bottom: 40px
+		&__fullscreen
+			display: none
+
+	@media screen and (min-width: $lg)
+		&__hint
+			display: none

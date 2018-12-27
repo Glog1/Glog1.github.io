@@ -1,0 +1,98 @@
+body,
+html
+	height: 100%
+	margin: 0
+body
+	font: 16px/1.4 $font-default
+	color: $color-dark
+	//overflow-x: hidden
+	overflow: hidden
+
+	*
+		box-sizing: border-box
+		outline: none
+		&:hover,
+		&:focus
+			outline: none
+
+	&.js-mobile-menu
+		overflow: hidden
+a
+	text-decoration: none
+	color: $color-dark
+	+transition(all, .4s, ease)
+	&:hover,
+	&:focus
+		color: $color-accent
+
+img
+	max-width: 100%
+	vertical-align: middle
+h1,h2,h3,h4,h5,h6
+	margin-top: 0
+p
+	font-size: 16px
+	margin-top: 0
+	margin-bottom: 15px
+
+button, input, textarea, .e-input
+	+transition(all, .4s, ease)
+
+
+input, textarea, .e-input
+	display: block
+	border-radius: 6px
+	border: 1px solid #e6eaee
+	width: 100%
+	font-size: 16px
+	padding: 12px 12px 11px
+	&.error, &:focus:required:invalid
+		//border-color: $input-error-border
+	&:focus,
+	&:required:valid
+		border-color: $color-accent
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+
+	-webkit-appearance: none
+	-moz-appearance: textfield
+	margin: 0
+	padding: 0
+	width: 0
+	display: none
+
+input[type="time"]
+	font-size: 13px
+	padding-right: 0
+
+label
+	cursor: pointer
+button
+	padding: 0
+	background-color: transparent
+	border: none
+	box-shadow: none
+	cursor: pointer
+video
+	max-width: 100%
+table
+	width: 100%
+
+::selection
+	background-color: $color-accent
+	color: #fff
+	text-shadow: none
+
+::placeholder
+	font-size: 16px
+	color: #262a2c
+	opacity: .55
+
+
+ul
+	list-style: none
+	padding: 0
+	margin: 0

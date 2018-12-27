@@ -1,0 +1,55 @@
+.b-radio-tile-select
+
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+
+	&__item
+		flex: 1
+		text-align: center
+
+
+	&__label
+		font-size: 11px
+	&__preview-wrap
+		position: relative
+		width: 44px
+		height: 44px
+		margin: 0 auto
+	&__preview-figure
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 2
+		width: 44px
+		height: 44px
+		.stroke-opacity
+			stroke-opacity: 1
+			stroke: #dde0e2
+		.stroke-width
+			stroke-width: 2px
+	&__preview
+		position: absolute
+		z-index: 1
+		top: 3px
+		left: 3px
+		border-radius: 1em
+		width: 38px
+		height: 38px
+
+		margin: 0 auto
+
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+
+	&__input
+		display: none
+		&:checked + .b-radio-tile-select__preview-wrap
+			//border-color: $color-green
+			.stroke-opacity
+				stroke: $color-green
+				stroke-opacity: 1
+		&:checked ~ span
+			color: $color-green
+			font-weight: 600

@@ -1,0 +1,91 @@
+.e-burger
+	display: flex
+	align-items: center
+	justify-content: center
+
+	position: absolute
+
+	top: -24px
+	right: -20px
+
+	width: 72px
+	height: 72px
+	//background-color: $color-accent
+	+border-radius(38px)
+	+transition(all, .35s, ease)
+
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		width: 100%
+		height: 100%
+
+		background-color: $color-accent
+		z-index: -1
+		+border-radius(50%)
+		+transition(all, .5s, cubic-bezier(0.405, 0.00, 0.165, 1.000))
+	&:after
+		content: ''
+		z-index: -1
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 0
+		height: 0
+		background-color: #ffffff
+		margin: auto
+		+scale(0)
+		+border-radius(50%)
+		+transition(all, .35s, ease)
+	&__line
+		position: relative
+		height: 2px
+		width: 24px
+		background-color: $color-dark
+		+transition(all, .35s, ease)
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			display: block
+			height: 2px
+			width: 12px
+			background-color: $color-dark
+			+transition(all, .35s, ease)
+
+		&:before
+			top: -8px
+			right: 0
+		&:after
+			bottom: -8px
+			left: 0
+	&.js-active
+		//background-color: #ffffff
+		&:after
+			+scale(1)
+			width: 74px
+			height: 74px
+			transition-delay: .35s
+		&:before
+			width: 100vh
+			height: 100vh
+			transition-duration: 1s
+			+scale(5)
+
+
+		.e-burger__line
+			+rotate(-45deg)
+			transition-delay: .35s
+			&:before,
+			&:after
+				transition-delay: .35s
+				width: 8px
+				
+			&:before
+				right: 8px
+			&:after
+				left: 8px
