@@ -1,0 +1,102 @@
+extends ../template/main-no-footer
+block title
+    | Markup
+block main
+    .c-container
+        .b-heading
+            h1.b-heading__caption Shopping Cart
+
+
+        form(action="/" method="post").b-table
+            .b-table__heading.b-table__heading--mobile-pb-0
+                .table__td.b-table__td--desctop-xxl.b-table__td--mobile-hidden Item
+                .b-table__td.b-table__td--desctop-xs.b-table__td--mobile-hidden Price
+                .b-table__td.b-table__td--desctop-xs.b-table__td--desctop-center.b-table__td--mobile-hidden Quantity
+                .b-table__td.b-table__td--desctop-right.b-table__td--mobile-hidden Total
+
+            .b-table__row.b-table__row--mobile-center
+                .b-table__td.b-table__td--desctop-xs.b-table__td--mobile-full.b-table__td--mobile-center
+                    img(src="assets/img/product/item-1.jpg" alt="alt")
+                .table__td.b-table__td--desctop-xl.b-table__td--mobile-full.b-table__td--mobile-center
+                    .b-product-cart
+                        h6.b-product-cart__title Nha Trang, Vietnam, 12.214°N / 109.20°E
+                        .b-product-cart__text
+                            | Orientation and size: portait, 70×100cm
+                            br
+                            |  Style: black&white
+                            br
+                            | Material and frame: paper + black frame.
+
+                .b-table__td.b-table__td--desctop-xs
+
+                    .b-product-cart.b-product-cart--mobile-padding
+                        .b-product-cart__text.b-product-cart__text--price.b-product-cart__text--mobile Price
+                        .b-product-cart__price $59
+
+                .b-table__td.b-table__td--desctop-xs.b-table__td--desctop-center-flex
+                    .b-product-cart.b-product-cart--mobile-padding
+
+                        .b-product-cart__text.b-product-cart__text--mobile Quantity
+                        .b-input.b-input--gutter-0
+                            input(type="number" value="1").b-input__number
+
+                .b-table__td.b-table__td--desctop-right
+
+                    .b-product-cart.b-product-cart--mobile-padding
+                        .b-product-cart__text.b-product-cart__text--mobile.b-product-cart__text--price Total
+                        .b-product-cart__total $59
+
+                button.b-table__remove-btn Remove
+
+            .b-table__row.b-table__row--mobile-center
+                .b-table__td.b-table__td--desctop-xs.b-table__td--mobile-full.b-table__td--mobile-center
+                    img(src="assets/img/product/item-2.jpg" alt="alt")
+                .table__td.b-table__td--desctop-xl.b-table__td--mobile-full.b-table__td--mobile-center
+                    .b-product-cart
+                        h6.b-product-cart__title Nha Trang, Vietnam, 12.214°N / 109.20°E
+                        .b-product-cart__text
+                            | Orientation and size: portait, 70×100cm
+                            br
+                            |  Style: black&white
+                            br
+                            | Material and frame: paper + black frame.
+
+                .b-table__td.b-table__td--desctop-xs
+
+                    .b-product-cart.b-product-cart--mobile-padding
+                        .b-product-cart__text.b-product-cart__text--price.b-product-cart__text--mobile Price
+                        .b-product-cart__price $59
+
+                .b-table__td.b-table__td--desctop-xs.b-table__td--desctop-center-flex
+                    .b-product-cart.b-product-cart--mobile-padding
+
+                        .b-product-cart__text.b-product-cart__text--mobile Quantity
+                        .b-input.b-input--gutter-0
+                            input(type="number" value="2").b-input__number
+
+                .b-table__td.b-table__td--desctop-right
+
+                    .b-product-cart.b-product-cart--mobile-padding
+                        .b-product-cart__text.b-product-cart__text--mobile.b-product-cart__text--price Total
+                        .b-product-cart__total $118
+
+                button.b-table__remove-btn Remove
+            .b-table__footer
+                a(href="#").b-table__footer-link
+                    span.b-table__figure
+                        include ../../assets/img/svg/icon/cart.svg
+                    | Contuinue Shopping
+
+                a(href="#").b-table__footer-link
+                    span.b-table__figure
+                        include ../../assets/img/svg/icon/refresh.svg
+                    | Update cart
+
+                .b-table__footer-price $177
+
+
+                .b-table__footer-hint Taxes and shipping calculated at checkout
+
+            .b-table__check-out
+                button.e-button-green.b-table__check-btn Check Out
+                    span.b-table__price-btn $177

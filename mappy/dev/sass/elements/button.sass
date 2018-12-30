@@ -1,0 +1,124 @@
+.e-button
+	display: inline-block
+	font-size: 18px
+	line-height: 1
+	font-weight: 600
+	padding: 22px 30px 20px
+	background-color: $color-light-yellow
+	-webkit-animation-duration: .4s
+	animation-duration: .4s
+	-webkit-animation-fill-mode: both
+	animation-fill-mode: both
+	animation-name: buttonAnimate
+
+	+border-radius(.6em)
+	&:hover,
+	&:focus
+		color: $color-dark
+		animation-name: buttonAnimateHover
+
+.e-button-corner
+	display: inline-block
+	position: relative
+	font-size: 14px
+	font-weight: 600
+
+	//background-color: #f7da5f
+	background-image: linear-gradient(-45deg, rgba(255,255,255,0) 8px,rgba(255,255,255,0),$color-accent 0)
+	padding: 25px 17px 5px
+	border-radius: 0 0 4px 4px
+
+	//+translate(0,-10px)
+	transform: translate3d(0, -10px, 0)
+
+	-webkit-animation-duration: .4s
+	animation-duration: .4s
+	-webkit-animation-fill-mode: both
+	animation-fill-mode: both
+	animation-name: bounceUp
+	+transition(all, .4s, ease)
+
+	&:before
+		content: ''
+		position: absolute
+		right: 0
+		bottom: 0
+
+		width: 0
+		height: 0
+		border-top: 11px solid rgba(0, 0, 0, 0.2)
+		border-right: 11px solid transparent
+
+	&:hover,
+	&:focus
+		color: $color-dark
+		animation-name: bounceInDown
+
+
+
+.e-button-frame
+	display: inline-block
+	position: relative
+	font-size: 37px
+	font-weight: 300
+	padding: 9px 34px 36px 13px
+	&__border
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background-image: linear-gradient(-135deg, rgba(255,255,255,0) 18px,rgba(255,255,255,0),$color-dark 0)
+		border-radius: 8px 8px 0 0
+		z-index: -1
+	&:after
+		content: ''
+		position: absolute
+		top: 2px
+		right: 2px
+		bottom: 0px
+		left: 2px
+		background-image: linear-gradient(-135deg, rgba(255,255,255,0) 17px,rgba(255,255,255,0),$color-accent 0)
+		z-index: 1
+		border-radius: 5px 5px 0 0
+		z-index: -1
+	&__triangle
+		position: absolute
+		top: 2px
+		right: 2px
+		width: 23px
+		height: 23px
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjYiIGhlaWdodD0iMjYiPjxkZWZzPjxwYXRoIGlkPSJhIiBkPSJNMzAwIDU2MGE4IDggMCAwIDAgOCA4aDE2di0yNGgtMjR6Ii8+PC9kZWZzPjx1c2UgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSI1MCIgc3Ryb2tlLXdpZHRoPSIyIiB4bGluazpocmVmPSIjYSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI5OSAtNTQzKSIvPjwvc3ZnPg==)
+		background-position: 0px -3px
+		background-repeat: no-repeat
+	&:hover,
+	&:focus
+		color: $color-dark
+		opacity: .8
+
+.e-button-green
+	display: inline-block
+	padding: 13px 16px
+	font-size: 18px
+	font-weight: 700
+	color: #ffffff
+	border-radius: 12px
+	background-color: $color-green
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%)
+
+
+@media screen and (max-width: $max-lg)
+	.e-button
+		&--tablet-full-w
+			width: 100%
+@media screen and (max-width: $max-sm)
+	.e-button
+		&--mobile-full-w
+			width: 100%
+
+@media screen and (min-width: $lg)
+	.e-button
+		font-size: 24px
+		padding: 24px 37px 22px
+	.e-button-green
+		padding: 18px 26px

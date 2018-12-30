@@ -1,0 +1,227 @@
+.c-page
+	display: flex
+	flex-direction: column
+	height: 100%
+	overflow-x: hidden
+	&.js-mobile-menu
+		overflow: hidden
+		.b-product-cart-icon__count
+			border-color: $color-accent
+.c-main
+	flex: 1 0 auto
+
+	//&--full-height
+	//	height: calc(100% - 48px)
+
+.c-header
+	position: relative
+	//overflow-x: hidden
+	display: flex
+	align-items: center
+	flex-shrink: 0
+	padding: 8px
+	background-color: #ffffff
+	z-index: 5
+
+	&:after
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		top: 100%
+		display: block
+		width: 100%
+		height: 4px
+		background-image: linear-gradient(to top, rgba(230, 234, 238, 0) 0%, #e6eaee 100%)
+		z-index: -2
+
+	&--style-2
+		background-color: transparent
+		&:after
+			display: none
+	&__logo
+		position: relative
+		z-index: 15
+		padding-right: 12px
+
+	&__navigation
+		padding-right: 12px
+		padding-left: 12px
+
+	&__right
+		position: relative
+		//z-index: 10
+		display: flex
+		align-items: center
+		margin-left: auto
+		padding-left: 12px
+
+	&__button-corner
+		display: none
+
+	&__burger
+		width: 48px
+	&__create-button-mobile
+
+		margin: 100px -16px 0 -16px
+		text-align: center
+
+
+
+
+.c-content
+	padding: 50px 0 50px
+
+
+.c-footer
+	padding: 38px 0
+	flex: 0 0 auto
+	border-top: 1px solid $color-light-bg
+	margin-left: 20px
+	margin-right: 20px
+
+	&__caption
+		font-size: 24px
+		font-weight: 600
+		margin-bottom: 8px
+
+	&__copyright
+		border-top: 1px solid $color-light-bg
+		padding-top: 38px
+		margin-top: 38px
+.main-bold
+	font-weight: 600
+.c-row
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+.c-justify-center
+	justify-content: center
+
+@media screen and (max-width: $max-lg)
+	.c-page
+		.o-editor__map
+			animation: fadeInSmall .4s
+			animation-fill-mode: forwards
+		.o-editor__sidebar
+			animation: fadeInSmall .4s
+			animation-fill-mode: forwards
+		&.js-mobile-menu
+			.o-editor__map
+				animation: fadeOutSmall .3s
+				animation-fill-mode: forwards
+			.o-editor__sidebar
+				animation: fadeOutSmall .3s
+				animation-fill-mode: forwards
+	.c-header
+		&__create-button-mobile
+			opacity: 0
+			transform: translatey(20px)
+
+		&__navigation
+			//display: none
+			position: fixed
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			left: 0
+			right: 0
+			top: 0
+
+			//background-color: $color-accent
+			//z-index: 5
+			overflow-y: auto
+
+			padding: 150px 48px 0
+			opacity: 0
+			visibility: hidden
+
+
+			+transition(all, .4s, ease)
+			//transform: translate3d(0, -100%, 0)
+			.b-navigation
+				&__item
+					animation: fadeOut .2s
+					animation-fill-mode: forwards
+
+			&.js-active
+				bottom: 0
+				opacity: 1
+				visibility: visible
+				//transform: translate3d(0, 0, 0)
+				.b-navigation
+					&__item
+
+						animation: fadeIn 0.4s
+						animation-fill-mode: forwards
+
+						&:nth-child(1)
+							animation-delay: 0.3s
+						&:nth-child(2)
+							animation-delay: 0.4s
+						&:nth-child(3)
+							animation-delay: 0.5s
+						&:nth-child(4)
+							animation-delay: 0.6s
+
+				.c-header__create-button-mobile
+					animation: createButtonMobile .7s .4s
+					animation-fill-mode: forwards
+
+
+@media screen and (min-width: $lg)
+	.c-container
+		margin-left: 100px
+		margin-right: 100px
+	.c-header
+		&__logo
+			-webkit-animation-duration: 1s
+			animation-duration: 1s
+			-webkit-animation-fill-mode: both
+			animation-fill-mode: both
+			animation-name: headerAnimation
+		&__navigation
+			-webkit-animation-duration: 1s
+			animation-duration: 1s
+			-webkit-animation-fill-mode: both
+			animation-fill-mode: both
+			animation-name: headerAnimation
+		&__button-corner
+
+			-webkit-animation-duration: .6s
+			animation-duration: .6s
+			-webkit-animation-fill-mode: both
+			animation-fill-mode: both
+			animation-name: buttonCorner
+			margin-top: -9px
+			display: block
+			height: 40px
+
+		&__burger
+			display: none
+		&__create-button-mobile
+			display: none
+
+	.c-footer
+		padding: 60px 0
+		margin-left: 60px
+		margin-right: 60px
+		&__row
+			display: flex
+			flex-wrap: wrap
+		&__item
+			&--xs
+				flex: 1 0 24%
+				max-width: 24%
+			&--lg
+				flex: 1 0 48%
+				max-width: 48%
+				margin-left: auto
+
+		&__copyright
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding-top: 60px
+			margin-top: 100px
+

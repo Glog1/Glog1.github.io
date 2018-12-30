@@ -1,0 +1,275 @@
+extends ../template/main-no-footer
+block title
+	| Markup
+block main
+	.o-editor
+		.o-editor__map.js-editorMap
+			.o-editor__navigation
+				.b-editor-nav
+					button.b-editor-nav__btn
+						include ../../assets/img/svg/icon/plus.svg
+					button.b-editor-nav__btn
+						include ../../assets/img/svg/icon/minus.svg
+
+			.b-editor-map.b-editor-map--style-2
+				.b-editor-map__map-wrap
+					.b-editor-map__pencil
+						include ../../assets/img/svg/icon/pencil.svg
+					button.b-editor-map__fullscreen
+						.b-editor-map__fullscreen-icon
+							include ../../assets/img/svg/icon/fullscreen.svg
+					.b-editor-map__map.b-editor-map__map--style-2#mapBlack
+				.b-editor-map__desc-style-2
+					.b-editor-map-desc-style-2
+						.b-editor-map-desc-style-2__city Los Angeles
+						.b-editor-map-desc-style-2__location United States, 59.329°N/18.068°E
+			.b-editor-map__hint You can <span class="main-bold">drag and zoom</span> map using standart gestures
+
+
+		form(action="/" method="post").o-editor__sidebar.js-editorSideBar
+			.b-sidebar.js-sidebar-wrap
+				.b-input.b-input--hidden-mobile.js-sidebar-content.js-active(data-child="a")
+					.b-input__label.b-input__label--hidden-mobile Location
+					.b-input__input-row
+						input(type="text").e-input.b-input__input-icon
+						.e-input-placeholder Enter city or place
+						button.b-input__right-button
+							.b-input__icon-location
+								include ../../assets/img/svg/icon/location.svg
+
+				.b-input.b-input--hidden-mobile.js-sidebar-content(data-child="b")
+					.b-input__label.b-input__label--hidden-mobile Lables
+
+					.b-input__input-row
+						input(type="text").e-input
+						.e-input-placeholder Header
+					.b-input__input-row
+						input(type="text").e-input
+						.e-input-placeholder Divider
+					.b-input__input-row
+						input(type="text").e-input.b-input__input-icon
+						.e-input-placeholder Tag line
+						button.b-input__right-button
+							.b-input__icon-location
+								include ../../assets/img/svg/icon/location.svg
+
+				.b-input.b-input--hidden-mobile.js-sidebar-content(data-child="c")
+					.b-input__label.b-input__label--hidden-mobile Size
+
+					.b-input__input-row
+
+						.b-radio-select
+
+							.b-radio-select__list
+
+								.b-radio-select__item
+									label.b-radio-select__label
+										input(type="radio" name="size" value="30×40" checked).b-radio-select__input
+										span 30×40cm
+										.b-radio-select__bg
+
+
+								.b-radio-select__item
+									label.b-radio-select__label
+										input(type="radio" name="size" value="50×70").b-radio-select__input
+										span 50×70cm
+										.b-radio-select__bg
+
+								.b-radio-select__item
+									label.b-radio-select__label
+										input(type="radio" name="size" value="70×100").b-radio-select__input
+										span 70×100cm
+										.b-radio-select__bg
+
+								.b-radio-select__item
+									label.b-radio-select__label
+										input(type="radio" name="size" value="24×36in").b-radio-select__input
+										span 24×36in
+										.b-radio-select__bg
+
+								.b-radio-select__item
+									label.b-radio-select__label
+										input(type="radio" name="size" value="18×24in").b-radio-select__input
+										span 18×24in
+										.b-radio-select__bg
+
+
+					.b-input__input-row
+
+						.b-radio-select
+
+							.b-radio-select__list
+
+								.b-radio-select__item
+									label.b-radio-select__label
+										input(type="radio" name="sizeType" value="Portait" checked).b-radio-select__input
+										span Portait
+										.b-radio-select__bg
+
+								.b-radio-select__item
+									label.b-radio-select__label
+										input(type="radio" name="sizeType" value="Landscape").b-radio-select__input
+										span Landscape
+										.b-radio-select__bg
+
+
+
+				.b-input.b-input--hidden-mobile.js-sidebar-content(data-child="d")
+					.b-input__label.b-input__label--hidden-mobile Style
+
+					.b-input__input-row
+
+						.b-radio-tile-select
+							.b-radio-tile-select__item
+
+								label.b-radio-tile-select__label
+									input(type="radio" name="style" value="Contrast" checked).b-radio-tile-select__input
+									.b-radio-tile-select__preview-wrap
+										.b-radio-tile-select__preview-figure
+											include ../../assets/img/svg/icon/oval.svg
+										.b-radio-tile-select__preview
+									span Contrast
+
+							.b-radio-tile-select__item
+
+								label.b-radio-tile-select__label
+									input(type="radio" name="style" value="Seaside" ).b-radio-tile-select__input
+									.b-radio-tile-select__preview-wrap
+										.b-radio-tile-select__preview-figure
+											include ../../assets/img/svg/icon/oval.svg
+										.b-radio-tile-select__preview
+									span Seaside
+
+							.b-radio-tile-select__item
+
+								label.b-radio-tile-select__label
+									input(type="radio" name="style" value="Bauhaus" ).b-radio-tile-select__input
+									.b-radio-tile-select__preview-wrap
+										.b-radio-tile-select__preview-figure
+											include ../../assets/img/svg/icon/oval.svg
+										.b-radio-tile-select__preview
+									span Bauhaus
+
+							.b-radio-tile-select__item
+
+								label.b-radio-tile-select__label
+									input(type="radio" name="style" value="Sierra" ).b-radio-tile-select__input
+									.b-radio-tile-select__preview-wrap
+										.b-radio-tile-select__preview-figure
+											include ../../assets/img/svg/icon/oval.svg
+										.b-radio-tile-select__preview
+									span Sierra
+
+							.b-radio-tile-select__item
+
+								label.b-radio-tile-select__label
+									input(type="radio" name="style" value="Twilight" ).b-radio-tile-select__input
+									.b-radio-tile-select__preview-wrap
+										.b-radio-tile-select__preview-figure
+											include ../../assets/img/svg/icon/oval.svg
+										.b-radio-tile-select__preview
+									span Twilight
+
+
+				.b-input.b-input--hidden-mobile.js-sidebar-content(data-child="e")
+					.b-input__label.b-input__label--hidden-mobile Frame
+
+					.b-input__input-row
+
+						.b-radio-select
+
+							.b-radio-select__list
+
+								.b-radio-select__item
+									label.b-radio-select__label
+										input(type="radio" name="Frame" value="Paper poster" checked).b-radio-select__input
+										span Paper poster
+										.b-radio-select__bg
+
+								.b-radio-select__item
+									label.b-radio-select__label
+										input(type="radio" name="Frame" value="Canvas").b-radio-select__input
+										span Canvas
+										span.b-radio-select__add-price +$20
+										.b-radio-select__bg
+
+								.b-radio-select__item
+									label.b-radio-select__label
+										input(type="radio" name="Frame" value="Poster + frame").b-radio-select__input
+										span Canvas
+										span.b-radio-select__add-price +$30
+										.b-radio-select__bg
+
+				.b-input.b-input--hidden-mobile.js-sidebar-content(data-child="e")
+					.b-input__input-row
+
+						.b-radio-tile-select
+							.b-radio-tile-select__item
+
+								label.b-radio-tile-select__label
+									input(type="radio" name="FrameType" value="Natural" checked).b-radio-tile-select__input
+									.b-radio-tile-select__preview-wrap
+										.b-radio-tile-select__preview-figure
+											include ../../assets/img/svg/icon/oval.svg
+										.b-radio-tile-select__preview(style="background-color: #887055; \tbackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAAXNSR0IB2cksfwAAArhQTFRFAAAAbVlDdmI7bVpEblpEbVlEbVhDZk1NbllFbVtDbVhDbVhEbVdHbVlEblpFbVlDbllDbUlJalVAbVpEbVlEbVlFbllFbllDbVlDaVpLbVlEbllFbF1GbVlDbVhEbVhEbVpFbllEbVlEbVlFZmYzZlVEbVlEbFlEa1pGbFlDbVlFbFpFbVlEbFlDbVlEbFlGa15DbVlEbVlEbFpDbVpFbllEbFlFbVhFbVhEalxHalVAbVpEbVlEbFhEbVlEbVhDbVhDblhEbVhEbVdCgFVVbVlEbFhFbFpEbVhEbVhEcVVHbVpEb1dDbllDbFlFcFdEbFtEbVlEbVlEbFlGbVlEbVlFblhFbFlEbVpEbVhEbVlEaF1GbVhEa1lBbFlEbVlFbVpEbVpFbVhEbVpEa1lDbllDblhFbVlDgICAAAAAgEBAbVlEbVpFbVhDcFhIa1dDbFlFbFlEbVlEbFlDblhFbVlEblpEbVpCbVhEbFhFVVVVbFtFbVpDbVlEbFlEbVlEbVpEb1xBbVlEblpGa1tDbVpDbVpEbFlEblpFblhCbVlEdF1Gc1lAbVlEbVlEbFlDbVlFcGBAbFhEbVlEbllDa1pCblhEbVhEbllEblpEblhFbVlEbllEbFlDbFpDbVlEbVlEcVpEbVlGbVlEbVlEb1lDbVlEbVVJbllEbVlEbFlEbVlFbFdCbVlDbVlEblpEb1lDbVlFbVtAbFhEbFpEbVhEbFlEbllEbVlEbFhFblhFb1hGblpDbFlFbVlEbFhFbFhEbFhEbVlEbVlFbVlFblpDbFhDalhGbVlEbldGbFlEbVlEbFlEbVdFblhFa1dCbVlEbVlEYGBAb1VEbFpEbVhEbVlEbVlEbVlEbVhEbVlEbFhEbVpEcVU5bFlEbVlEbVlEbVlEbVlEbllDbVtJbVlDbVhEbVtE7WKWfgAAAOh0Uk5TAGcNg4Bwbgq6KlSIL+5Km3kHGESmWYlf0BHCZCGBZXx3h6+rBQ/ntT7Bc1W+UNcoE+y7Y5GqXGDbJAxS3ECpnz2zrSMG6WiXMd4SojVyhikt0s5CwI1drGnE+hbHK88/vHqwXjlIUbICAQSxtoUgJqB4j65D5U82lk4DO1ukhHWoJ9gzTJRs1iU6vwsU68x2yRCL1aMfdPV7ZoLvlWp90eoiTZrDLrcVVuhTmEmM/44XxRxapWKSbf4aazdYp/A0mX/91ONBVx3iLJ7T5EacMvvGCB5Hk6H3+cq0cbkJyLjty9qQDr1LOCjrdwoAAAMYSURBVBgZBcAJWw4GAADgt1DUllITFYSWWMWnoo0W2hbRB1lCAyKNhAlhBtZgMAwNBsyGsZiB0cwOszaDXXaff8MDAEJCadESrcIAAIBwWrchIpJHHo1C2+gYAEC7WOIeI7I98R06EpGQCACQFEd0Jzp3oWsyMd269wAASHmcqFR6ptErkt5PpAMAkJGpT19CA+hHVjYAOTmAyP4MyCUjE54cEAHgqYEtwoFBeWT15un+kJSWC5A/eMhQQMEzPPscOZ2gcBiGQ1JRwggYmYvioFGjKRwDY8egpCPGDYuC50vHwXjKQpnQAxMnUf7CZHpPGYl2U6cVJZnOUFKj6D4DFQFmzqo0e1p2FbEvzplbzbwamJ/MglaIDdB5IS8tqmVxwpKlsDSgjmVlLF+BySW8HM3KKVjySj5YlUcNJaxajTWlrF1H91dZvHo8oD6o6DXr1rNhI5teZ0FXNkewZes2uW/Ub9+heqewLN6kbBl2hdu9h9Kx1LSnYXBYcHhONtveAnv3oT5ofwMZ5RxIV/h2vIPUTaoy6xB0PoyiWvGdKCvkyFE5x945/u7A99SecHIOOyxOQK9TYgN0S9fj/XDFyRpOn2mTLbXa5jZ6DrEd6z/Q2I0WXRQkcLbYuQ85XxEd4qPzHJhnIrMvsOii43lmX+DwfCGXWHj5ysdSrrI8EhRd03RIsJ5AjC6JTn9C6dmjg9mQr/I6mJ8s5ATXK31abnqT+JZib3zWOIC5Uyn+HFbl+eJL4m6aek3SMJkZgoGYPn2p/YrEtmzi1k23bjrVC8QFleW6aNTXNG8ldyGq2aP9FhXHQL9v7IvGjO18u4KUqzgHy+JU3QZuNOpwkenfMWI0dyZV0vou7Aq3YRC41wTuL+HS97T7oY7Uo6Dcyv1QJToEV348S806mlsjrRmQ+RNM/Hns+iG775cUF7h8JJ4HvyCjJ8DdFDSm9Rn966jEmaGc/m2nqt8bWPNHJgDwZ+XadLDnrwfU3r7Hvs11AMDf+cDBgU3/OHPsBM7vBQC4Azg5VEHWrArWTqgAAACAf8PY+N//AHgIMK/doX/q4NEAAAAASUVORK5CYII=)")
+									span Natural
+
+							.b-radio-tile-select__item
+
+								label.b-radio-tile-select__label
+									input(type="radio" name="FrameType" value="Black" ).b-radio-tile-select__input
+									.b-radio-tile-select__preview-wrap
+										.b-radio-tile-select__preview-figure
+											include ../../assets/img/svg/icon/oval.svg
+										.b-radio-tile-select__preview(style="background-color: #2c2c2c;")
+									span Black
+
+							.b-radio-tile-select__item
+
+								label.b-radio-tile-select__label
+									input(type="radio" name="FrameType" value="White" ).b-radio-tile-select__input
+									.b-radio-tile-select__preview-wrap
+										.b-radio-tile-select__preview-figure
+											include ../../assets/img/svg/icon/oval.svg
+										.b-radio-tile-select__preview
+									span White
+
+
+				.b-sidebar__mobile-nav
+					.b-sidebar-nav
+						a(href="#" data-main="a").b-sidebar-nav__item.js-sidebar-item.js-active Location
+						a(href="#" data-main="b").b-sidebar-nav__item.js-sidebar-item Lables
+						a(href="#" data-main="c").b-sidebar-nav__item.js-sidebar-item Size
+						a(href="#" data-main="d").b-sidebar-nav__item.js-sidebar-item Style
+						a(href="#" data-main="e").b-sidebar-nav__item.js-sidebar-item Frame
+
+			button.b-total-price
+				.b-total-price__title Buy poster
+
+				.b-total-price__sum $39
+	section.b-reviews
+		.b-reviews__row
+			.b-reviews__item.b-reviews__item--content
+				h2.b-reviews__caption Customers Say
+				.b-review
+					h3.b-review__text If anyone ever wants to give me a gift, visit the @mappyplace site for ideas. Just amazing!
+					a(href="#").b-review__twitter @eliciatoyou on Twitter
+
+
+				.b-reviews__circle
+					.b-reviews__circle-figure
+						include ../../assets/img/svg/icon/circle.svg
+
+			.b-reviews__item
+
+				.b-review-img
+					.b-review-img__item
+						img(src="assets/img/review/item-2.png" alt="alt")
+					.b-review-img__item
+						img(src="assets/img/review/item-1.png" alt="alt")
+					.b-review-img__item
+						img(src="assets/img/review/item-3.png" alt="alt")
+
+				a(href="#").b-reviews__more More inspiration
+					span.b-reviews__more-figure
+						include ../../assets/img/svg/icon/arrow-right.svg

@@ -1,0 +1,45 @@
+.b-product-cart-icon
+	position: relative
+	font-size: 14px
+	line-height: 1
+	font-weight: 600
+	margin-right: 24px
+	-webkit-animation-duration: 1s
+	animation-duration: 1s
+	-webkit-animation-fill-mode: both
+	animation-fill-mode: both
+	animation-name: headerAnimation
+	svg
+		+transition(all, .4s, ease)
+	&:hover,
+	&:focus
+		color: $color-purple
+		opacity: .8
+		svg
+			fill: $color-purple
+	&__figure
+		display: inline-block
+		height: 21px
+		font-size: 21px
+		margin-right: 11px
+
+	&__sum
+		display: inline-block
+		vertical-align: super
+
+	&__count
+		display: flex
+		align-items: center
+		justify-content: center
+		min-width: 15px
+		height: 15px
+		font-size: 10px
+		color: #ffffff
+		position: absolute
+		top: -3px
+		left: 11px
+		background-color: $color-purple
+		border: 2px solid #ffffff
+		+border-radius(50%)
+		+transition(all, .4s, ease)
+		transition-delay: .1s

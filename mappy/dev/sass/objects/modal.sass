@@ -1,0 +1,137 @@
+.o-modal
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	//background-color: $modal-background
+	z-index: 100
+	display: none
+	&.active
+		display: block
+	&__center
+		height: 100%
+		min-height: 100%
+		text-align: center
+		padding: 2%
+		overflow-y: auto
+		&:before
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			height: 100%
+			margin-right: -2%
+
+	&__content
+		position: relative
+		display: inline-flex
+		vertical-align: middle
+		background-color: #ffffff
+		max-width: 733px
+		min-height: 258px
+		width: 100%
+		padding: 25px 20px
+		text-align: left
+		z-index: 101
+
+		align-content: center
+		justify-content: center
+		flex-direction: column
+		&.__lg
+			max-width: 1000px
+
+	&__body,
+	&__footer
+
+		&.__border-top
+
+			//border-top: 1px solid $grey-darker
+			padding: 26px 0 0
+			margin-top: 25px
+
+
+	&__close
+		position: absolute
+		right: 12px
+		top: 12px
+		z-index: 110
+		cursor: pointer
+
+	&__caption
+		letter-spacing: -0.36px
+		padding-bottom: 15px
+		//border-bottom: 1px solid $grey-darker
+		margin-bottom: 25px
+		&.__mb-10
+			margin-bottom: 10px
+	&__text
+		//font-family: $additional-font-bold
+		letter-spacing: -0.27px
+		margin-bottom: 25px
+	&__greeting
+		text-align: center
+		&--figure
+			margin: 0 0 25px
+
+	&__footer
+		margin-top: 40px
+		text-align: center
+
+		&.__mt-10
+			margin-top: 10px
+
+
+
+	&__button-row
+		+row
+		align-items: center
+		justify-content: center
+	&__button-wrap
+		margin: 5px 8px 5px 8px
+	&__textarea
+		min-height: 165px
+		resize: none
+
+	&__caption-bg
+		background-color: $accent
+		text-align: center
+		padding: 25px 15px
+		margin-bottom: 35px
+	&__caption-bg-title
+		margin-bottom: 0
+	&__profile-photo
+		margin: 0 auto 25px
+		text-align: center
+	//.o-modal
+	@media screen and (min-width: $sm)
+		&__caption
+			padding: 0 0 18px
+
+		&__content
+			padding: 40px 36px
+
+
+	@media screen and (min-width: $sm-l)
+		&__profile-photo
+			margin-bottom: 0
+
+	@media screen and (min-width: $lg)
+		&__content
+			min-height: 358px
+			&.__md
+				min-height: 331px
+				max-width: 754px
+				padding: 60px 36px 25px
+		&__caption
+			padding: 0 0 22px
+			margin-bottom: 30px
+		&__footer
+			&.__mt-70
+				margin-top: 70px
+	@media screen and (min-width: $xl)
+		&__caption
+			padding: 0 0 26px
+			margin-bottom: 39px
+		&__greeting
+			&--figure
+				margin: 0 0 35px

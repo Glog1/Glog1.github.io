@@ -1,0 +1,32 @@
+.b-navigation
+	position: relative
+	display: flex
+	flex-direction: column
+	flex-shrink: 0
+	z-index: 15
+	&__item
+		font-size: 36px
+		font-weight: 300
+		margin-right: 0
+		margin-bottom: 23px
+		&:hover,
+		&:focus
+			color: $color-dark
+
+	@media screen and (max-width: $max-lg)
+		&__item
+			transform: translatey(20px)
+			opacity: 0
+	@media screen and (min-width: $lg)
+		align-items: center
+		flex-direction: row
+		&__item
+			font-size: 14px
+			font-weight: 400
+			margin-right: 25px
+			margin-bottom: 0
+			&:last-child
+				margin-right: 0
+			&:hover,
+			&:focus
+				color: $color-green

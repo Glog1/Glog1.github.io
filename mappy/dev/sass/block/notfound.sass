@@ -1,0 +1,55 @@
+.b-notfound
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+
+	padding: 65px 20px 45px
+
+	&__text
+		font-size: 40px
+		line-height: 1.1
+		font-weight: 700
+		letter-spacing: 0.02em
+		margin-bottom: 0
+	&__item
+		&--text
+			margin-bottom: 50px
+		//	text-align: center
+		//&--error
+		//	display: flex
+		//	align-items: flex-end
+		//	flex: 1
+
+	&__error-icon
+		max-width: 250px
+		margin: 0 auto
+		svg
+			max-width: 100%
+	@media screen and (min-width: $lg)
+		flex-direction: row
+		justify-content: space-between
+		padding: 99px 60px 83px
+		&__item--text
+			text-align: left
+		&__text
+			font-size: 72px
+			//margin-bottom: 36px
+
+		//&__error
+		//	width: 256px
+		//	height: 252px
+		//	font-size: 108px
+		//	padding-bottom: 17px
+		//	margin-bottom: 0
+		&__item
+
+			&--text
+				flex: 0 0 52%
+				max-width: 52%
+				margin-bottom: 0
+			&--error
+				margin-top: -23px
+		&__error-icon
+			max-width: 100%
+			margin: 0
+

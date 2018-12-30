@@ -2518,6 +2518,9 @@ ul {
   .b-editor-map__pencil {
     display: block;
   }
+  .b-editor-map__map-wrap {
+    overflow: visible;
+  }
 }
 
 .b-editor-nav__btn {

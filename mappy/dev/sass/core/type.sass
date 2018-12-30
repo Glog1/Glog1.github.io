@@ -1,0 +1,129 @@
+body,
+html
+	height: 100%
+	margin: 0
+body
+	font: 16px/1.4 $font-default
+	color: $color-dark
+	//overflow-x: hidden
+	overflow: hidden
+
+	*
+		box-sizing: border-box
+		outline: none
+		&:hover,
+		&:focus
+			outline: none
+
+	&.js-mobile-menu
+		overflow: hidden
+a
+	text-decoration: none
+	color: $color-dark
+
+	+transition(all, .4s, ease)
+	svg
+		+transition(all, .4s, ease)
+	&:hover,
+	&:focus
+		color: $color-green
+		svg
+			fill: $color-green
+
+img
+	max-width: 100%
+	vertical-align: middle
+h1,h2,h3,h4,h5,h6
+	margin-top: 0
+p
+	font-size: 16px
+	margin-top: 0
+	margin-bottom: 15px
+
+button, input, textarea, .e-input
+	+transition(all, .4s, ease)
+
+
+input, textarea, .e-input
+	display: block
+	border-radius: 6px
+	border: 1px solid #e6eaee
+	width: 100%
+	font-size: 16px
+	padding: 8px 12px 8px
+	position: relative
+	z-index: 1
+	background-color: transparent
+	&.error, &:focus:required:invalid
+		//border-color: $input-error-border
+	&:focus,
+	&:required:valid
+		border-color: $color-green
+
+	@media screen and (min-width: $lg)
+		padding: 10px 12px 10px
+.e-input-placeholder
+	position: absolute
+	top: 50%
+	left: 11px
+	font-size: 11px
+	line-height: 1
+	color: #262a2c
+	opacity: .55
+	background-color: #ffffff
+	padding-left: 2px
+	padding-right: 2px
+	+translate(0, -50%)
+	+transition(all, .3s, ease)
+
+.e-input
+	&:focus ~ .e-input-placeholder
+		opacity: 1
+		color: $color-green
+		top: 0
+		z-index: 1
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+
+	-webkit-appearance: none
+	-moz-appearance: textfield
+	margin: 0
+	padding: 0
+	width: 0
+	display: none
+
+input[type="time"]
+	font-size: 13px
+	padding-right: 0
+
+label
+	cursor: pointer
+button
+	padding: 0
+	background-color: transparent
+	border: none
+	box-shadow: none
+	cursor: pointer
+video
+	max-width: 100%
+table
+	width: 100%
+
+::selection
+	background-color: $color-accent
+	color: #fff
+	text-shadow: none
+
+::placeholder
+	font-size: 11px
+	color: #262a2c
+	opacity: .55
+
+
+ul
+	list-style: none
+	padding: 0
+	margin: 0
