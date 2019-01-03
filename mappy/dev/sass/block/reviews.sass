@@ -21,8 +21,30 @@
 		text-align: center
 		margin-top: 25px
 	&__circle-figure
+		position: relative
 		font-size: 20px
-		color: $color-light-bg
+		background: $color-light-bg
+		background-image: linear-gradient(to right, transparent 50%, #ffffff 0)
+		width: 20px
+		height: 20px
+		margin: 0 auto
+		+border-radius(50%)
+
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			display: block
+			margin-left: 50%
+			height: 100%
+			border-radius: 0 100% 100% 0 / 50%
+			background-color: #ffffff
+			transform-origin: left
+			animation: spin 5s linear infinite, bg 10s step-end infinite
+
 	&__more
 		position: relative
 		display: inline-block

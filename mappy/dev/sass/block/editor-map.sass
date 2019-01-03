@@ -94,9 +94,12 @@
 	&__pencil
 		display: none
 		position: absolute
-
+		width: 16px
+		height: 206px
 		left: calc(100% + 18px)
 		bottom: 0
+		background: transparent url("../assets/img/pencil.png") center no-repeat
+		background-size: cover
 
 
 	@media screen and (min-width: $sm)
@@ -108,7 +111,7 @@
 		&__desc
 			//min-height: 230px
 			min-height: 117px
-			padding: 12px 20px
+			padding: 16px 20px 20px
 
 		&__coordinates
 			font-size: 20px
@@ -124,7 +127,7 @@
 	@media screen and (min-width: $lg)
 		width: 480px
 		&__desc
-			min-height: 230px
+			min-height: 240px
 		&__hint
 			display: none
 
