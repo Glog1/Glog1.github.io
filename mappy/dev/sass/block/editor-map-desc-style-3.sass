@@ -22,7 +22,17 @@
 	@media screen and (min-width: $sm)
 		width: 280px
 		padding: 19px 10px 5px
+		box-shadow: 5px 5px 0 $color-brown
 		&__city
 			font-size: 32px
 		&__location
 			font-size: 12px
+
+	@media only screen and (max-device-width: 778px) and (orientation: landscape)
+		width: 117px
+		padding: 5px
+		box-shadow: none
+		&__city
+			font-size: 10px
+		&__location
+			font-size: 5px

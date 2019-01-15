@@ -1,17 +1,78 @@
 .b-sidebar
-	padding: 19px 17px
+	position: relative
+	padding: 12px
 	background-color: #ffffff
-
+	padding-bottom: 20px
 	&__mobile-nav
 		display: none
+		background-color: #ffffff
+		//width: 100%
+	&__sticky
+		position: sticky
+		bottom: 0
+		z-index: 5
+	//@media only screen and (orientation: landscape) and (max-width: $max-lg)
+	//	display: flex
+	//	flex-wrap: wrap
+
+		.b-input
+			flex: 1
 	@media screen and (max-width: $max-lg)
-		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15)
 		border-top-right-radius: 12px
 		border-top-left-radius: 12px
+		&:before
+			content: ''
+			position: absolute
+			bottom: 20px
+			left: 0
+			right: 0
+			width: 100%
+			border-bottom: 1px solid $color-light-bg
 		&__mobile-nav
+			position: relative
 			display: block
+			padding: 0 18px 18px
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 40px
+				height: 30px
+				width: 100%
+				display: block
+				background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%)
 
-
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				bottom: -13px
+				z-index: -1
+				left: 0
+				right: 0
+				background-color: #ffffff
 	@media screen and (min-width: $lg)
-
 		min-height: calc(100vh - 101px)
+
+	@media only screen and (max-device-width: 778px) and (orientation: landscape)
+		display: flex
+		.b-input
+			flex: 1
+		&:after
+			content: ''
+			position: absolute
+			bottom: -20px
+			left: 0
+			right: 0
+			background: #ffffff
+			height: 20px
+		&__sticky
+			display: flex
+			align-items: center
+		&__mobile-nav
+			flex: 1
+			padding-bottom: 0
+			&:before
+				bottom: 24px
+

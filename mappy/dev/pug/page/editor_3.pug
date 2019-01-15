@@ -11,7 +11,7 @@ block main
 					button.b-editor-nav__btn
 						include ../../assets/img/svg/icon/minus.svg
 
-			.b-editor-map.b-editor-map--style-2
+			.b-editor-map.b-editor-map--style-2.js-second-map
 				.b-editor-map__map-wrap
 					.b-editor-map__pencil
 					button.b-editor-map__fullscreen
@@ -101,13 +101,13 @@ block main
 
 								.b-radio-select__item
 									label.b-radio-select__label
-										input(type="radio" name="sizeType" value="Portait" checked).b-radio-select__input
+										input(type="radio" name="sizeType" value="Portait" checked).b-radio-select__input.js-type-portait
 										span Portait
 										.b-radio-select__bg
 
 								.b-radio-select__item
 									label.b-radio-select__label
-										input(type="radio" name="sizeType" value="Landscape").b-radio-select__input
+										input(type="radio" name="sizeType" value="Landscape").b-radio-select__input.js-type-landscape
 										span Landscape
 										.b-radio-select__bg
 
@@ -181,21 +181,21 @@ block main
 
 								.b-radio-select__item
 									label.b-radio-select__label
-										input(type="radio" name="Frame" value="Paper poster" checked).b-radio-select__input
+										input(type="radio" name="Frame" value="Paper poster" checked).b-radio-select__input.js-disable-frame
 										span Paper poster
 										.b-radio-select__bg
 
 								.b-radio-select__item
 									label.b-radio-select__label
-										input(type="radio" name="Frame" value="Canvas").b-radio-select__input
+										input(type="radio" name="Frame" value="Canvas").b-radio-select__input.js-disable-frame
 										span Canvas
 										span.b-radio-select__add-price +$20
 										.b-radio-select__bg
 
 								.b-radio-select__item
 									label.b-radio-select__label
-										input(type="radio" name="Frame" value="Poster + frame").b-radio-select__input
-										span Canvas
+										input(type="radio" name="Frame" value="Poster + frame").b-radio-select__input.js-active-frame
+										span Poster + frame
 										span.b-radio-select__add-price +$30
 										.b-radio-select__bg
 
@@ -206,7 +206,7 @@ block main
 							.b-radio-tile-select__item
 
 								label.b-radio-tile-select__label
-									input(type="radio" name="FrameType" value="Natural" checked).b-radio-tile-select__input
+									input(type="radio" name="FrameType" value="Natural" checked disabled).b-radio-tile-select__input.js-frame-style
 									.b-radio-tile-select__preview-wrap
 										.b-radio-tile-select__preview-figure
 											include ../../assets/img/svg/icon/oval.svg
@@ -216,7 +216,7 @@ block main
 							.b-radio-tile-select__item
 
 								label.b-radio-tile-select__label
-									input(type="radio" name="FrameType" value="Black" ).b-radio-tile-select__input
+									input(type="radio" name="FrameType" value="Black" disabled).b-radio-tile-select__input.js-frame-style
 									.b-radio-tile-select__preview-wrap
 										.b-radio-tile-select__preview-figure
 											include ../../assets/img/svg/icon/oval.svg
@@ -226,14 +226,14 @@ block main
 							.b-radio-tile-select__item
 
 								label.b-radio-tile-select__label
-									input(type="radio" name="FrameType" value="White" ).b-radio-tile-select__input
+									input(type="radio" name="FrameType" value="White" disabled).b-radio-tile-select__input.js-frame-style
 									.b-radio-tile-select__preview-wrap
 										.b-radio-tile-select__preview-figure
 											include ../../assets/img/svg/icon/oval.svg
 										.b-radio-tile-select__preview
 									span White
 
-
+			.b-sidebar__sticky
 				.b-sidebar__mobile-nav
 					.b-sidebar-nav
 						a(href="#" data-main="a").b-sidebar-nav__item.js-sidebar-item.js-active Location
@@ -242,10 +242,9 @@ block main
 						a(href="#" data-main="d").b-sidebar-nav__item.js-sidebar-item Style
 						a(href="#" data-main="e").b-sidebar-nav__item.js-sidebar-item Frame
 
-			button.b-total-price
-				.b-total-price__title Buy poster
-
-				.b-total-price__sum $39
+				button.b-total-price
+					.b-total-price__title Buy poster
+					.b-total-price__sum $39
 	section.b-reviews
 		.b-reviews__row
 			.b-reviews__item.b-reviews__item--content

@@ -1,7 +1,7 @@
 .b-editor-map
 	position: relative
-	//width: 210px
-	width: 65%
+	width: 240px
+	//width: 66%
 	margin: 0 auto
 	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.15)
 	background-color: #ffffff
@@ -9,11 +9,12 @@
 	display: flex
 	flex-direction: column
 	height: 100%
+	max-width: 100%
 
 	&--style-2
 		padding: 5px
 	&__map
-		height: 180px
+		height: 240px
 
 		min-height: 100%
 
@@ -23,8 +24,8 @@
 		display: flex
 		flex-direction: column
 		justify-content: space-between
-		padding: 7px 8px
-		//min-height: 117px
+		padding: 8px 11px 11px
+		min-height: 120px
 
 		flex: 1 1 30%
 		//height: 35%
@@ -66,7 +67,7 @@
 	&__hint
 		font-size: 11px
 		opacity: .55
-		margin: 15px auto 0
+		margin: 9px auto 0
 		text-align: center
 	&__map-wrap
 		position: relative
@@ -100,14 +101,79 @@
 		bottom: 0
 		background: transparent url("../assets/img/pencil.png") center no-repeat
 		background-size: cover
+	&.landscape
+		width: 100%
+		.b-editor-map
+			&__map
+				height: 200px
+			&__desc
+				background-color: #ffffff
+				position: absolute
+				bottom: 0
+				left: 0
+				padding: 5px
+				min-height: 51px
+			&__city
+				font-size: 10px
+			&__location
+				font-size: 5px
+			&__desc-style-2
+				bottom: 0
+				right: auto
+			&__desc-style-3
+				bottom: 0
+				right: auto
+		.b-editor-map-desc-style-2
+			width: 117px
+			padding: 5px
+			border-radius: 0
+			&:before,
+			&:after
+				display: none
+			&__city
+				font-size: 10px
+			&__location
+				font-size: 5px
 
-
+		.b-editor-map-desc-style-3
+			width: 117px
+			padding: 5px
+			&__city
+				font-size: 10px
+			&__location
+				font-size: 5px
 	@media screen and (min-width: $sm)
-		//width: 480px
+		width: 480px
+		&.landscape
+			width: 480px
+			.b-editor-map
+				&__map
+					height: 240px
+				&__coordinates
+					font-size: 12px
+				&__city
+					font-size: 24px
+				&__desc
+					min-height: 80px
+					min-width: 170px
+
+			.b-editor-map-desc-style-2
+				width: 180px
+				&__city
+					font-size: 20px
+				&__location
+					font-size: 10px
+			.b-editor-map-desc-style-3
+				box-shadow: none
+				width: 180px
+				&__city
+					font-size: 20px
+				&__location
+					font-size: 10px
 		&__map
-			height: 480px
+			height: 350px
 			&--style-2
-				height: 720px
+				height: 480px
 		&__desc
 			//min-height: 230px
 			min-height: 117px
@@ -123,9 +189,55 @@
 			bottom: 40px
 		&__fullscreen
 			display: none
-
+	@media screen and (min-width: 767px)
+		&.landscape
+			width: 480px
+			.b-editor-map
+				&__map
+					height: 300px
+			.b-editor-map-desc-style-2
+				width: 280px
+				&__city
+					font-size: 24px
+				&__location
+					font-size: 12px
+			.b-editor-map-desc-style-3
+				width: 280px
+				&__city
+					font-size: 24px
+				&__location
+					font-size: 12px
+		&__map
+			height: 480px
+			&--style-2
+				height: 720px
 	@media screen and (min-width: $lg)
 		width: 480px
+		&.landscape
+			width: 720px
+			max-width: 80%
+			.b-editor-map
+				&__map
+					height: 480px
+				&__desc
+					padding: 12px
+					min-height: 120px
+					min-width: 280px
+				&__coordinates
+					font-size: 12px
+				&__city
+					font-size: 24px
+
+				&__desc-style-3
+					bottom: 35px
+					right: 0
+			.b-editor-map-desc-style-3
+				box-shadow: 5px 5px 0 $color-brown
+				padding: 12px 10px
+				&__city
+					font-size: 32px
+
+
 		&__desc
 			min-height: 240px
 		&__hint
@@ -135,3 +247,33 @@
 			display: block
 		&__map-wrap
 			overflow: visible
+
+	@media only screen and (max-device-width: 778px) and (orientation: landscape)
+		width: 100%
+		&__map
+			height: 300px
+		&__desc
+			position: absolute
+			bottom: 0
+			left: 0
+			background-color: #fff
+			padding: 5px
+			min-height: 51px
+			min-width: 117px
+		&__city
+			font-size: 10px
+		&__coordinates
+			font-size: 5px
+		&__fullscreen
+			display: flex
+		&__desc-style-2
+			bottom: 0
+			right: auto
+			&:before
+				display: none
+		&__desc-style-3
+			bottom: 0
+			right: auto
+	@media only screen and (max-device-height: 400px) and (orientation: landscape)
+		&__map
+			height: 200px

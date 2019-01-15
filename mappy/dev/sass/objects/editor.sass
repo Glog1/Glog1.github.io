@@ -1,4 +1,5 @@
 .o-editor
+	position: relative
 	display: flex
 	background-color: $color-light-bg
 	//min-height: 590px
@@ -11,23 +12,31 @@
 
 	&__map
 		position: relative
-		padding: 30px 0
-		min-height: 290px
+		padding: 12px 0
+		//min-height: 290px
+		//min-height: 408px
 
 	&__sidebar
 
 	@media screen and (max-width: $max-lg)
 		flex-direction: column
+		min-height: calc(100vh - 48px)
 		&__map
 			//flex: 1
-			display: flex
-			flex-direction: column
-			justify-content: center
+			//display: flex
+			//flex-direction: column
+			//justify-content: center
+			margin: auto
+		&__sidebar
+			//position: sticky
+			//bottom: 0
+			//box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15)
+			margin-top: auto
 	@media screen and (min-width: $sm)
 		//min-height: 700px
 		&__map
 			padding: 40px 0
-			min-height: 390px
+			//min-height: 390px
 	@media screen and (min-width: $lg)
 		min-height: auto
 		height: auto
@@ -50,3 +59,8 @@
 		&__sidebar
 			flex: 0 0 31%
 			max-width: 31%
+
+	@media only screen and (max-device-width: 778px) and (orientation: landscape)
+		&__map
+			padding: 12px 0
+			width: 47%
