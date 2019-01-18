@@ -91,16 +91,18 @@
 	&__fullscreen-icon
 		font-size: 14px
 		height: 14px
-		opacity: .4
+		//opacity: .4
 	&__pencil
 		display: none
 		position: absolute
 		width: 16px
 		height: 206px
+		top: 50%
 		left: calc(100% + 18px)
-		bottom: 0
+
 		background: transparent url("../assets/img/pencil.png") center no-repeat
 		background-size: cover
+		+translate(0, -50%)
 	&.landscape
 		width: 100%
 		.b-editor-map
@@ -123,6 +125,12 @@
 			&__desc-style-3
 				bottom: 0
 				right: auto
+			&__pencil
+				top: 100%
+				left: 0
+				right: 0
+				margin: 0 auto
+				transform: rotate(-90deg) translate(80px, 0);
 		.b-editor-map-desc-style-2
 			width: 117px
 			padding: 5px

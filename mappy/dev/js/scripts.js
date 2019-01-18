@@ -253,14 +253,17 @@ var App = {
 			frameDisable[iFrameDis].addEventListener('click', frameDisabledFunc);
 		}
 
-		frameActive.onclick = function () {
-			if (this.checked) {
-				let frameStyles = document.querySelectorAll('.js-frame-style')
-				for (let i= 0; i < frameStyles.length; i++) {
-					frameStyles[i].removeAttribute("disabled")
+		if (frameActive) {
+			frameActive.onclick = function () {
+				if (this.checked) {
+					let frameStyles = document.querySelectorAll('.js-frame-style')
+					for (let i= 0; i < frameStyles.length; i++) {
+						frameStyles[i].removeAttribute("disabled")
+					}
 				}
-			}
-		};
+			};
+		}
+
 
 		function frameDisabledFunc () {
 
@@ -274,23 +277,28 @@ var App = {
 		let mapTypeButtonLand = document.querySelector(".js-type-landscape")
 		let mapTypeButtonPort = document.querySelector(".js-type-portait")
 		let secondMap = document.querySelector(".js-second-map")
+		if (mapTypeButtonLand) {
 
-		mapTypeButtonLand.onclick = function () {
+			mapTypeButtonLand.onclick = function () {
 
-			if (this.checked) {
-				secondMap.classList.add("landscape")
-				secondMap.classList.remove("portait")
+				if (this.checked) {
+					secondMap.classList.add("landscape")
+					secondMap.classList.remove("portait")
+				}
+
 			}
-
 		}
-		mapTypeButtonPort.onclick = function () {
+		if (mapTypeButtonPort) {
+			mapTypeButtonPort.onclick = function () {
 
-			if (this.checked) {
-				secondMap.classList.add("portait")
-				secondMap.classList.remove("landscape")
+				if (this.checked) {
+					secondMap.classList.add("portait")
+					secondMap.classList.remove("landscape")
+				}
+
 			}
-
 		}
+
 
 	},
 
