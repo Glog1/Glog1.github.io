@@ -2541,8 +2541,8 @@ ul {
   left: -webkit-calc(100% + 18px);
   left: calc(100% + 18px);
   background: transparent url("../assets/img/pencil.png") center no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: contain;
+          background-size: contain;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
