@@ -364,8 +364,85 @@ var App = {
 				}
 			});
 		}
-	}
+	},
+	mapSize: function () {
 
+		let buttonSizeMap = document.querySelectorAll('.js-input-change-size-map');
+		let typeLandscape = document.querySelector(".js-type-landscape");
+		let typePortait = document.querySelector(".js-type-portait");
+		if (typeLandscape || typePortait) {
+			typeLandscape.addEventListener('click', checkedInputSize);
+			typePortait.addEventListener('click', checkedInputSize);
+		}
+
+		function  checkedInputSize() {
+
+			for (let i= 0; i < buttonSizeMap.length; i++) {
+				if(buttonSizeMap[i].checked) {
+					buttonSizeMap[i].click()
+				}
+			}
+		}
+		if (buttonSizeMap) {
+			for (let i= 0; i < buttonSizeMap.length; i++) {
+				buttonSizeMap[i].addEventListener('click', toggleSizeMap);
+
+			}
+		}
+
+		function  toggleSizeMap() {
+			let mapSize = this.getAttribute('data-map-size');
+			let pencilMapSize = document.querySelector(".js-pencil-size-map");
+			let mainMap = document.querySelector(".js-second-map");
+
+
+			let computedStyle = getComputedStyle(pencilMapSize);
+			let values = computedStyle.transform.split('(')[1].split(')')[0].split(',');
+
+			let a = values[0];
+			let b = values[1];
+			let c = values[2];
+			let d = values[3];
+			let e = values[4];
+			let f = values[5];
+
+			if (mainMap.classList.contains("landscape")) {
+				a = 0
+				d = 0
+
+				b = '-' + mapSize
+				c = mapSize
+
+			} else {
+				a = mapSize
+				d = mapSize
+
+				b = 0
+				c = 0
+			}
+
+			pencilMapSize.style.transform = 'matrix('+a+','+b+','+c+','+d+','+e+','+f+')'
+
+		}
+
+	}
+	// scrollEditor: function () {
+	//
+	// 	let editorBlock = document.querySelector('.o-editor');
+	// 	let mainBody = document.querySelector('.c-page');
+	//
+	// 	mainBody.onscroll = function() {
+	//
+	// 		editorBlock.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
+	// 		mainBody.classList.add('js-scroll');
+	//
+	// 		setTimeout(function() {
+	// 			mainBody.classList.remove('js-scroll');
+	// 		}, 1000)
+	//
+	// 	}
+	//
+	// }
 
 };
 
@@ -373,7 +450,9 @@ var App = {
 
 	App.init(),
 	App.sidebarNav(),
-	App.slider()
+	App.slider(),
+	App.mapSize()
+	// App.scrollEditor()
 
 })();
 

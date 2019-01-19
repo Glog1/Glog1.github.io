@@ -1077,6 +1077,10 @@ ul {
   border-color: #f7da5f;
 }
 
+.c-page .js-scroll {
+  overflow: hidden;
+}
+
 .c-main {
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
@@ -2584,7 +2588,8 @@ ul {
 }
 
 .b-editor-map.landscape .b-editor-map__pencil {
-  top: 100%;
+  top: -webkit-calc(100% + 32px);
+  top: calc(100% + 32px);
   left: 0;
   right: 0;
   margin: 0 auto;
