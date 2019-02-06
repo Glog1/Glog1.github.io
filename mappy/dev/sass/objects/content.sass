@@ -1,0 +1,20 @@
+.o-content
+	&__item
+		padding: 30px 20px
+
+		&--background-green
+			background-color: $color-green
+
+	@media screen and (min-width: $lg)
+		p
+			font-size: 20px
+			margin-bottom: 30px
+		&--row
+			display: flex
+			flex-wrap: wrap
+		&__item
+			padding: 60px
+			&--col-6
+				flex: 1 0 50%
+				max-width: 50%
+

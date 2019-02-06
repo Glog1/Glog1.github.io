@@ -50,16 +50,23 @@
 		bottom: 0
 		left: 0
 		right: 0
+		text-align: center
+	&__desc-style-4
+		position: absolute
+		bottom: 15px
+		left: 0
+		right: 0
+		text-align: center
 	&__coordinates
 		text-transform: uppercase
-		font-size: 10px
+		font-size: 12px
 		font-weight: 300
 
 	&__city
 		font-weight: 700
 		font-size: 20px
 		text-transform: uppercase
-		line-height: .8
+		line-height: .9
 	&__country
 		display: block
 		font-weight: 200
@@ -117,6 +124,8 @@
 				min-height: 51px
 			&__city
 				font-size: 10px
+			&__coordinates
+				font-size: 5px
 			&__location
 				font-size: 5px
 			&__desc-style-2
@@ -125,6 +134,8 @@
 			&__desc-style-3
 				bottom: 0
 				right: auto
+			&__desc-style-4
+				bottom: 15px
 			&__pencil
 				top: calc(100% + 32px)
 				left: 0
@@ -148,8 +159,9 @@
 			padding: 5px
 			&__city
 				font-size: 10px
-			&__location
-				font-size: 5px
+			&__location,
+			&__coordinates
+				font-size: 8px
 	@media screen and (min-width: $sm)
 		width: 480px
 		&.landscape
@@ -160,7 +172,7 @@
 				&__coordinates
 					font-size: 12px
 				&__city
-					font-size: 24px
+					font-size: 20px
 				&__desc
 					min-height: 80px
 					min-width: 170px
@@ -168,12 +180,12 @@
 			.b-editor-map-desc-style-2
 				width: 180px
 				&__city
-					font-size: 20px
+					font-size: 18px
 				&__location
-					font-size: 10px
+					font-size: 12px
 			.b-editor-map-desc-style-3
-				box-shadow: none
-				width: 180px
+
+				//width: 180px
 				&__city
 					font-size: 20px
 				&__location
@@ -185,16 +197,19 @@
 		&__desc
 			//min-height: 230px
 			min-height: 117px
-			padding: 16px 20px 20px
+			//padding: 16px 20px 20px
+			padding: 9px 12px 9px
 
 		&__coordinates
-			font-size: 20px
+			font-size: 12px
 		&__city
-			font-size: 40px
+			font-size: 20px
 		&__desc-style-2
 			bottom: 100px
 		&__desc-style-3
-			bottom: 40px
+			bottom: 31px
+		&__desc-style-4
+			bottom: 30px
 		&__fullscreen
 			display: none
 	@media screen and (min-width: 767px)
@@ -206,13 +221,13 @@
 			.b-editor-map-desc-style-2
 				width: 280px
 				&__city
-					font-size: 24px
+					//font-size: 24px
 				&__location
-					font-size: 12px
+					//font-size: 12px
 			.b-editor-map-desc-style-3
-				width: 280px
+				//width: 280px
 				&__city
-					font-size: 24px
+					font-size: 18px
 				&__location
 					font-size: 12px
 		&__map
@@ -232,22 +247,21 @@
 					min-height: 120px
 					min-width: 280px
 				&__coordinates
-					font-size: 12px
+					//font-size: 12px
 				&__city
-					font-size: 24px
+					//font-size: 24px
 
 				&__desc-style-3
 					bottom: 35px
 					right: 0
 			.b-editor-map-desc-style-3
-				box-shadow: 5px 5px 0 $color-brown
 				padding: 12px 10px
 				&__city
-					font-size: 32px
+					//font-size: 32px
 
 
 		&__desc
-			min-height: 240px
+			min-height: 120px
 		&__hint
 			display: none
 
@@ -282,6 +296,8 @@
 		&__desc-style-3
 			bottom: 0
 			right: auto
+		&__desc-style-4
+			bottom: 15px
 	@media only screen and (max-device-height: 400px) and (orientation: landscape)
 		&__map
 			height: 200px

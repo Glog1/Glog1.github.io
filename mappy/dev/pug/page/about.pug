@@ -1,0 +1,31 @@
+extends ../template/main-header-border
+block title
+	| Markup
+block main
+	.o-content.o-content--row
+		.o-content__item.o-content__item--col-6
+			h1.h1 About
+			p Welcome to MappyPlace. We are a team of creatives based in Manchester, UK who have been lucky enough to travel the world and see the beauty that it offers. In doing so we realised that, while there is an incredible amount of differences in people around the world, there is also a real similarity that runs throughout people; a genuine desire for good, for relationships and for self-expression.
+			p We created MappyPlace to allow our customers to celebrate not only the journeys they have made, but also the places they live. Home should be a happy place and what better way to make it unique than by making it a MappyPlace.
+
+			.b-content-link
+				.b-content-link__item
+					a(href="#").b-link-with-arrow  Create a Poster
+						span.b-link-with-arrow__figure
+							include ../../assets/img/svg/icon/arrow-right.svg
+
+				.b-content-link__item
+					a(href="#").b-link-with-arrow  Contact Us
+						span.b-link-with-arrow__figure
+							include ../../assets/img/svg/icon/arrow-right.svg
+		.o-content__item.o-content__item--background-green.o-content__item--col-6
+
+			.b-about-review
+				p.b-about-review__text Travel isn’t always pretty. <br />It isn’t always comfortable. Sometimes it hurts, it even breaks your heart. But that’s okay. The journey changes you; it should change you. It leaves marks on your memory, on your consciousness, on your heart, and on your body. You take something with you. Hopefully, you leave something good behind.
+
+				.b-author
+					.b-author__photo
+						img(src="assets/img/author.jpg" alt="alt")
+					span.b-author__name Anthony Bourdain
+					span.b-author__position travel documentarian
+

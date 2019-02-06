@@ -2,31 +2,43 @@
 	position: relative
 	background-color: #ffffff
 	text-align: center
-	width: 100%
+	display: inline-block
+	//width: 100%
 	max-width: 100%
 	margin: 0 auto
 	padding: 8px 10px 4px
 
 
 	&__city
-		font: 20px $font-cho
-		color: $color-brown
+		font: 18px $font-josefin
 
 	&__location
-		font: 10px $font-bio
-		letter-spacing: 2px
-		text-transform: uppercase
-		color: $color-dark
-
-
+		position: relative
+		font: 12px $font-ebg
+		font-style: italic
+		margin-bottom: 5px
+		&:before,
+		&:after
+			content: ''
+			display: inline-block
+			height: 1px
+			width: 10px
+			margin: 0 5px
+			vertical-align: middle
+			background-color: $color-dark
+	&__coordinates
+		font: 12px $font-ebg
+		letter-spacing: 0.08em
 	@media screen and (min-width: $sm)
-		width: 280px
-		padding: 19px 10px 5px
-		box-shadow: 5px 5px 0 $color-brown
+		min-width: 160px
+		padding: 13px 10px 11px
+
 		&__city
-			font-size: 32px
+			font-size: 18px
 		&__location
 			font-size: 12px
+		&__coordinates
+
 
 	@media only screen and (max-device-width: 778px) and (orientation: landscape)
 		width: 117px
