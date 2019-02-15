@@ -21,9 +21,9 @@
 
 
 	@media screen and (min-width: $sm)
-		width: 380px
-		padding: 30px 10px
-		+border-radius(30px)
+		width: 240px
+		padding: 15px 5px
+		+border-radius(17px)
 		&:before
 			content: ''
 			position: absolute
@@ -31,9 +31,9 @@
 			right: 99%
 			width: 0
 			height: 0
-			border-top: 50px solid transparent
+			border-top: 30px solid transparent
 			border-right: 20px solid #ffffff
-			border-bottom: 50px solid transparent
+			border-bottom: 30px solid transparent
 			+translate(0, -50%)
 		&:after
 			content: ''
@@ -42,10 +42,23 @@
 			left: 99%
 			width: 0
 			height: 0
+			border-top: 30px solid transparent
+			border-left: 20px solid #ffffff
+			border-bottom: 30px solid transparent
+			+translate(0, -50%)
+	@media screen and (min-width: $lg)
+		width: 380px
+		padding: 30px 10px
+		+border-radius(30px)
+		&:before
+			border-top: 50px solid transparent
+			border-right: 20px solid #ffffff
+			border-bottom: 50px solid transparent
+		&:after
 			border-top: 50px solid transparent
 			border-left: 20px solid #ffffff
 			border-bottom: 50px solid transparent
-			+translate(0, -50%)
+
 		&__city
 			font-size: 36px
 		&__location

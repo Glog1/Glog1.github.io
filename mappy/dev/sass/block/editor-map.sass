@@ -25,18 +25,22 @@
 			background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)
 			z-index: 1
 	&__map
-		height: 240px
-
+		height: 320px
 		min-height: 100%
-
 		&--style-2
-			height: 280px
+			height: 310px
 	&__desc
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		background: #fff
+
 		display: flex
 		flex-direction: column
 		justify-content: space-between
 		padding: 8px 11px 11px
-		min-height: 120px
+		min-height: 100px
 
 		flex: 1 1 30%
 		//height: 35%
@@ -92,8 +96,8 @@
 		position: relative
 
 		//max-height: 65%
-		flex: 1 1 70%
-		overflow: hidden
+		//flex: 1 1 70%
+		//overflow: hidden
 	&__fullscreen
 		z-index: 3
 		position: absolute
@@ -132,6 +136,7 @@
 				position: absolute
 				bottom: 0
 				left: 0
+				right: inherit
 				padding: 5px
 				min-height: 51px
 			&__city
@@ -175,10 +180,12 @@
 			&__coordinates
 				font-size: 8px
 	@media screen and (min-width: $sm)
-		width: 480px
+		width: 320px
 		&--style-4
 			&:before
 				height: 241px
+		//&__desc
+		//	min-height: 120px
 		&.landscape
 			width: 480px
 			&.b-editor-map--style-4
@@ -186,7 +193,7 @@
 					height: 120px
 			.b-editor-map
 				&__map
-					height: 240px
+					height: 320px
 				&__coordinates
 					font-size: 12px
 				&__city
@@ -209,9 +216,9 @@
 				&__location
 					font-size: 10px
 		&__map
-			height: 350px
+			height: 480px
 			&--style-2
-				height: 480px
+				height: 470px
 		&__desc
 			//min-height: 230px
 			min-height: 117px
@@ -223,7 +230,7 @@
 		&__city
 			font-size: 20px
 		&__desc-style-2
-			bottom: 100px
+			bottom: 40px
 		&__desc-style-3
 			bottom: 31px
 		&__desc-style-4
@@ -236,9 +243,9 @@
 			&.b-editor-map--style-4
 				&:before
 					height: 240px
-			.b-editor-map
-				&__map
-					height: 300px
+			//.b-editor-map
+			//	&__map
+			//		height: 300px
 			.b-editor-map-desc-style-2
 				width: 280px
 				&__city
@@ -251,10 +258,10 @@
 					font-size: 18px
 				&__location
 					font-size: 12px
-		&__map
-			height: 480px
-			&--style-2
-				height: 720px
+		//&__map
+		//	height: 720px
+		//	&--style-2
+		//		height: 710px
 	@media screen and (min-width: $lg)
 		width: 480px
 		&.landscape
@@ -263,6 +270,8 @@
 			.b-editor-map
 				&__map
 					height: 480px
+					&--style-2
+						height: 470px
 				&__desc
 					padding: 12px
 					min-height: 120px
@@ -290,15 +299,23 @@
 			display: block
 		&__map-wrap
 			overflow: visible
-
+		&__map
+			height: 720px
+			&--style-2
+				height: 710px
+		&__desc-style-2
+			bottom: 100px
 	@media only screen and (max-device-width: 778px) and (orientation: landscape)
 		width: 100%
 		&__map
-			height: 300px
+			height: 480px
+			&--style-2
+				height: 470px
 		&__desc
 			position: absolute
 			bottom: 0
 			left: 0
+			right: inherit
 			background-color: #fff
 			padding: 5px
 			min-height: 51px
@@ -322,4 +339,4 @@
 	@media only screen and (max-device-height: 400px) and (orientation: landscape)
 
 		&__map
-			height: 200px
+			height: 320px

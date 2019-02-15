@@ -1853,7 +1853,7 @@ ul {
 @media only screen and (max-device-width: 778px) and (orientation: landscape) {
   .o-editor__map {
     padding: 12px 0;
-    width: 47%;
+    width: 480px;
   }
 }
 
@@ -2493,15 +2493,20 @@ ul {
 }
 
 .b-editor-map__map {
-  height: 240px;
+  height: 320px;
   min-height: 100%;
 }
 
 .b-editor-map__map--style-2 {
-  height: 280px;
+  height: 310px;
 }
 
 .b-editor-map__desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2516,7 +2521,7 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 8px 11px 11px;
-  min-height: 120px;
+  min-height: 100px;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 30%;
       -ms-flex: 1 1 30%;
@@ -2588,11 +2593,6 @@ ul {
 
 .b-editor-map__map-wrap {
   position: relative;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 70%;
-      -ms-flex: 1 1 70%;
-          flex: 1 1 70%;
-  overflow: hidden;
 }
 
 .b-editor-map__fullscreen {
@@ -2655,6 +2655,7 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
+  right: inherit;
   padding: 5px;
   min-height: 51px;
 }
@@ -2730,7 +2731,7 @@ ul {
 
 @media screen and (min-width: 576px) {
   .b-editor-map {
-    width: 480px;
+    width: 320px;
   }
   .b-editor-map--style-4:before {
     height: 241px;
@@ -2742,7 +2743,7 @@ ul {
     height: 120px;
   }
   .b-editor-map.landscape .b-editor-map__map {
-    height: 240px;
+    height: 320px;
   }
   .b-editor-map.landscape .b-editor-map__coordinates {
     font-size: 12px;
@@ -2770,10 +2771,10 @@ ul {
     font-size: 10px;
   }
   .b-editor-map__map {
-    height: 350px;
+    height: 480px;
   }
   .b-editor-map__map--style-2 {
-    height: 480px;
+    height: 470px;
   }
   .b-editor-map__desc {
     min-height: 117px;
@@ -2786,7 +2787,7 @@ ul {
     font-size: 20px;
   }
   .b-editor-map__desc-style-2 {
-    bottom: 100px;
+    bottom: 40px;
   }
   .b-editor-map__desc-style-3 {
     bottom: 31px;
@@ -2806,9 +2807,6 @@ ul {
   .b-editor-map.landscape.b-editor-map--style-4:before {
     height: 240px;
   }
-  .b-editor-map.landscape .b-editor-map__map {
-    height: 300px;
-  }
   .b-editor-map.landscape .b-editor-map-desc-style-2 {
     width: 280px;
   }
@@ -2817,12 +2815,6 @@ ul {
   }
   .b-editor-map.landscape .b-editor-map-desc-style-3__location {
     font-size: 12px;
-  }
-  .b-editor-map__map {
-    height: 480px;
-  }
-  .b-editor-map__map--style-2 {
-    height: 720px;
   }
 }
 
@@ -2836,6 +2828,9 @@ ul {
   }
   .b-editor-map.landscape .b-editor-map__map {
     height: 480px;
+  }
+  .b-editor-map.landscape .b-editor-map__map--style-2 {
+    height: 470px;
   }
   .b-editor-map.landscape .b-editor-map__desc {
     padding: 12px;
@@ -2861,6 +2856,15 @@ ul {
   .b-editor-map__map-wrap {
     overflow: visible;
   }
+  .b-editor-map__map {
+    height: 720px;
+  }
+  .b-editor-map__map--style-2 {
+    height: 710px;
+  }
+  .b-editor-map__desc-style-2 {
+    bottom: 100px;
+  }
 }
 
 @media only screen and (max-device-width: 778px) and (orientation: landscape) {
@@ -2868,12 +2872,16 @@ ul {
     width: 100%;
   }
   .b-editor-map__map {
-    height: 300px;
+    height: 480px;
+  }
+  .b-editor-map__map--style-2 {
+    height: 470px;
   }
   .b-editor-map__desc {
     position: absolute;
     bottom: 0;
     left: 0;
+    right: inherit;
     background-color: #fff;
     padding: 5px;
     min-height: 51px;
@@ -2909,7 +2917,7 @@ ul {
 
 @media only screen and (max-device-height: 400px) and (orientation: landscape) {
   .b-editor-map__map {
-    height: 200px;
+    height: 320px;
   }
 }
 
@@ -3422,11 +3430,11 @@ ul {
 
 @media screen and (min-width: 576px) {
   .b-editor-map-desc-style-2 {
-    width: 380px;
-    padding: 30px 10px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
+    width: 240px;
+    padding: 15px 5px;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
   }
   .b-editor-map-desc-style-2:before {
     content: '';
@@ -3435,9 +3443,9 @@ ul {
     right: 99%;
     width: 0;
     height: 0;
-    border-top: 50px solid transparent;
+    border-top: 30px solid transparent;
     border-right: 20px solid #ffffff;
-    border-bottom: 50px solid transparent;
+    border-bottom: 30px solid transparent;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -3449,12 +3457,32 @@ ul {
     left: 99%;
     width: 0;
     height: 0;
-    border-top: 50px solid transparent;
+    border-top: 30px solid transparent;
     border-left: 20px solid #ffffff;
-    border-bottom: 50px solid transparent;
+    border-bottom: 30px solid transparent;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .b-editor-map-desc-style-2 {
+    width: 380px;
+    padding: 30px 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+  }
+  .b-editor-map-desc-style-2:before {
+    border-top: 50px solid transparent;
+    border-right: 20px solid #ffffff;
+    border-bottom: 50px solid transparent;
+  }
+  .b-editor-map-desc-style-2:after {
+    border-top: 50px solid transparent;
+    border-left: 20px solid #ffffff;
+    border-bottom: 50px solid transparent;
   }
   .b-editor-map-desc-style-2__city {
     font-size: 36px;
