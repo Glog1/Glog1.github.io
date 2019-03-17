@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#ffcc00"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link href="css/styles.min.css" type="text/css" rel="stylesheet"/><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js" data-skip-moving="true"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" data-skip-moving="true"></script><![endif]-->
+    <title>Markup
+    </title>
+  </head>
+  <body>
+    <div class="c-page">
+      <header class="c-header">
+        <div class="c-header__container">
+          <div class="row align-items-center">
+            <div class="c-header__logo"><a class="b-logo" href="/">
+                <div class="b-logo__icon"><svg width="62" height="38" viewBox="0 0 62 38" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="62" height="38" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.0104167 0.0166667)"/>
+</pattern>
+<image id="image0" width="207" height="60" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>
+
+                </div></a></div>
+            <div class="c-header__account-type"><a class="b-link-icon b-link-icon--gray" href="#">
+                <svg class="icon icon-fa-briefcase b-link-icon__icon">
+                  <use xlink:href="assets/img/sprite/sprite.svg#fa-briefcase"></use>
+                </svg>Bussiness account</a>
+            </div>
+            <div class="c-header__user-account">
+              <div class="c-header__user-account-notification"><a class="b-notification" href="#">
+                  <div class="b-notification__icon">
+                    <svg class="icon icon-fa-bell ">
+                      <use xlink:href="assets/img/sprite/sprite.svg#fa-bell"></use>
+                    </svg>
+                  </div></a></div>
+              <div class="b-user-account">
+                <div class="b-user-account__avatar"><img src="assets/img/avatar.jpg" alt="avatar"/></div>
+                <div class="b-user-account__inform">
+                  <div class="b-user-account__number">905314732228</div>
+                  <div class="b-user-account__alias">MoneyFGE Store</div>
+                </div>
+                <div class="b-user-account__arrow">
+                  <svg class="icon icon-angle-down b-user-account__arrow-icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="c-header__burger">
+              <button class="burger js-burger-btn">
+                <div class="burger__icon"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="c-main">
+        <aside class="b-sidebar js-sidebar">
+          <div class="b-sidebar__body">
+            <nav class="b-navigation js-navigation">
+              <div class="b-navigation__item"><a class="b-navigation__item-link" href="/">
+                  <svg class="icon icon-fa-home b-navigation__item-icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-home"></use>
+                  </svg>Dashboard</a></div>
+              <div class="b-navigation__item js-sub-cat open"><a class="b-navigation__item-link active" href="payments.html">
+                  <svg class="icon icon-fa-wallet b-navigation__item-icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-wallet"></use>
+                  </svg>Payments</a>
+                <div class="b-navigation__sub-category">
+                  <div class="b-sub-category"><a class="b-sub-category__item" href="#">Disputs</a><a class="b-sub-category__item" href="#">Subscriptions</a><a class="b-sub-category__item" href="invoice.html">Invoices</a><a class="b-sub-category__item active" href="#">Сoupons</a><a class="b-sub-category__item" href="#">Branding</a></div>
+                </div>
+              </div>
+              <div class="b-navigation__item"><a class="b-navigation__item-link" href="#">
+                  <svg class="icon icon-fa-money-bill-wave b-navigation__item-icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-money-bill-wave"></use>
+                  </svg>Balance</a></div>
+              <div class="b-navigation__item"><a class="b-navigation__item-link" href="#">
+                  <svg class="icon icon-fa-history b-navigation__item-icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-history"></use>
+                  </svg>Payoffs</a></div>
+              <div class="b-navigation__item"><a class="b-navigation__item-link" href="#">
+                  <svg class="icon icon-fa-users b-navigation__item-icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-users"></use>
+                  </svg>Сustomers</a></div>
+              <div class="b-navigation__item"><a class="b-navigation__item-link" href="#">
+                  <svg class="icon icon-fa-box-open b-navigation__item-icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-box-open"></use>
+                  </svg>Products</a></div>
+              <div class="b-navigation__item"><a class="b-navigation__item-link" href="#">
+                  <svg class="icon icon-fa-cash-register b-navigation__item-icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-cash-register"></use>
+                  </svg>Сash equipment</a></div>
+              <div class="b-navigation__item"><a class="b-navigation__item-link" href="#">
+                  <svg class="icon icon-fa-code b-navigation__item-icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-code"></use>
+                  </svg>To developers</a></div>
+              <div class="b-navigation__item"><a class="b-navigation__item-link" href="#">
+                  <svg class="icon icon-fa-cog b-navigation__item-icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-cog"></use>
+                  </svg>Settings</a></div>
+            </nav>
+            <div class="b-sidebar__bottom">
+              <div class="b-have-question">
+                <div class="b-have-question__caption">Have a question?
+                  <svg class="icon icon-fa-comments b-have-question__icon">
+                    <use xlink:href="assets/img/sprite/sprite.svg#fa-comments"></use>
+                  </svg>
+                </div>
+                <div class="b-have-question__text">Contact our support team</div><a class="button" href="#">Contact</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <main>
+          <div class="container-main">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="col-tile">
+                  <div class="col-tile__content">
+                    <div class="b-inform-block">
+                      <div class="b-inform-block__picture">
+                        <svg class="icon icon-fa-info-circle b-inform-block__icon b-inform-block__icon--pink">
+                          <use xlink:href="assets/img/sprite/sprite.svg#fa-info-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="b-inform-block__body">
+                        <h5 class="b-inform-block__caption">Activate your account</h5>
+                        <p class="b-inform-block__text">Fill in the information for verification and start accepting payments!</p>
+                        <div class="b-inform-block__bottom"><a class="b-inform-block__link" href="#">Go to verification
+                            <svg class="icon icon-fa-caret-right b-inform-block__link-icon">
+                              <use xlink:href="assets/img/sprite/sprite.svg#fa-caret-right"></use>
+                            </svg></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="col-tile">
+                  <div class="col-tile__content">
+                    <div class="b-inform-block">
+                      <div class="b-inform-block__picture">
+                        <svg class="icon icon-fa-credit-card b-inform-block__icon b-inform-block__icon--blue">
+                          <use xlink:href="assets/img/sprite/sprite.svg#fa-credit-card"></use>
+                        </svg>
+                      </div>
+                      <div class="b-inform-block__body">
+                        <h5 class="b-inform-block__caption">Build a Custom Intefgration</h5>
+                        <p class="b-inform-block__text">Choose a platform and follow along with our API docs to start your custom integration.</p>
+                        <div class="b-inform-block__bottom"><a class="b-inform-block__link" href="#">View Docs
+                            <svg class="icon icon-fa-caret-right b-inform-block__link-icon">
+                              <use xlink:href="assets/img/sprite/sprite.svg#fa-caret-right"></use>
+                            </svg></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-9">
+                <div class="col-tile">
+                  <div class="col-tile__content">
+                    <h5 class="col-tile__caption">Statistic</h5>
+                    <div class="b-statistic-chart">
+                      <div class="b-statistic-chart__header">
+                        <div class="b-statistic-chart__header-item b-statistic-chart__header-item--first">
+                          <div class="b-period-chart">
+                            <div class="b-period-chart__caption">Period</div>
+                            <div class="b-period-chart__row">
+                              <div class="b-period-chart__item">1D</div>
+                              <div class="b-period-chart__item">1W</div>
+                              <div class="b-period-chart__item">1M</div>
+                              <div class="b-period-chart__item">3M</div>
+                              <div class="b-period-chart__item active">6M</div>
+                              <div class="b-period-chart__item">1Y</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="b-statistic-chart__header-item b-statistic-chart__header-item--second">
+                          <div class="b-select js-select-block">
+                            <div class="b-select__header js-select-button">
+                              <!--.b-select__header-placeholder Select currency-->
+                              <div class="b-select__header-val selected js-select-val">USD</div>
+                              <svg class="icon icon-angle-down b-select__header-icon">
+                                <use xlink:href="assets/img/sprite/sprite.svg#angle-down"></use>
+                              </svg>
+                            </div>
+                            <div class="b-select__dropdown js-select-dropdown"><span class="b-select__item" data-value="EUR">EUR</span><span class="b-select__item" data-value="RUB">RUB</span><span class="b-select__item active" data-value="USD">USD</span></div>
+                          </div>
+                        </div>
+                        <div class="b-statistic-chart__header-item b-statistic-chart__header-item--last">
+                          <div class="b-select js-select-block">
+                            <div class="b-select__header js-select-button">
+                              <!--.b-select__header-placeholder Chose dates-->
+                              <div class="b-select__header-val">Chose dates</div>
+                              <svg class="icon icon-angle-down b-select__header-icon">
+                                <use xlink:href="assets/img/sprite/sprite.svg#angle-down"></use>
+                              </svg>
+                            </div>
+                            <div class="b-select__dropdown js-select-dropdown"><span class="b-select__item">Chose dates 1</span><span class="b-select__item active">Chose dates 2</span><span class="b-select__item">Chose dates 3</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="b-statistic-chart__body">
+                        <div class="b-statistic-chart__chart-wrap"></div>
+                        <div class="b-statistic-chart__chart">
+                          <div class="b-chart-tooltip" id="statistic-chart-tooltip">
+                            <table class="b-chart-tooltip__body js-tooltip"></table>
+                          </div>
+                          <canvas class="b-statistic-chart__chart-canvas" id="statistcChart"></canvas>
+                        </div>
+                        <div class="b-statistic-chart__chart-desc">
+                          <div class="b-chart-labels">
+                            <div class="b-chart-labels__item">
+                              <div class="b-chart-labels__lab-color" style="background-color: #FDB900"></div>
+                              <div class="b-chart-labels__title">Circulation</div>
+                              <div class="b-chart-labels__wallet">150 556,55 USD</div>
+                            </div>
+                            <div class="b-chart-labels__item">
+                              <div class="b-chart-labels__lab-color" style="background-color: #00C48C"></div>
+                              <div class="b-chart-labels__title">Average check</div>
+                              <div class="b-chart-labels__wallet">68,44 USD</div>
+                            </div>
+                            <div class="b-chart-labels__item">
+                              <div class="b-chart-labels__lab-color" style="background-color: #6E9FFF"></div>
+                              <div class="b-chart-labels__title">Refund amount</div>
+                              <div class="b-chart-labels__wallet">7556,55 USD</div>
+                            </div>
+                            <div class="b-chart-labels__item b-chart-labels__item--all">
+                              <div class="b-chart-labels__lab-color"></div>
+                              <div class="b-chart-labels__title">All Payments</div>
+                              <div class="b-chart-labels__wallet">95</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="col-tile">
+                  <div class="col-tile__content">
+                    <h5 class="col-tile__caption col-tile__caption--sm">MAIN ACCOUNT</h5>
+                    <div class="b-main-account-block">
+                      <div class="row">
+                        <div class="col-sm-6 col-xl-12">
+                          <div class="b-main-account-block__balance b-main-account-block__balance--blue"><span class="b-main-account-block__title">Balance</span><span class="b-main-account-block__walet">12 439,43 <span>USD</span></span></div>
+                        </div>
+                        <div class="col-sm-6 col-xl-12">
+                          <div class="b-main-account-block__balance"><span class="b-main-account-block__title">Payments</span><span class="b-main-account-block__walet">7 124,76 <span>USD</span></span></div>
+                        </div>
+                      </div>
+                      <div class="b-main-account-block__currency">
+                        <div class="b-select-currency js-currency-block">
+                          <div class="b-select-currency__caption">Select currency</div>
+                          <div class="b-select-currency__body">
+                            <div class="b-select-currency__list">
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">EUR</div>
+                                  <div class="b-currency__price">32 431,00</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency selected">
+                                  <div class="b-currency__name">USD</div>
+                                  <div class="b-currency__price">12 439,43</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">UAH</div>
+                                  <div class="b-currency__price">18 431,00</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">RUB</div>
+                                  <div class="b-currency__price">352 431,00</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="b-select-currency__list-hidden">
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">EUR</div>
+                                  <div class="b-currency__price">32 431,00</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency selected">
+                                  <div class="b-currency__name">USD</div>
+                                  <div class="b-currency__price">12 439,43</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">UAH</div>
+                                  <div class="b-currency__price">18 431,00</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">RUB</div>
+                                  <div class="b-currency__price">352 431,00</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">GBP</div>
+                                  <div class="b-currency__price">431,00</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">TRY</div>
+                                  <div class="b-currency__price">282 591,00</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">NOK</div>
+                                  <div class="b-currency__price">1 431,00</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">JPY</div>
+                                  <div class="b-currency__price">0,00</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">CNY</div>
+                                  <div class="b-currency__price">32 431,00</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__list-item">
+                                <div class="b-currency">
+                                  <div class="b-currency__name">CZK</div>
+                                  <div class="b-currency__price">2 591,00</div>
+                                </div>
+                              </div>
+                              <div class="b-select-currency__button b-select-currency__button--gutter-b-0 js-currency-list-btn">
+                                <svg class="icon icon-fa-angle-double-up b-select-currency__button-icon">
+                                  <use xlink:href="assets/img/sprite/sprite.svg#fa-angle-double-up"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="b-select-currency__button js-currency-list-btn">
+                              <svg class="icon icon-fa-angle-double-up b-select-currency__button-icon">
+                                <use xlink:href="assets/img/sprite/sprite.svg#fa-angle-double-up"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="col-tile">
+                  <div class="col-tile__content col-tile__content--no-gutter">
+                    <div class="col-tile__header">
+                      <h5 class="col-tile__caption">Transactions</h5>
+                      <div class="b-buttons">
+                        <div class="b-buttons__item">
+                          <button class="button button--cap button--md js-filters-button">
+                            <svg class="icon icon-fa-filter e-icon e-icon--filter">
+                              <use xlink:href="assets/img/sprite/sprite.svg#fa-filter"></use>
+                            </svg>filter
+                          </button>
+                        </div>
+                        <div class="b-buttons__item">
+                          <button class="button button--cap button--md button--white js-export-button">
+                            <svg class="icon icon-fa-file-download e-icon e-icon--file-download">
+                              <use xlink:href="assets/img/sprite/sprite.svg#fa-file-download"></use>
+                            </svg>Export
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="b-transactions-table">
+                      <table class="b-table">
+                        <tr class="b-table__header">
+                          <th class="b-table__header-item b-table__header-item--id">ID</th>
+                          <th class="b-table__header-item b-table__header-item--desc">Description</th>
+                          <th class="b-table__header-item">Amount</th>
+                          <th class="b-table__header-item">Currency</th>
+                          <th class="b-table__header-item">Method</th>
+                          <th class="b-table__header-item">Date</th>
+                          <th class="b-table__header-item">Status</th>
+                          <th class="b-table__header-item"></th>
+                        </tr>
+                        <!--ROW-->
+                        <tr class="b-table__row">
+                          <td class="b-table__col">78887887</td>
+                          <td class="b-table__col">Advertising integration</td>
+                          <td class="b-table__col"><b class="bold">43 532,00</b></td>
+                          <td class="b-table__col">USD</td>
+                          <td class="b-table__col">MasterCard</td>
+                          <td class="b-table__col">2019/01/21 <span class="b-table__time"> 12:18:25</span></td>
+                          <td class="b-table__col"><span class="b-status b-status--done">Done</span></td>
+                          <td class="b-table__col">
+                            <div class="b-options js-options-block">
+                              <button class="b-options__button js-options-button">
+                                <svg class="icon icon-fa-ellipsis-v e-icon e-icon--ellipsis-v">
+                                  <use xlink:href="assets/img/sprite/sprite.svg#fa-ellipsis-v"></use>
+                                </svg>
+                              </button>
+                              <div class="b-options__drobdown">
+                                <button class="b-options__drobdown-item">Cancel invoice</button>
+                                <button class="b-options__drobdown-item">Resend to e-mail</button>
+                                <button class="b-options__drobdown-item active">Refund payment</button>
+                                <button class="b-options__drobdown-item">See details</button>
+                                <button class="b-options__drobdown-item b-options__drobdown-item--delete">
+                                  <svg class="icon icon-fa-trash-alt e-icon e-icon--trash-alt">
+                                    <use xlink:href="assets/img/sprite/sprite.svg#fa-trash-alt"></use>
+                                  </svg>Delete invoice
+                                </button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!--ROW-->
+                        <tr class="b-table__row">
+                          <td class="b-table__col">78887887</td>
+                          <td class="b-table__col">Advertising integration</td>
+                          <td class="b-table__col"><b class="bold">232,00</b></td>
+                          <td class="b-table__col">USD</td>
+                          <td class="b-table__col">Visa</td>
+                          <td class="b-table__col">2019/01/21 <span class="b-table__time"> 12:18:25</span></td>
+                          <td class="b-table__col"><span class="b-status b-status--in-progress">In Progress</span></td>
+                          <td class="b-table__col">
+                            <div class="b-options js-options-block">
+                              <button class="b-options__button js-options-button">
+                                <svg class="icon icon-fa-ellipsis-v e-icon e-icon--ellipsis-v">
+                                  <use xlink:href="assets/img/sprite/sprite.svg#fa-ellipsis-v"></use>
+                                </svg>
+                              </button>
+                              <div class="b-options__drobdown">
+                                <button class="b-options__drobdown-item">Cancel invoice</button>
+                                <button class="b-options__drobdown-item">Resend to e-mail</button>
+                                <button class="b-options__drobdown-item active">Refund payment</button>
+                                <button class="b-options__drobdown-item">See details</button>
+                                <button class="b-options__drobdown-item b-options__drobdown-item--delete">
+                                  <svg class="icon icon-fa-trash-alt e-icon e-icon--trash-alt">
+                                    <use xlink:href="assets/img/sprite/sprite.svg#fa-trash-alt"></use>
+                                  </svg>Delete invoice
+                                </button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!--ROW-->
+                        <tr class="b-table__row">
+                          <td class="b-table__col">78887887</td>
+                          <td class="b-table__col">Advertising integration</td>
+                          <td class="b-table__col"><b class="bold">232,00</b></td>
+                          <td class="b-table__col">USD</td>
+                          <td class="b-table__col">MasterCard</td>
+                          <td class="b-table__col">2019/01/21 <span class="b-table__time"> 12:18:25</span></td>
+                          <td class="b-table__col"><span class="b-status b-status--declined">Declined</span></td>
+                          <td class="b-table__col">
+                            <div class="b-options js-options-block">
+                              <button class="b-options__button js-options-button">
+                                <svg class="icon icon-fa-ellipsis-v e-icon e-icon--ellipsis-v">
+                                  <use xlink:href="assets/img/sprite/sprite.svg#fa-ellipsis-v"></use>
+                                </svg>
+                              </button>
+                              <div class="b-options__drobdown">
+                                <button class="b-options__drobdown-item">Cancel invoice</button>
+                                <button class="b-options__drobdown-item">Resend to e-mail</button>
+                                <button class="b-options__drobdown-item active">Refund payment</button>
+                                <button class="b-options__drobdown-item">See details</button>
+                                <button class="b-options__drobdown-item b-options__drobdown-item--delete">
+                                  <svg class="icon icon-fa-trash-alt e-icon e-icon--trash-alt">
+                                    <use xlink:href="assets/img/sprite/sprite.svg#fa-trash-alt"></use>
+                                  </svg>Delete invoice
+                                </button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!--ROW-->
+                        <tr class="b-table__row">
+                          <td class="b-table__col">78887887</td>
+                          <td class="b-table__col">Advertising integration</td>
+                          <td class="b-table__col"><b class="bold">43 532,00</b></td>
+                          <td class="b-table__col">USD</td>
+                          <td class="b-table__col">MasterCard</td>
+                          <td class="b-table__col">2019/01/21 <span class="b-table__time"> 12:18:25</span></td>
+                          <td class="b-table__col"><span class="b-status b-status--done">Done</span></td>
+                          <td class="b-table__col">
+                            <div class="b-options js-options-block">
+                              <button class="b-options__button js-options-button">
+                                <svg class="icon icon-fa-ellipsis-v e-icon e-icon--ellipsis-v">
+                                  <use xlink:href="assets/img/sprite/sprite.svg#fa-ellipsis-v"></use>
+                                </svg>
+                              </button>
+                              <div class="b-options__drobdown">
+                                <button class="b-options__drobdown-item">Cancel invoice</button>
+                                <button class="b-options__drobdown-item">Resend to e-mail</button>
+                                <button class="b-options__drobdown-item active">Refund payment</button>
+                                <button class="b-options__drobdown-item">See details</button>
+                                <button class="b-options__drobdown-item b-options__drobdown-item--delete">
+                                  <svg class="icon icon-fa-trash-alt e-icon e-icon--trash-alt">
+                                    <use xlink:href="assets/img/sprite/sprite.svg#fa-trash-alt"></use>
+                                  </svg>Delete invoice
+                                </button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!--ROW-->
+                        <tr class="b-table__row">
+                          <td class="b-table__col">78887887</td>
+                          <td class="b-table__col">Advertising integration</td>
+                          <td class="b-table__col"><b class="bold">232,00</b></td>
+                          <td class="b-table__col">USD</td>
+                          <td class="b-table__col">Visa</td>
+                          <td class="b-table__col">2019/01/21 <span class="b-table__time"> 12:18:25</span></td>
+                          <td class="b-table__col"><span class="b-status b-status--in-progress">In Progress</span></td>
+                          <td class="b-table__col">
+                            <div class="b-options js-options-block">
+                              <button class="b-options__button js-options-button">
+                                <svg class="icon icon-fa-ellipsis-v e-icon e-icon--ellipsis-v">
+                                  <use xlink:href="assets/img/sprite/sprite.svg#fa-ellipsis-v"></use>
+                                </svg>
+                              </button>
+                              <div class="b-options__drobdown">
+                                <button class="b-options__drobdown-item">Cancel invoice</button>
+                                <button class="b-options__drobdown-item">Resend to e-mail</button>
+                                <button class="b-options__drobdown-item active">Refund payment</button>
+                                <button class="b-options__drobdown-item">See details</button>
+                                <button class="b-options__drobdown-item b-options__drobdown-item--delete">
+                                  <svg class="icon icon-fa-trash-alt e-icon e-icon--trash-alt">
+                                    <use xlink:href="assets/img/sprite/sprite.svg#fa-trash-alt"></use>
+                                  </svg>Delete invoice
+                                </button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!--ROW-->
+                        <tr class="b-table__row">
+                          <td class="b-table__col">78887887</td>
+                          <td class="b-table__col">Advertising integration</td>
+                          <td class="b-table__col"><b class="bold">232,00</b></td>
+                          <td class="b-table__col">USD</td>
+                          <td class="b-table__col">MasterCard</td>
+                          <td class="b-table__col">2019/01/21 <span class="b-table__time"> 12:18:25</span></td>
+                          <td class="b-table__col"><span class="b-status b-status--declined">Declined</span></td>
+                          <td class="b-table__col">
+                            <div class="b-options js-options-block">
+                              <button class="b-options__button js-options-button">
+                                <svg class="icon icon-fa-ellipsis-v e-icon e-icon--ellipsis-v">
+                                  <use xlink:href="assets/img/sprite/sprite.svg#fa-ellipsis-v"></use>
+                                </svg>
+                              </button>
+                              <div class="b-options__drobdown">
+                                <button class="b-options__drobdown-item">Cancel invoice</button>
+                                <button class="b-options__drobdown-item">Resend to e-mail</button>
+                                <button class="b-options__drobdown-item active">Refund payment</button>
+                                <button class="b-options__drobdown-item">See details</button>
+                                <button class="b-options__drobdown-item b-options__drobdown-item--delete">
+                                  <svg class="icon icon-fa-trash-alt e-icon e-icon--trash-alt">
+                                    <use xlink:href="assets/img/sprite/sprite.svg#fa-trash-alt"></use>
+                                  </svg>Delete invoice
+                                </button>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                      <div class="b-transactions-table__button">
+                        <button class="button button--lg">See all</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!--include ../global/footer-->
+    </div>
+    <!--include ../global/modal-->
+    <!-- script markup only!-->
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
