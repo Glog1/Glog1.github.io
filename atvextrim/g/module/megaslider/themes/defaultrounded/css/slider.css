@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+	
+/* theme custom */
+.slider-theme-defaultrounded {margin:5px;background:#fff;}
+.slider-theme-defaultrounded .slider-theme-defaultrounded-text {background:url(../images/text_bg.png); color:#fff;}
+.slider-theme-defaultrounded .slider-theme-defaultrounded-text-inner {padding:10px;}
+.slider-theme-defaultrounded .slider-theme-defaultrounded-controls .slider-theme-defaultrounded-prev {margin:-14px 0 0; font-size:0; width:28px; height:28px; background:url(../images/controls.png) 0 0 no-repeat;}
+.slider-theme-defaultrounded .slider-theme-defaultrounded-controls .slider-theme-defaultrounded-next {margin:-14px 0 0; font-size:0; width:28px; height:28px; background:url(../images/controls.png) 0 -35px no-repeat;}
+.slider-theme-defaultrounded .slider-theme-defaultrounded-controls .slider-theme-defaultrounded-player {width:11px; height:15px; background:url(../images/controls.png) 0 -149px no-repeat;}
+.slider-theme-defaultrounded .slider-theme-defaultrounded-controls .player-on {background-position:1px -124px;}
+.slider-theme-defaultrounded .slider-theme-defaultrounded-bullets li {width:14px; height:15px; background:url(../images/controls.png) 0 -74px no-repeat; font-size:0px; color:#333; text-align:center;}
+.slider-theme-defaultrounded .slider-theme-defaultrounded-bullets li.active {background:url(../images/controls.png) 0 -96px no-repeat; color:#fff;}
+.slider-theme-defaultrounded .slider-theme-defaultrounded-bullets-num li {font-size:11px;line-height:15px;}
+.slider-theme-defaultrounded .slider-theme-defaultrounded-bullets .slider-theme-defaultrounded-player {width:11px; height:15px; background:url(../images/controls.png) 0 -149px no-repeat;}
+.slider-theme-defaultrounded .slider-theme-defaultrounded-bullets .player-on {background-position:1px -124px;}
+
+.slider-theme-defaultrounded-ram-top-left, .slider-theme-defaultrounded-ram-top-right, .slider-theme-defaultrounded-ram-bottom-left, .slider-theme-defaultrounded-ram-bottom-right {position:absolute;background-image:url(../images/ram.png); width:10px; height:10px; z-index:10;}
+.slider-theme-defaultrounded-ram-top, .slider-theme-defaultrounded-ram-bottom, .slider-theme-defaultrounded-ram-left, .slider-theme-defaultrounded-ram-right {background:#fff; position:absolute; z-index:10;}
+
+
+.slider-theme-defaultrounded-ram-top-left {top:-5px; left:-5px; background-position:-13px -13px;}
+.slider-theme-defaultrounded-ram-top-right {top:-5px; right:-5px; background-position:0 -13px;}
+.slider-theme-defaultrounded-ram-bottom-left {bottom:-5px; left:-5px; background-position:-13px 0;}
+.slider-theme-defaultrounded-ram-bottom-right {bottom:-5px; right:-5px; background-position:0 0;}
+
+.slider-theme-defaultrounded-ram-top {top:-5px; height:5px; left:5px; right:5px;}
+.slider-theme-defaultrounded-ram-bottom {bottom:-5px; height:5px; left:5px; right:5px;}
+.slider-theme-defaultrounded-ram-left {left:-5px; width:5px; top:5px; bottom:5px;}
+.slider-theme-defaultrounded-ram-right {right:-5px; width:5px; top:5px; bottom:5px;}
