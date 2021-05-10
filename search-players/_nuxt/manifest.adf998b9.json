@@ -1,0 +1,10 @@
+{
+  "name": "search_players",
+  "short_name": "search_players",
+  "description": "## Build Setup",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}
